@@ -1,4 +1,81 @@
 @charset "utf-8";
-@import "reset.scss";
+
+// 폰트
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+// scss import
+@import "reset.scss";
+
+#header {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    .inner {
+        width: 1180px;
+        position: relative;
+        margin: 0 auto;
+        padding: 35px 0;
+
+        .logo {
+            position: absolute;
+            left: 0;
+            top: 20px;
+
+            a {
+                font: 600 30px/1 "Saira Semi Condensed";
+                color: #000;
+            }
+        }
+
+        .menuWeb {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 295px;
+
+            #gnb {
+                width: 590px;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+
+                >li {
+                    display: inline-block;
+                    margin-top: 3px;
+                    
+                    >a {
+                        font: 400 18px/1 "Saira Semi Condensed";
+                        color: #000;
+                    }
+                }
+            }
+
+            #util {
+                &::after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+
+                > li {
+                    float: left;
+                    margin-left: 10px;
+
+                    &:first-child a i {
+                        font-size: 26px;
+                    }
+
+                    &:last-child a i {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        .btnCall {
+            display: none;
+        }
+    }
+}

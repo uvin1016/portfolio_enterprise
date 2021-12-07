@@ -2,12 +2,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  box-sizing: border-box; }
 
 ul, ol, li {
   list-style: none; }
 
 a {
   text-decoration: none; }
+
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+  #header .inner {
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
+    padding: 35px 0; }
+    #header .inner .logo {
+      position: absolute;
+      left: 0;
+      top: 20px; }
+      #header .inner .logo a {
+        font: 600 30px/1 "Saira Semi Condensed";
+        color: #000; }
+    #header .inner .menuWeb {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 295px; }
+      #header .inner .menuWeb #gnb {
+        width: 590px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline; }
+        #header .inner .menuWeb #gnb > li {
+          display: inline-block;
+          margin-top: 3px; }
+          #header .inner .menuWeb #gnb > li > a {
+            font: 400 18px/1 "Saira Semi Condensed";
+            color: #000; }
+      #header .inner .menuWeb #util::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header .inner .menuWeb #util > li {
+        float: left;
+        margin-left: 10px; }
+        #header .inner .menuWeb #util > li:first-child a i {
+          font-size: 26px; }
+        #header .inner .menuWeb #util > li:last-child a i {
+          font-size: 25px; }
+    #header .inner .btnCall {
+      display: none; }
 
 /*# sourceMappingURL=style.css.map */
