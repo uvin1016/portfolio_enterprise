@@ -7,11 +7,14 @@
 // scss import
 @import "reset.scss";
 
+
+// header ---------------------------------------------------------------------------
 #header {
     width: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
+    z-index: 10;
 
     .inner {
         width: 1180px;
@@ -25,8 +28,10 @@
             top: 20px;
 
             a {
-                font: 600 30px/1 "Saira Semi Condensed";
-                color: #000;
+                font: 500 30px/1 "Saira Semi Condensed";
+                color: #fff;
+                opacity: 0.9;
+                letter-spacing: 1px;
             }
         }
 
@@ -44,10 +49,11 @@
                 >li {
                     display: inline-block;
                     margin-top: 3px;
-                    
+
                     >a {
                         font: 400 18px/1 "Saira Semi Condensed";
-                        color: #000;
+                        color: #fff;
+                        opacity: 0.9;
                     }
                 }
             }
@@ -63,6 +69,11 @@
                     float: left;
                     margin-left: 10px;
 
+                    a i {
+                        color: #fff;
+                        opacity: 0.9;
+                    }
+
                     &:first-child a i {
                         font-size: 26px;
                     }
@@ -76,6 +87,102 @@
 
         .btnCall {
             display: none;
+        }
+    }
+}
+
+
+// visual ---------------------------------------------------------------------------
+#visual {
+    width: 100%;
+    height: 100vh;
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .inner {
+            width: 1180px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+
+            .txtBox {
+                position: absolute;
+                left: 0;
+                bottom: 200px;
+
+                h1 {
+                    font: 400 16px/1 'Roboto';
+                    color: #fff;
+                    opacity: 0.9;
+                }
+
+                h2 {
+                    font: 500 8vw/1.1 'Roboto';
+                    color: #fff;
+                    margin-left: -7px;
+                }
+            }
+
+            .txtSub {
+                position: absolute;
+                bottom: 100px;
+                left: 0;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    width: 295px;
+
+                    h3 {
+                        font: 400 16px/1 'Roboto';
+                        color: #fff;
+                        opacity: 0.7;
+                    }
+
+                    span {
+                        font: 400 16px/1 'Roboto';
+                        color: #fff;
+                        opacity: 0.95;
+                    }
+                }
+            }
+
+            .pagination {
+                position: absolute;
+                right: 0;
+                bottom: 100px;
+                display: flex;
+                width: 295px;
+                justify-content: space-between;
+                align-items: center;
+
+                span {
+                    font: 400 16px/1 'Roboto';
+                    color: #fff;
+                    opacity: 0.9;
+                }
+
+                .progress {
+                    width: 200px;
+                    height: 2px;
+                    background-color: #fff;
+                    opacity: 0.7;
+                    position: relative;
+                }
+            }
         }
     }
 }

@@ -15,7 +15,8 @@ a {
   width: 100%;
   position: absolute;
   top: 0px;
-  left: 0px; }
+  left: 0px;
+  z-index: 10; }
   #header .inner {
     width: 1180px;
     position: relative;
@@ -26,8 +27,10 @@ a {
       left: 0;
       top: 20px; }
       #header .inner .logo a {
-        font: 600 30px/1 "Saira Semi Condensed";
-        color: #000; }
+        font: 500 30px/1 "Saira Semi Condensed";
+        color: #fff;
+        opacity: 0.9;
+        letter-spacing: 1px; }
     #header .inner .menuWeb {
       display: flex;
       justify-content: space-between;
@@ -42,7 +45,8 @@ a {
           margin-top: 3px; }
           #header .inner .menuWeb #gnb > li > a {
             font: 400 18px/1 "Saira Semi Condensed";
-            color: #000; }
+            color: #fff;
+            opacity: 0.9; }
       #header .inner .menuWeb #util::after {
         content: '';
         display: block;
@@ -50,11 +54,81 @@ a {
       #header .inner .menuWeb #util > li {
         float: left;
         margin-left: 10px; }
+        #header .inner .menuWeb #util > li a i {
+          color: #fff;
+          opacity: 0.9; }
         #header .inner .menuWeb #util > li:first-child a i {
           font-size: 26px; }
         #header .inner .menuWeb #util > li:last-child a i {
           font-size: 25px; }
     #header .inner .btnCall {
       display: none; }
+
+#visual {
+  width: 100%;
+  height: 100vh; }
+  #visual .slide {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    #visual .slide img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; }
+    #visual .slide .inner {
+      width: 1180px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative; }
+      #visual .slide .inner .txtBox {
+        position: absolute;
+        left: 0;
+        bottom: 200px; }
+        #visual .slide .inner .txtBox h1 {
+          font: 400 16px/1 'Roboto';
+          color: #fff;
+          opacity: 0.9; }
+        #visual .slide .inner .txtBox h2 {
+          font: 500 8vw/1.1 'Roboto';
+          color: #fff;
+          margin-left: -7px; }
+      #visual .slide .inner .txtSub {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        display: flex;
+        justify-content: space-between; }
+        #visual .slide .inner .txtSub li {
+          width: 295px; }
+          #visual .slide .inner .txtSub li h3 {
+            font: 400 16px/1 'Roboto';
+            color: #fff;
+            opacity: 0.7; }
+          #visual .slide .inner .txtSub li span {
+            font: 400 16px/1 'Roboto';
+            color: #fff;
+            opacity: 0.95; }
+      #visual .slide .inner .pagination {
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+        display: flex;
+        width: 295px;
+        justify-content: space-between;
+        align-items: center; }
+        #visual .slide .inner .pagination span {
+          font: 400 16px/1 'Roboto';
+          color: #fff;
+          opacity: 0.9; }
+        #visual .slide .inner .pagination .progress {
+          width: 200px;
+          height: 2px;
+          background-color: #fff;
+          opacity: 0.7;
+          position: relative; }
 
 /*# sourceMappingURL=style.css.map */
