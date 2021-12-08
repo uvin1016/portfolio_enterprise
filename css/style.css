@@ -168,12 +168,13 @@ a {
 
 #projects {
   width: 100%;
-  padding: 0px 0 200px; }
+  padding: 0px 0 250px; }
   #projects .inner {
     width: 1180px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     #projects .inner div {
       width: 580px;
       margin-right: 20px;
@@ -183,7 +184,7 @@ a {
       #projects .inner div:first-child h1 {
         font: 400 24px/1 "Saira Semi Condensed";
         color: #171717; }
-      #projects .inner div:last-child article:nth-of-type(1) {
+      #projects .inner div:nth-of-type(2) article:nth-of-type(1) {
         margin-top: 0; }
       #projects .inner div article {
         margin-top: 11vh; }
@@ -200,6 +201,23 @@ a {
             width: 100%;
             height: 100%;
             object-fit: cover; }
+    #projects .inner .moreBtn {
+      position: absolute;
+      left: calc(100% / 2);
+      bottom: -50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #projects .inner .moreBtn span {
+        font: 400 14px/1 'Roboto';
+        color: #171717;
+        margin-right: 10px; }
+      #projects .inner .moreBtn .progress {
+        width: 100px;
+        height: 1px;
+        background-color: #171717;
+        position: relative;
+        margin-right: 10px; }
 
 #banner {
   width: 100%;
@@ -227,7 +245,8 @@ a {
   padding: 200px 0 180px; }
   #events .inner {
     width: 1180px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     #events .inner h1 {
       font: 400 24px/1 "Saira Semi Condensed";
       color: #171717;
@@ -353,5 +372,83 @@ a {
               background-color: #727272;
               position: relative;
               margin-right: 10px; }
+
+#footer {
+  width: 100%;
+  padding: 100px 0 0px;
+  background-color: #171717; }
+  #footer .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #footer .inner .ftTop {
+      display: flex;
+      margin-bottom: 80px; }
+      #footer .inner .ftTop h1 {
+        width: calc(100% / 2);
+        font: 400 40px/1.3 "Roboto";
+        color: #fff; }
+      #footer .inner .ftTop .signUp {
+        width: calc(100% / 2); }
+        #footer .inner .ftTop .signUp input[type=email] {
+          width: 200px;
+          padding: 10px 0 15px;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+          color: #fff; }
+        #footer .inner .ftTop .signUp button {
+          font: 300 14px/1 'Roboto';
+          color: #fff;
+          border: none;
+          background: transparent;
+          cursor: pointer; }
+        #footer .inner .ftTop .signUp p {
+          margin-top: 10px;
+          font: 300 12px/1.3 'Roboto';
+          color: #aaa; }
+    #footer .inner .ftMid {
+      display: flex;
+      margin-bottom: 80px; }
+      #footer .inner .ftMid article {
+        width: calc(100% / 4);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between; }
+        #footer .inner .ftMid article p {
+          font: 300 14px/1 "Roboto";
+          color: #fff; }
+        #footer .inner .ftMid article a > h3 {
+          font: 300 16px/1 'Roboto';
+          color: #fff; }
+        #footer .inner .ftMid article a > p {
+          width: 80%;
+          margin: 10px 0 30px;
+          font: 300 14px/1.6 'Roboto';
+          color: #727272; }
+        #footer .inner .ftMid article:nth-of-type(1) h2 {
+          width: 100%;
+          font: 400 24px/1 'Roboto';
+          color: #fff; }
+        #footer .inner .ftMid article:nth-of-type(1) > a {
+          font: 300 14px/1 "Roboto";
+          color: #fff;
+          border-bottom: 1px solid #fff; }
+    #footer .inner .ftBttm {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0; }
+      #footer .inner .ftBttm p {
+        width: calc(100% / 2);
+        font: 300 12px/1 'Roboto';
+        color: #fff; }
+      #footer .inner .ftBttm .ftUtil {
+        width: calc(100% / 2);
+        display: flex; }
+        #footer .inner .ftBttm .ftUtil li {
+          width: calc(100% / 4); }
+          #footer .inner .ftBttm .ftUtil li a {
+            font: 300 14px/1 'Roboto';
+            color: #fff;
+            letter-spacing: 1px; }
 
 /*# sourceMappingURL=style.css.map */
