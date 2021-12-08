@@ -131,4 +131,39 @@ a {
           opacity: 0.7;
           position: relative; }
 
+#about {
+  width: 100%;
+  padding: 150px 0 180px; }
+  #about .inner {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    #about .inner h1 {
+      width: 295px;
+      font: 400 24px/1 "Saira Semi Condensed";
+      color: #171717; }
+    #about .inner .contents {
+      width: calc(100% - 295px); }
+      #about .inner .contents h2 {
+        font: 500 40px/1.1 "Roboto";
+        color: #171717; }
+      #about .inner .contents > p {
+        width: calc(100% - 295px);
+        margin: 50px 0;
+        word-break: keep-all;
+        font: 400 15px/1.6 "Roboto";
+        color: #171717; }
+      #about .inner .contents .number {
+        display: flex; }
+        #about .inner .contents .number article {
+          width: calc(100% / 3); }
+          #about .inner .contents .number article h3 {
+            font: 400 15px/1 "Roboto";
+            color: #171717;
+            margin-bottom: 15px; }
+          #about .inner .contents .number article p {
+            font: 500 40px/1 "Roboto";
+            color: #171717; }
+
 /*# sourceMappingURL=style.css.map */

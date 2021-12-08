@@ -186,3 +186,59 @@
         }
     }
 }
+
+
+// About ---------------------------------------------------------------------------
+#about {
+    width: 100%;
+    padding: 150px 0 180px;
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            width: 295px;
+            font: 400 24px/1 "Saira Semi Condensed";
+            color: #171717;
+        }
+
+        .contents {
+            width: calc(100% - 295px);
+
+            h2 {
+                font: 500 40px/1.1 "Roboto";
+                color: #171717;
+            }
+
+            >p {
+                width: calc(100% - 295px);
+                margin: 50px 0;
+                word-break: keep-all;
+                font: 400 15px/1.6 "Roboto";
+                color: #171717;
+            }
+
+            .number {
+                display: flex;
+
+                article {
+                    width: calc(100% / 3);
+
+                    h3 {
+                        font: 400 15px/1 "Roboto";
+                        color: #171717;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        font: 500 40px/1 "Roboto";
+                        color: #171717;
+                    }
+                }
+            }
+        }
+    }
+}
