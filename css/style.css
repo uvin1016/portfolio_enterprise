@@ -222,4 +222,49 @@ a {
       color: #fff;
       text-align: center; }
 
+#events {
+  width: 100%;
+  padding: 200px 0 180px; }
+  #events .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #events .inner h1 {
+      font: 400 24px/1 "Saira Semi Condensed";
+      color: #171717;
+      border-bottom: 1px solid #171717;
+      padding-bottom: 10px;
+      margin-bottom: 30px; }
+    #events .inner .slide {
+      display: flex;
+      justify-content: right; }
+      #events .inner .slide article {
+        width: 280px;
+        margin-left: 20px; }
+        #events .inner .slide article h2 {
+          font: 600 40px/1 "Roboto";
+          color: #171717;
+          margin-bottom: 15px; }
+          #events .inner .slide article h2 span {
+            font: 400 24px/1 "Roboto";
+            margin-left: 10px; }
+        #events .inner .slide article p {
+          font: 400 14px/1.6 "Roboto";
+          color: #727272; }
+        #events .inner .slide article .loca {
+          margin: 50px 0; }
+          #events .inner .slide article .loca p {
+            font: 500 15px/1.6 "Saira Semi Condensed";
+            color: #727272; }
+        #events .inner .slide article .pic {
+          width: 100%;
+          height: 150px; }
+          #events .inner .slide article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        #events .inner .slide article.on .pic {
+          float: right;
+          width: 200%;
+          height: calc(150px * 2); }
+
 /*# sourceMappingURL=style.css.map */
