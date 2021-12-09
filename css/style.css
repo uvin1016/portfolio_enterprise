@@ -596,9 +596,224 @@ a {
   #footer .inner {
     width: calc(100% - 70px); }
     #footer .inner .ftBttm p {
-      width: 30%;
+      width: 100%;
       margin-top: 6px; }
     #footer .inner .ftBttm .ftUtil {
-      width: 70%; } }
+      display: none; } }
+@media screen and (max-width: 768px) {
+  #header .inner .menuMb #util {
+    margin-top: 100px;
+    margin-right: 0;
+    margin-left: 35px;
+    text-align: left; }
+
+  #visual .slide .inner .txtBox {
+    bottom: 250px; }
+  #visual .slide .inner .txtSub {
+    width: 100%;
+    bottom: 150px; }
+    #visual .slide .inner .txtSub li {
+      width: calc(100% / 3); }
+  #visual .slide .inner .pagination {
+    width: 100%;
+    bottom: 50px;
+    right: auto;
+    left: 0; }
+    #visual .slide .inner .pagination .progress {
+      width: 80%; }
+
+  #about {
+    padding: 150px 0 150px; }
+    #about .inner {
+      display: block;
+      width: calc(100% - 70px); }
+      #about .inner h1 {
+        width: 100%;
+        margin-bottom: 30px; }
+      #about .inner .contents {
+        width: 100%; }
+        #about .inner .contents h2 {
+          font: 500 24px/1.1 "Roboto"; }
+          #about .inner .contents h2 br {
+            display: none; }
+        #about .inner .contents > p {
+          width: 100%;
+          font: 400 14px/1.6 "Roboto";
+          margin: 30px 0; }
+
+  #projects {
+    padding: 0px 0 150px; }
+    #projects .inner {
+      display: block;
+      width: calc(100% - 70px); }
+      #projects .inner div {
+        display: block;
+        width: 100%; }
+        #projects .inner div article {
+          margin-top: 30px; }
+        #projects .inner div.right {
+          margin-top: 30px; }
+      #projects .inner .moreBtn {
+        width: 100%;
+        margin-top: 30px;
+        position: unset; }
+        #projects .inner .moreBtn .progress {
+          width: 100%; }
+
+  #banner {
+    padding: 80px 0; }
+    #banner .inner {
+      width: calc(100% - 70px); }
+      #banner .inner h1 {
+        font: 500 26px/1 "Roboto"; }
+      #banner .inner p {
+        font: 300 14px/1.3 "Roboto"; }
+
+  #events .inner .slide article {
+    width: calc(100% / 3); }
+    #events .inner .slide article:last-child {
+      display: none; }
+    #events .inner .slide article .pic {
+      width: 100%;
+      height: 120px; }
+    #events .inner .slide article.on .pic {
+      width: 180%;
+      height: calc(120px * 1.8); }
+    #events .inner .slide article h2 {
+      font: 600 30px/1 "Roboto"; }
+      #events .inner .slide article h2 span {
+        font: 400 20px/1 "Roboto"; }
+    #events .inner .slide article > p {
+      display: none; }
+    #events .inner .slide article .loca {
+      margin: 30px 0; }
+
+  #news {
+    padding: 0px 0 150px; }
+    #news .inner {
+      width: calc(100% - 70px); }
+      #news .inner ul li {
+        padding: 20px 0; }
+        #news .inner ul li a {
+          font: 400 16px/1 "Roboto"; }
+        #news .inner ul li .subNews {
+          display: block; }
+          #news .inner ul li .subNews .pic {
+            width: 100%;
+            height: 150px; }
+          #news .inner ul li .subNews .subTxt {
+            margin-top: 30px;
+            padding-bottom: 40px;
+            width: 100%; }
+          #news .inner ul li .subNews .moreBtn {
+            left: 0; }
+
+  #footer {
+    padding: 60px 0 0px; }
+    #footer .inner {
+      width: calc(100% - 70px); }
+      #footer .inner .ftTop {
+        display: block;
+        margin-bottom: 60px; }
+        #footer .inner .ftTop h1 {
+          width: 100%;
+          margin-bottom: 20px; }
+        #footer .inner .ftTop .signUp {
+          width: 100%; }
+      #footer .inner .ftMid {
+        margin-bottom: 30px; }
+        #footer .inner .ftMid article {
+          width: calc(100% /3); }
+          #footer .inner .ftMid article:first-child {
+            display: none; }
+      #footer .inner .ftBttm p {
+        width: 100%; } }
+@media screen and (max-width: 510px) {
+  #header .inner .menuMb {
+    display: none; }
+    #header .inner .menuMb #gnb li a {
+      font: 300 35px/1 "Saira Semi Condensed"; }
+
+  #visual .slide .inner .txtBox {
+    bottom: 250px; }
+  #visual .slide .inner .txtSub {
+    width: 100%;
+    bottom: 150px; }
+    #visual .slide .inner .txtSub li {
+      width: calc(100% / 3); }
+      #visual .slide .inner .txtSub li h3 {
+        font: 400 14px/1 'Roboto'; }
+      #visual .slide .inner .txtSub li span {
+        font: 400 14px/1 'Roboto'; }
+
+  #about .inner .contents {
+    width: 100%; }
+    #about .inner .contents > p {
+      margin: 30px 0 50px; }
+
+  #banner {
+    padding: 60px 0; }
+    #banner .inner h1 {
+      font: 500 24px/1 "Roboto"; }
+    #banner .inner p {
+      font: 300 12px/1.3 "Roboto"; }
+
+  #events .inner .slide article {
+    margin: 0;
+    width: 100%; }
+    #events .inner .slide article:last-child {
+      display: none; }
+    #events .inner .slide article:nth-of-type(2) {
+      display: none; }
+    #events .inner .slide article > p {
+      display: block; }
+    #events .inner .slide article.on .pic {
+      width: 100%;
+      height: 150px; }
+
+  #news .inner ul li > a {
+    font: 400 14px/1 "Roboto";
+    padding-left: 20px; }
+  #news .inner ul li .subNews {
+    display: block; }
+    #news .inner ul li .subNews .pic {
+      width: 100%;
+      height: 150px; }
+    #news .inner ul li .subNews .subTxt {
+      margin-top: 30px;
+      padding-bottom: 40px;
+      width: 100%; }
+    #news .inner ul li .subNews .moreBtn {
+      left: 0; }
+
+  #footer {
+    padding: 60px 0 0px; }
+    #footer .inner {
+      width: calc(100% - 70px); }
+      #footer .inner .ftTop {
+        display: block;
+        margin-bottom: 60px; }
+        #footer .inner .ftTop h1 {
+          width: 100%;
+          margin-bottom: 20px; }
+        #footer .inner .ftTop .signUp {
+          width: 100%; }
+      #footer .inner .ftMid {
+        margin-bottom: 30px; }
+        #footer .inner .ftMid article {
+          display: block;
+          width: calc(100% /3); }
+          #footer .inner .ftMid article a {
+            display: block;
+            margin-bottom: 20px; }
+            #footer .inner .ftMid article a p {
+              display: none; }
+          #footer .inner .ftMid article > p {
+            font: 300 12px/1 "Roboto";
+            color: #727272; }
+          #footer .inner .ftMid article:first-child {
+            display: none; }
+      #footer .inner .ftBttm p {
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
