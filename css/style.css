@@ -61,6 +61,8 @@ a {
           font-size: 26px; }
         #header .inner .menuWeb #util > li:last-child a i {
           font-size: 25px; }
+    #header .inner .menuMb {
+      display: none; }
     #header .inner .btnCall {
       display: none; }
 
@@ -450,5 +452,153 @@ a {
             font: 300 14px/1 'Roboto';
             color: #fff;
             letter-spacing: 1px; }
+
+@media screen and (max-width: 1200px) {
+  #header .inner {
+    width: 100%;
+    padding: 35px; }
+    #header .inner .logo {
+      left: 35px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 12;
+      opacity: 1; }
+    #header .inner .menuWeb {
+      display: none; }
+    #header .inner .menuMb {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 11;
+      background-color: #171717;
+      justify-content: space-between; }
+      #header .inner .menuMb #gnb {
+        width: calc(100% / 2);
+        display: block;
+        height: auto;
+        margin-left: 35px;
+        margin-top: 25vh; }
+        #header .inner .menuMb #gnb li {
+          display: block; }
+          #header .inner .menuMb #gnb li a {
+            display: block;
+            font: 300 50px/1 "Saira Semi Condensed";
+            color: #fff;
+            margin-bottom: 30px;
+            letter-spacing: 1px; }
+      #header .inner .menuMb #util {
+        width: calc(100% / 2);
+        display: block;
+        height: auto;
+        margin-top: 50vh;
+        margin-right: 35px;
+        text-align: right; }
+        #header .inner .menuMb #util li {
+          margin-bottom: 3px; }
+          #header .inner .menuMb #util li a {
+            font: 300 14px/1 'Roboto';
+            color: #fff;
+            letter-spacing: 1px; }
+    #header .inner .btnCall {
+      display: block;
+      width: 40px;
+      height: 21px;
+      position: absolute;
+      right: 35px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 12; }
+      #header .inner .btnCall::before {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        content: '';
+        display: block;
+        width: 40px;
+        height: 1px;
+        background-color: #fff; }
+      #header .inner .btnCall::after {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        display: block;
+        width: 40px;
+        height: 1px;
+        background-color: #fff; }
+      #header .inner .btnCall span {
+        display: inline-block;
+        font-size: 10px;
+        text-indent: -99999px; }
+
+  #visual .slide .inner {
+    width: calc(100% - 70px); }
+    #visual .slide .inner .txtBox h1 {
+      font: 400 16px/1 'Roboto';
+      color: #fff;
+      opacity: 0.9; }
+    #visual .slide .inner .txtBox h2 {
+      font: 500 15vw/1.1 'Roboto';
+      color: #fff;
+      margin-left: -7px; }
+    #visual .slide .inner .txtSub {
+      width: 70%; }
+      #visual .slide .inner .txtSub li {
+        width: calc(100% / 3); }
+    #visual .slide .inner .pagination {
+      width: 30%; }
+      #visual .slide .inner .pagination .progress {
+        width: 80%; }
+
+  #about {
+    padding: 150px 0 150px; }
+    #about .inner {
+      width: calc(100% - 70px); }
+      #about .inner h1 {
+        width: 20%;
+        font: 400 24px/1 "Saira Semi Condensed"; }
+      #about .inner .contents {
+        width: 80%; }
+        #about .inner .contents h2 {
+          font: 500 3.5vw/1.1 "Roboto"; }
+        #about .inner .contents > p {
+          width: 90%;
+          margin: 40px 0; }
+
+  #projects {
+    padding: 0px 0 200px; }
+    #projects .inner {
+      width: calc(100% - 70px); }
+
+  #banner .inner {
+    width: calc(100% - 70px); }
+
+  #events {
+    padding: 150px 0 150px; }
+    #events .inner {
+      width: calc(100% - 70px); }
+      #events .inner .slide article {
+        width: calc(100% / 4); }
+        #events .inner .slide article.on .pic {
+          width: 180%;
+          height: calc(150px * 1.8); }
+
+  #news {
+    padding: 50px 0 150px; }
+    #news .inner {
+      width: calc(100% - 70px); }
+
+  #footer .inner {
+    width: calc(100% - 70px); }
+    #footer .inner .ftBttm p {
+      width: 30%;
+      margin-top: 6px; }
+    #footer .inner .ftBttm .ftUtil {
+      width: 70%; } }
 
 /*# sourceMappingURL=style.css.map */

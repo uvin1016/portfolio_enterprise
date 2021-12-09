@@ -85,6 +85,10 @@
             }
         }
 
+        .menuMb {
+            display: none;
+        }
+
         .btnCall {
             display: none;
         }
@@ -674,6 +678,261 @@
                         color: #fff;
                         letter-spacing: 1px;
                     }
+                }
+            }
+        }
+    }
+}
+
+
+
+// tablet ver
+@media screen and (max-width: 1200px) {
+    // header ---------------------------------------------------------------------------
+    #header {
+        .inner {
+            width: 100%;
+            padding: 35px;
+
+            .logo {
+                left: 35px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 12;
+                opacity: 1;
+            }
+
+            .menuWeb {
+                display: none;
+            }
+
+            .menuMb {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: 11;
+                background-color: #171717;
+                justify-content: space-between;
+
+                #gnb {
+                    width: calc(100% / 2);
+                    display: block;
+                    height: auto;
+                    margin-left: 35px;
+                    margin-top: 25vh;
+
+                    li {
+                        display: block;
+
+                        a {
+                            display: block;
+                            font: 300 50px/1 "Saira Semi Condensed";
+                            color: #fff;
+                            margin-bottom: 30px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+
+                #util {
+                    width: calc(100% / 2);
+                    display: block;
+                    height: auto;
+                    margin-top: 50vh;
+                    margin-right: 35px;
+                    text-align: right;
+
+                    li {
+                        margin-bottom: 3px;
+
+                        a {
+                            font: 300 14px/1 'Roboto';
+                            color: #fff;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+
+            .btnCall {
+                display: block;
+                width: 40px;
+                height: 21px;
+                position: absolute;
+                right: 35px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 12;
+                
+                &::before {
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    transform: translate(-50%,-40%);
+                    content: '';
+                    display: block;
+                    width: 40px;
+                    height: 1px;
+                    background-color: #fff;
+                }
+
+                &::after {
+                    position: absolute;
+                    top: 80%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    content: '';
+                    display: block;
+                    width: 40px;
+                    height: 1px;
+                    background-color: #fff;
+                }
+
+                span {
+                    display: inline-block;
+                    font-size: 10px;
+                    text-indent: -99999px;
+                }
+            }
+        }
+    }
+
+
+    // visual ---------------------------------------------------------------------------
+    #visual {
+        .slide {
+            .inner {
+                width: calc(100% - 70px);
+
+                .txtBox {
+                    h1 {
+                        font: 400 16px/1 'Roboto';
+                        color: #fff;
+                        opacity: 0.9;
+                    }
+    
+                    h2 {
+                        font: 500 15vw/1.1 'Roboto';
+                        color: #fff;
+                        margin-left: -7px;
+                    }
+                }
+
+                .txtSub {
+                    width: 70%;
+
+                    li {
+                        width: calc(100% / 3);
+                    }
+                }
+
+                .pagination {
+                    width: 30%;
+
+                    .progress {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // About ---------------------------------------------------------------------------
+    #about {
+        padding: 150px 0 150px;
+
+        .inner {
+            width: calc(100% - 70px);
+
+            h1 {
+                width: 20%;
+                font: 400 24px/1 "Saira Semi Condensed";
+            }
+
+            .contents {
+                width: 80%;
+
+                h2 {
+                    font: 500 3.5vw/1.1 "Roboto";
+                }
+
+                >p {
+                    width: 90%;
+                    margin: 40px 0;
+                }
+            }
+        }
+    }
+
+
+    // PROJECTS ---------------------------------------------------------------------------
+    #projects {
+        padding: 0px 0 200px;
+        .inner {
+            width: calc(100% - 70px);
+        }
+    }
+
+
+    // banner ---------------------------------------------------------------------------
+    #banner {
+        .inner {
+            width: calc(100% - 70px);
+        }
+    }
+
+
+    // events ---------------------------------------------------------------------------
+    #events {
+        padding: 150px 0 150px;
+        
+        .inner {
+            width: calc(100% - 70px);
+
+            .slide {
+                article {
+                    width: calc(100% / 4);
+
+                    &.on .pic {
+                        width: 180%;
+                        height: calc(150px * 1.8);
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+
+    // news ---------------------------------------------------------------------------
+    #news {
+        padding: 50px 0 150px;
+
+        .inner {
+            width: calc(100% - 70px);
+        }
+    }
+
+
+    // footer ---------------------------------------------------------------------------
+    #footer {
+        .inner {
+            width: calc(100% - 70px);
+
+            .ftBttm {
+
+                p {
+                    width: 30%;
+                    margin-top: 6px;
+                }
+
+                .ftUtil {
+                    width: 70%;
                 }
             }
         }
