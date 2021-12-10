@@ -61,20 +61,20 @@ a {
     #headerSub .inner .btnCall {
       display: none; }
 
-#content {
+.content {
   width: 100%; }
-  #content .inner {
+  .content .inner {
     width: 1180px;
     margin: 0 auto; }
-    #content .inner .subVisual {
+    .content .inner .subVisual {
       margin-bottom: 50px; }
-      #content .inner .subVisual h1 {
+      .content .inner .subVisual h1 {
         margin: 100px 0 30px;
         font: 300 60px/1 "Saira Semi Condensed";
         color: #171717;
         padding-bottom: 30px;
         position: relative; }
-        #content .inner .subVisual h1::after {
+        .content .inner .subVisual h1::after {
           content: '';
           display: block;
           width: 590px;
@@ -83,19 +83,19 @@ a {
           position: absolute;
           bottom: 0;
           left: 0; }
-      #content .inner .subVisual .txtBox {
+      .content .inner .subVisual .txtBox {
         width: 590px;
         display: flex;
         justify-content: space-between; }
-        #content .inner .subVisual .txtBox h2 {
+        .content .inner .subVisual .txtBox h2 {
           width: 30%;
           font: 400 16px/1 "Saira Semi Condensed";
           color: #171717; }
-        #content .inner .subVisual .txtBox p {
+        .content .inner .subVisual .txtBox p {
           width: 70%;
           font: 300 16px/1.3 "Saira Semi Condensed";
           color: #171717; }
-    #content .inner .contents {
+    .content .inner .contents {
       width: 100%;
       min-height: 500px;
       border-top: 1px solid #727272; }
@@ -261,9 +261,9 @@ a {
         font-size: 10px;
         text-indent: -99999px; }
 
-  #content .inner {
+  .content .inner {
     width: calc(100% - 70px); }
-    #content .inner .subVisual {
+    .content .inner .subVisual {
       margin-bottom: 50px; }
 
   #footerSub .inner {
@@ -280,9 +280,9 @@ a {
     margin-left: 35px;
     text-align: left; }
 
-  #content .inner .subVisual h1::after {
+  .content .inner .subVisual h1::after {
     width: 100%; }
-  #content .inner .subVisual .txtBox {
+  .content .inner .subVisual .txtBox {
     width: 100%; }
 
   #footerSub {
@@ -311,15 +311,17 @@ a {
     #headerSub .inner .menuMb #gnb li a {
       font: 300 35px/1 "Saira Semi Condensed"; }
 
-  #content .inner .subVisual h1::after {
-    width: 100%; }
-  #content .inner .subVisual .txtBox {
+  .content .inner .subVisual h1 {
+    font: 400 45px/1 "Saira Semi Condensed"; }
+    .content .inner .subVisual h1::after {
+      width: 100%; }
+  .content .inner .subVisual .txtBox {
     width: 100%;
     display: block; }
-    #content .inner .subVisual .txtBox h2 {
+    .content .inner .subVisual .txtBox h2 {
       width: 100%;
       margin-bottom: 20px; }
-    #content .inner .subVisual .txtBox p {
+    .content .inner .subVisual .txtBox p {
       width: 100%; }
 
   #footerSub {
@@ -351,6 +353,113 @@ a {
             display: none; }
       #footerSub .inner .ftBttm p {
         width: 100%; } }
+.department .inner .contents {
+  padding: 50px 0; }
+  .department .inner .contents .hww {
+    display: flex;
+    justify-content: space-between; }
+    .department .inner .contents .hww h1 {
+      width: 295px;
+      font: 400 16px/1 "Saira Semi Condensed";
+      color: #171717; }
+    .department .inner .contents .hww .contWrap {
+      width: calc(100% - 295px); }
+      .department .inner .contents .hww .contWrap h2 {
+        font: 500 30px/1.2 "Roboto";
+        color: #171717; }
+      .department .inner .contents .hww .contWrap .items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px; }
+        .department .inner .contents .hww .contWrap .items article {
+          width: calc(100% / 3); }
+          .department .inner .contents .hww .contWrap .items article i {
+            font-size: 40px; }
+          .department .inner .contents .hww .contWrap .items article h3 {
+            margin-top: 30px;
+            font: 400 16px/1 "Roboto";
+            color: #727272; }
+          .department .inner .contents .hww .contWrap .items article h4 {
+            margin: 15px 0;
+            font: 500 20px/1.2 "Roboto";
+            color: #171717; }
+          .department .inner .contents .hww .contWrap .items article p {
+            width: 80%;
+            font: 400 13px/1.2 "Roboto";
+            color: #727272; }
+
+@media screen and (max-width: 1200px) {
+  .department .inner .contents .hww h1 {
+    width: 25%; }
+  .department .inner .contents .hww .contWrap {
+    width: 75%; }
+    .department .inner .contents .hww .contWrap h2 {
+      word-break: break-all;
+      font: 500 25px/1.2 "Roboto"; }
+      .department .inner .contents .hww .contWrap h2 br {
+        display: none; }
+    .department .inner .contents .hww .contWrap .items {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px; }
+      .department .inner .contents .hww .contWrap .items article {
+        margin-right: 20px; }
+        .department .inner .contents .hww .contWrap .items article h3 {
+          margin-top: 20px; }
+        .department .inner .contents .hww .contWrap .items article h4 {
+          margin: 5px 0 10px; }
+        .department .inner .contents .hww .contWrap .items article p {
+          width: 100%; } }
+@media screen and (max-width: 768px) {
+  .department .inner .contents .hww {
+    display: block; }
+    .department .inner .contents .hww h1 {
+      width: 100%;
+      margin-bottom: 20px; }
+    .department .inner .contents .hww .contWrap {
+      width: 100%; }
+      .department .inner .contents .hww .contWrap h2 {
+        word-break: keep-all; }
+        .department .inner .contents .hww .contWrap h2 br {
+          display: none; }
+      .department .inner .contents .hww .contWrap .items article h3 {
+        font: 400 12px/1 "Roboto";
+        margin-top: 20px; }
+      .department .inner .contents .hww .contWrap .items article h4 {
+        font: 500 16px/1.2 "Roboto";
+        margin: 15px 0; }
+      .department .inner .contents .hww .contWrap .items article p {
+        font: 400 12px/1.2 "Roboto";
+        width: 100%; } }
+@media screen and (max-width: 768px) {
+  .department .inner .contents .hww {
+    display: block; }
+    .department .inner .contents .hww h1 {
+      width: 100%;
+      margin-bottom: 20px; }
+    .department .inner .contents .hww .contWrap {
+      width: 100%; }
+      .department .inner .contents .hww .contWrap h2 {
+        word-break: keep-all; }
+        .department .inner .contents .hww .contWrap h2 br {
+          display: none; }
+      .department .inner .contents .hww .contWrap .items {
+        display: block;
+        margin-top: 0; }
+        .department .inner .contents .hww .contWrap .items article {
+          width: 85%;
+          margin-right: 0;
+          padding: 25px 0;
+          border-bottom: 1px solid #727272; }
+          .department .inner .contents .hww .contWrap .items article h3 {
+            font: 400 12px/1 "Roboto";
+            margin-top: 20px; }
+          .department .inner .contents .hww .contWrap .items article h4 {
+            font: 500 16px/1.2 "Roboto";
+            margin: 15px 0; }
+          .department .inner .contents .hww .contWrap .items article p {
+            font: 400 12px/1.2 "Roboto";
+            width: 100%; } }
 #header {
   width: 100%;
   position: absolute;

@@ -1,0 +1,203 @@
+.department .inner .contents {
+    padding: 50px 0;
+
+    .hww {
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            width: 295px;
+            font: 400 16px/1 "Saira Semi Condensed";
+            color: #171717;
+        }
+
+        .contWrap {
+            width: calc(100% - 295px);
+            
+            h2 {
+                font: 500 30px/1.2 "Roboto";
+                color: #171717;
+            }
+
+            .items {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+
+                article {
+                    width: calc(100% / 3);
+
+                    i {
+                        font-size: 40px;
+                    }
+
+                    h3 {
+                        margin-top: 30px;
+                        font: 400 16px/1 "Roboto";
+                        color: #727272;
+                    }
+
+                    h4 {
+                        margin: 15px 0;
+                        font: 500 20px/1.2 "Roboto";
+                        color: #171717;
+                    }
+
+                    p {
+                        width: 80%;
+                        font: 400 13px/1.2 "Roboto";
+                        color: #727272;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// tablet
+@media screen and (max-width: 1200px) {
+    .department .inner .contents {
+        .hww {
+            
+            h1 {
+                width: 25%;
+            }
+
+            .contWrap {
+                width: 75%;
+
+                h2 {
+                    word-break: break-all;
+                    font: 500 25px/1.2 "Roboto";
+                    
+                    br {
+                        display: none;
+                    }
+                }
+    
+                .items {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 40px;
+                    
+                    article {
+                        margin-right: 20px;
+
+                        h3 {
+                            margin-top: 20px;
+                        }
+    
+                        h4 {
+                            margin: 5px 0 10px;
+                        }
+    
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// moblie 1ver
+@media screen and (max-width: 768px) {
+    .department .inner .contents {
+        .hww {
+            display: block;
+
+            h1 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .contWrap {
+                width: 100%;
+
+                h2 {
+                    word-break: keep-all;
+                    
+                    br {
+                        display: none;
+                    }
+                }
+    
+                .items {
+                    article {
+                        
+    
+                        h3 {
+                            font: 400 12px/1 "Roboto";
+                            margin-top: 20px;
+                        }
+    
+                        h4 {
+                            font: 500 16px/1.2 "Roboto";
+                            margin: 15px 0;
+                        }
+    
+                        p {
+                            font: 400 12px/1.2 "Roboto";
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// mobile 2ver
+@media screen and (max-width: 768px) {
+    .department .inner .contents {
+        .hww {
+            display: block;
+
+            h1 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .contWrap {
+                width: 100%;
+
+                h2 {
+                    word-break: keep-all;
+                    
+                    br {
+                        display: none;
+                    }
+                }
+    
+                .items {
+                    display: block;
+                    margin-top: 0 ;
+
+                    article {
+                        width: 85%;
+                        margin-right: 0;
+                        padding: 25px 0;
+                        border-bottom: 1px solid #727272;
+    
+                        h3 {
+                            font: 400 12px/1 "Roboto";
+                            margin-top: 20px;
+                        }
+    
+                        h4 {
+                            font: 500 16px/1.2 "Roboto";
+                            margin: 15px 0;
+                        }
+    
+                        p {
+                            font: 400 12px/1.2 "Roboto";
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
