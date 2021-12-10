@@ -1,0 +1,585 @@
+// header ---------------------------------------------------------------------------
+#headerSub {
+    width: 100%;
+    display: block;
+
+    .inner {
+        width: 1180px;
+        position: relative;
+        margin: 0 auto;
+        padding: 35px 0;
+
+        .logo {
+            position: absolute;
+            left: 0;
+            top: 24px;
+
+            a {
+                font: 500 30px/1 "Saira Semi Condensed";
+                color: #171717;
+                letter-spacing: 1px;
+            }
+        }
+
+        .menuWeb {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 295px;
+
+            #gnb {
+                width: 590px;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+
+                >li {
+                    display: inline-block;
+                    margin-top: 3px;
+
+                    >a {
+                        font: 400 18px/1 "Saira Semi Condensed";
+                        color: #171717;
+                    }
+                }
+            }
+
+            #util {
+                &::after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+
+                > li {
+                    float: left;
+                    margin-left: 10px;
+
+                    a i {
+                        color: #171717;
+                        opacity: 0.9;
+                    }
+
+                    &:first-child a i {
+                        font-size: 26px;
+                    }
+
+                    &:last-child a i {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        .menuMb {
+            display: none;
+        }
+
+        .btnCall {
+            display: none;
+        }
+    }
+}
+
+
+// content ------------------------------------------------------------------------
+#content {
+    width: 100%;
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+
+        .subVisual {
+            margin-bottom: 50px;
+
+            h1 {
+                margin: 100px 0 30px;
+                font: 300 60px/1 "Saira Semi Condensed";
+                color: #171717;
+                padding-bottom: 30px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 590px;
+                    height: 1px;
+                    background-color: #727272;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+
+            .txtBox {
+                width: 590px;
+                display: flex;
+                justify-content: space-between;
+
+                h2 {
+                    width: 30%;
+                    font: 400 16px/1 "Saira Semi Condensed";
+                    color: #171717; 
+                }
+
+                p {
+                    width: 70%;
+                    font: 300 16px/1.3 "Saira Semi Condensed";
+                    color: #171717; 
+                }
+            }
+        }
+
+        .contents {
+            width: 100%;
+            min-height: 500px;
+            border-top: 1px solid #727272;
+        }
+    }
+}
+
+
+// footer ---------------------------------------------------------------------------
+#footerSub {
+    width: 100%;
+    padding: 100px 0 0px;
+    background-color: #171717;
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+
+        .ftTop {
+            display: flex;
+            margin-bottom: 80px;
+
+            h1 {
+                width: calc(100% / 2);
+                font: 400 40px/1.3 "Roboto";
+                color: #fff;
+            }
+
+            .signUp {
+                width: calc(100% / 2);
+
+                input[type=email] {
+                    width: 200px;
+                    padding: 10px 0 15px;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+                    color: #fff;
+                }
+
+                button {
+                    font: 300 14px/1 'Roboto';
+                    color: #fff;
+                    border: none;
+                    background: transparent;
+                    cursor: pointer;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font: 300 12px/1.3 'Roboto';
+                    color: #aaa;
+                }
+            }
+        }
+
+        .ftMid {
+            display: flex;
+            margin-bottom: 80px;
+
+            article {
+                width: calc(100% / 4);
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+
+                p {
+                    font: 300 14px/1 "Roboto";
+                    color: #fff;
+                }
+
+                a>h3 {
+                    font: 300 16px/1 'Roboto';
+                    color: #fff;
+                }
+
+                a>p {
+                    width: 80%;
+                    margin: 10px 0 30px;
+                    font: 300 14px/1.6 'Roboto';
+                    color: #727272;
+                }
+
+                &:nth-of-type(1) {
+                    h2 {
+                        width: 100%;
+                        font: 400 24px/1 'Roboto';
+                        color: #fff;
+                    }
+
+                    >a {
+                        font: 300 14px/1 "Roboto";
+                        color: #fff;
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+
+        .ftBttm {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+
+            p {
+                width: calc(100% / 2);
+                font: 300 12px/1 'Roboto';
+                color: #fff;
+            }
+
+            .ftUtil {
+                width: calc(100% / 2);
+                display: flex;
+
+                li {
+                    width: calc(100% / 4);
+
+                    a {
+                        font: 300 14px/1 'Roboto';
+                        color: #fff;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// tablet ver
+@media screen and (max-width: 1200px) {
+    // header ---------------------------------------------------------------------------
+    #headerSub {
+        .inner {
+            width: 100%;
+            padding: 35px;
+
+            .logo {
+                left: 35px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 12;
+                opacity: 1;
+            }
+
+            .menuWeb {
+                display: none;
+            }
+
+            .menuMb {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: 11;
+                background-color: #171717;
+                justify-content: space-between;
+
+                #gnb {
+                    width: calc(100% / 2);
+                    display: block;
+                    height: auto;
+                    margin-left: 35px;
+                    margin-top: 25vh;
+
+                    li {
+                        display: block;
+
+                        a {
+                            display: block;
+                            font: 300 50px/1 "Saira Semi Condensed";
+                            color: #171717;
+                            margin-bottom: 30px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+
+                #util {
+                    width: calc(100% / 2);
+                    display: block;
+                    height: auto;
+                    margin-top: 50vh;
+                    margin-right: 35px;
+                    text-align: right;
+
+                    li {
+                        margin-bottom: 3px;
+
+                        a {
+                            font: 300 14px/1 'Roboto';
+                            color: #171717;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+
+            .btnCall {
+                display: block;
+                width: 40px;
+                height: 21px;
+                position: absolute;
+                right: 35px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 12;
+                
+                &::before {
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    transform: translate(-50%,-40%);
+                    content: '';
+                    display: block;
+                    width: 40px;
+                    height: 1px;
+                    background-color: #171717;
+                }
+
+                &::after {
+                    position: absolute;
+                    top: 80%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    content: '';
+                    display: block;
+                    width: 40px;
+                    height: 1px;
+                    background-color: #171717;
+                }
+
+                span {
+                    display: inline-block;
+                    font-size: 10px;
+                    text-indent: -99999px;
+                }
+            }
+        }
+    }
+
+    // content ------------------------------------------------------------------------
+    #content {
+        .inner {
+            width: calc(100% - 70px);
+
+            .subVisual {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    // footer ---------------------------------------------------------------------------
+    #footerSub {
+        .inner {
+            width: calc(100% - 70px);
+
+            .ftBttm {
+
+                p {
+                    width: 100%;
+                    margin-top: 6px;
+                }
+
+                .ftUtil {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Mobile ver
+@media screen and (max-width: 768px) {
+    // header ---------------------------------------------------------------------------
+    #headerSub {
+        .inner {
+            .menuMb {
+                #util {
+                    margin-top: 100px;
+                    margin-right: 0;
+                    margin-left: 35px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+
+    // content ------------------------------------------------------------------------
+    #content {
+        .inner {
+            .subVisual {
+                h1 {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+                .txtBox {
+                    width: 100%;
+                }
+            }
+        }
+    }    
+
+    // footer ---------------------------------------------------------------------------
+    #footerSub {
+        padding: 60px 0 0px;
+
+        .inner {
+            width: calc(100% - 70px);
+
+            .ftTop {
+                display: block;
+                margin-bottom: 60px;
+
+                h1 {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .signUp {
+                    width: 100%;
+                }
+            }
+
+            .ftMid {
+                margin-bottom: 30px;
+                article {
+                    width: calc(100% /3);
+
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+
+            .ftBttm {
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Mobile 2 ver
+@media screen and (max-width: 510px) {
+    // header ---------------------------------------------------------------------------
+    #headerSub {
+        .inner {
+            .menuMb {
+                display: none;
+
+                #gnb li a {
+                    font: 300 35px/1 "Saira Semi Condensed";
+                }
+            }
+        }
+    }
+
+    // content ------------------------------------------------------------------------
+    #content {
+        .inner {
+            .subVisual {
+                h1 {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+                .txtBox {
+                    width: 100%;
+                    display: block;
+                    
+                    h2 {
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }    
+
+    // footer ---------------------------------------------------------------------------
+    #footerSub {
+        padding: 60px 0 0px;
+
+        .inner {
+            width: calc(100% - 70px);
+
+            .ftTop {
+                display: block;
+                margin-bottom: 60px;
+
+                h1 {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .signUp {
+                    width: 100%;
+                }
+            }
+
+            .ftMid {
+                margin-bottom: 30px;
+                article {
+                    display: block;
+                    width: calc(100% /3);
+
+                    a {
+                        display: block;
+                        margin-bottom: 20px;
+
+                        p {
+                            display: none;
+                        }
+                    }
+
+                    >p {
+                        font: 300 12px/1 "Roboto";
+                        color: #727272;
+                    }
+
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+
+            .ftBttm {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

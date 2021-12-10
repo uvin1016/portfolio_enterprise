@@ -11,6 +11,346 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
+#headerSub {
+  width: 100%;
+  display: block; }
+  #headerSub .inner {
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
+    padding: 35px 0; }
+    #headerSub .inner .logo {
+      position: absolute;
+      left: 0;
+      top: 24px; }
+      #headerSub .inner .logo a {
+        font: 500 30px/1 "Saira Semi Condensed";
+        color: #171717;
+        letter-spacing: 1px; }
+    #headerSub .inner .menuWeb {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 295px; }
+      #headerSub .inner .menuWeb #gnb {
+        width: 590px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline; }
+        #headerSub .inner .menuWeb #gnb > li {
+          display: inline-block;
+          margin-top: 3px; }
+          #headerSub .inner .menuWeb #gnb > li > a {
+            font: 400 18px/1 "Saira Semi Condensed";
+            color: #171717; }
+      #headerSub .inner .menuWeb #util::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #headerSub .inner .menuWeb #util > li {
+        float: left;
+        margin-left: 10px; }
+        #headerSub .inner .menuWeb #util > li a i {
+          color: #171717;
+          opacity: 0.9; }
+        #headerSub .inner .menuWeb #util > li:first-child a i {
+          font-size: 26px; }
+        #headerSub .inner .menuWeb #util > li:last-child a i {
+          font-size: 25px; }
+    #headerSub .inner .menuMb {
+      display: none; }
+    #headerSub .inner .btnCall {
+      display: none; }
+
+#content {
+  width: 100%; }
+  #content .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #content .inner .subVisual {
+      margin-bottom: 50px; }
+      #content .inner .subVisual h1 {
+        margin: 100px 0 30px;
+        font: 300 60px/1 "Saira Semi Condensed";
+        color: #171717;
+        padding-bottom: 30px;
+        position: relative; }
+        #content .inner .subVisual h1::after {
+          content: '';
+          display: block;
+          width: 590px;
+          height: 1px;
+          background-color: #727272;
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+      #content .inner .subVisual .txtBox {
+        width: 590px;
+        display: flex;
+        justify-content: space-between; }
+        #content .inner .subVisual .txtBox h2 {
+          width: 30%;
+          font: 400 16px/1 "Saira Semi Condensed";
+          color: #171717; }
+        #content .inner .subVisual .txtBox p {
+          width: 70%;
+          font: 300 16px/1.3 "Saira Semi Condensed";
+          color: #171717; }
+    #content .inner .contents {
+      width: 100%;
+      min-height: 500px;
+      border-top: 1px solid #727272; }
+
+#footerSub {
+  width: 100%;
+  padding: 100px 0 0px;
+  background-color: #171717; }
+  #footerSub .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #footerSub .inner .ftTop {
+      display: flex;
+      margin-bottom: 80px; }
+      #footerSub .inner .ftTop h1 {
+        width: calc(100% / 2);
+        font: 400 40px/1.3 "Roboto";
+        color: #fff; }
+      #footerSub .inner .ftTop .signUp {
+        width: calc(100% / 2); }
+        #footerSub .inner .ftTop .signUp input[type=email] {
+          width: 200px;
+          padding: 10px 0 15px;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+          color: #fff; }
+        #footerSub .inner .ftTop .signUp button {
+          font: 300 14px/1 'Roboto';
+          color: #fff;
+          border: none;
+          background: transparent;
+          cursor: pointer; }
+        #footerSub .inner .ftTop .signUp p {
+          margin-top: 10px;
+          font: 300 12px/1.3 'Roboto';
+          color: #aaa; }
+    #footerSub .inner .ftMid {
+      display: flex;
+      margin-bottom: 80px; }
+      #footerSub .inner .ftMid article {
+        width: calc(100% / 4);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between; }
+        #footerSub .inner .ftMid article p {
+          font: 300 14px/1 "Roboto";
+          color: #fff; }
+        #footerSub .inner .ftMid article a > h3 {
+          font: 300 16px/1 'Roboto';
+          color: #fff; }
+        #footerSub .inner .ftMid article a > p {
+          width: 80%;
+          margin: 10px 0 30px;
+          font: 300 14px/1.6 'Roboto';
+          color: #727272; }
+        #footerSub .inner .ftMid article:nth-of-type(1) h2 {
+          width: 100%;
+          font: 400 24px/1 'Roboto';
+          color: #fff; }
+        #footerSub .inner .ftMid article:nth-of-type(1) > a {
+          font: 300 14px/1 "Roboto";
+          color: #fff;
+          border-bottom: 1px solid #fff; }
+    #footerSub .inner .ftBttm {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0; }
+      #footerSub .inner .ftBttm p {
+        width: calc(100% / 2);
+        font: 300 12px/1 'Roboto';
+        color: #fff; }
+      #footerSub .inner .ftBttm .ftUtil {
+        width: calc(100% / 2);
+        display: flex; }
+        #footerSub .inner .ftBttm .ftUtil li {
+          width: calc(100% / 4); }
+          #footerSub .inner .ftBttm .ftUtil li a {
+            font: 300 14px/1 'Roboto';
+            color: #fff;
+            letter-spacing: 1px; }
+
+@media screen and (max-width: 1200px) {
+  #headerSub .inner {
+    width: 100%;
+    padding: 35px; }
+    #headerSub .inner .logo {
+      left: 35px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 12;
+      opacity: 1; }
+    #headerSub .inner .menuWeb {
+      display: none; }
+    #headerSub .inner .menuMb {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 11;
+      background-color: #171717;
+      justify-content: space-between; }
+      #headerSub .inner .menuMb #gnb {
+        width: calc(100% / 2);
+        display: block;
+        height: auto;
+        margin-left: 35px;
+        margin-top: 25vh; }
+        #headerSub .inner .menuMb #gnb li {
+          display: block; }
+          #headerSub .inner .menuMb #gnb li a {
+            display: block;
+            font: 300 50px/1 "Saira Semi Condensed";
+            color: #171717;
+            margin-bottom: 30px;
+            letter-spacing: 1px; }
+      #headerSub .inner .menuMb #util {
+        width: calc(100% / 2);
+        display: block;
+        height: auto;
+        margin-top: 50vh;
+        margin-right: 35px;
+        text-align: right; }
+        #headerSub .inner .menuMb #util li {
+          margin-bottom: 3px; }
+          #headerSub .inner .menuMb #util li a {
+            font: 300 14px/1 'Roboto';
+            color: #171717;
+            letter-spacing: 1px; }
+    #headerSub .inner .btnCall {
+      display: block;
+      width: 40px;
+      height: 21px;
+      position: absolute;
+      right: 35px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 12; }
+      #headerSub .inner .btnCall::before {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        content: '';
+        display: block;
+        width: 40px;
+        height: 1px;
+        background-color: #171717; }
+      #headerSub .inner .btnCall::after {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        display: block;
+        width: 40px;
+        height: 1px;
+        background-color: #171717; }
+      #headerSub .inner .btnCall span {
+        display: inline-block;
+        font-size: 10px;
+        text-indent: -99999px; }
+
+  #content .inner {
+    width: calc(100% - 70px); }
+    #content .inner .subVisual {
+      margin-bottom: 50px; }
+
+  #footerSub .inner {
+    width: calc(100% - 70px); }
+    #footerSub .inner .ftBttm p {
+      width: 100%;
+      margin-top: 6px; }
+    #footerSub .inner .ftBttm .ftUtil {
+      display: none; } }
+@media screen and (max-width: 768px) {
+  #headerSub .inner .menuMb #util {
+    margin-top: 100px;
+    margin-right: 0;
+    margin-left: 35px;
+    text-align: left; }
+
+  #content .inner .subVisual h1::after {
+    width: 100%; }
+  #content .inner .subVisual .txtBox {
+    width: 100%; }
+
+  #footerSub {
+    padding: 60px 0 0px; }
+    #footerSub .inner {
+      width: calc(100% - 70px); }
+      #footerSub .inner .ftTop {
+        display: block;
+        margin-bottom: 60px; }
+        #footerSub .inner .ftTop h1 {
+          width: 100%;
+          margin-bottom: 20px; }
+        #footerSub .inner .ftTop .signUp {
+          width: 100%; }
+      #footerSub .inner .ftMid {
+        margin-bottom: 30px; }
+        #footerSub .inner .ftMid article {
+          width: calc(100% /3); }
+          #footerSub .inner .ftMid article:first-child {
+            display: none; }
+      #footerSub .inner .ftBttm p {
+        width: 100%; } }
+@media screen and (max-width: 510px) {
+  #headerSub .inner .menuMb {
+    display: none; }
+    #headerSub .inner .menuMb #gnb li a {
+      font: 300 35px/1 "Saira Semi Condensed"; }
+
+  #content .inner .subVisual h1::after {
+    width: 100%; }
+  #content .inner .subVisual .txtBox {
+    width: 100%;
+    display: block; }
+    #content .inner .subVisual .txtBox h2 {
+      width: 100%;
+      margin-bottom: 20px; }
+    #content .inner .subVisual .txtBox p {
+      width: 100%; }
+
+  #footerSub {
+    padding: 60px 0 0px; }
+    #footerSub .inner {
+      width: calc(100% - 70px); }
+      #footerSub .inner .ftTop {
+        display: block;
+        margin-bottom: 60px; }
+        #footerSub .inner .ftTop h1 {
+          width: 100%;
+          margin-bottom: 20px; }
+        #footerSub .inner .ftTop .signUp {
+          width: 100%; }
+      #footerSub .inner .ftMid {
+        margin-bottom: 30px; }
+        #footerSub .inner .ftMid article {
+          display: block;
+          width: calc(100% /3); }
+          #footerSub .inner .ftMid article a {
+            display: block;
+            margin-bottom: 20px; }
+            #footerSub .inner .ftMid article a p {
+              display: none; }
+          #footerSub .inner .ftMid article > p {
+            font: 300 12px/1 "Roboto";
+            color: #727272; }
+          #footerSub .inner .ftMid article:first-child {
+            display: none; }
+      #footerSub .inner .ftBttm p {
+        width: 100%; } }
 #header {
   width: 100%;
   position: absolute;
