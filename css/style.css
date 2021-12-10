@@ -69,10 +69,10 @@ a {
     .content .inner .subVisual {
       margin-bottom: 50px; }
       .content .inner .subVisual h1 {
-        margin: 100px 0 30px;
+        margin: 100px 0 50px;
         font: 300 60px/1 "Saira Semi Condensed";
         color: #171717;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         position: relative; }
         .content .inner .subVisual h1::after {
           content: '';
@@ -89,7 +89,7 @@ a {
         justify-content: space-between; }
         .content .inner .subVisual .txtBox h2 {
           width: 30%;
-          font: 400 16px/1 "Saira Semi Condensed";
+          font: 400 20px/1 "Saira Semi Condensed";
           color: #171717; }
         .content .inner .subVisual .txtBox p {
           width: 70%;
@@ -312,7 +312,7 @@ a {
       font: 300 35px/1 "Saira Semi Condensed"; }
 
   .content .inner .subVisual h1 {
-    font: 400 45px/1 "Saira Semi Condensed"; }
+    font: 400 40px/1 "Saira Semi Condensed"; }
     .content .inner .subVisual h1::after {
       width: 100%; }
   .content .inner .subVisual .txtBox {
@@ -354,13 +354,13 @@ a {
       #footerSub .inner .ftBttm p {
         width: 100%; } }
 .department .inner .contents {
-  padding: 50px 0; }
+  padding: 100px 0; }
   .department .inner .contents .hww {
     display: flex;
     justify-content: space-between; }
     .department .inner .contents .hww h1 {
       width: 295px;
-      font: 400 16px/1 "Saira Semi Condensed";
+      font: 400 20px/1 "Saira Semi Condensed";
       color: #171717; }
     .department .inner .contents .hww .contWrap {
       width: calc(100% - 295px); }
@@ -387,6 +387,55 @@ a {
             width: 80%;
             font: 400 13px/1.2 "Roboto";
             color: #727272; }
+  .department .inner .contents .team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; }
+    .department .inner .contents .team h1 {
+      width: 295px;
+      font: 400 20px/1 "Saira Semi Condensed";
+      color: #171717; }
+    .department .inner .contents .team .contWrap {
+      width: calc(100% - 295px); }
+      .department .inner .contents .team .contWrap h2 {
+        font: 500 30px/1.2 "Roboto";
+        color: #171717;
+        margin-bottom: 30px; }
+      .department .inner .contents .team .contWrap .people {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        padding: 30px 0;
+        border-bottom: 1px solid #727272;
+        border-top: 1px solid #727272; }
+        .department .inner .contents .team .contWrap .people article {
+          width: calc(100% / 3);
+          margin-bottom: 30px;
+          padding-right: 30px;
+          cursor: pointer; }
+          .department .inner .contents .team .contWrap .people article:nth-of-type(3n) {
+            padding-right: 0; }
+          .department .inner .contents .team .contWrap .people article .pic {
+            width: 100%;
+            height: 350px;
+            position: relative; }
+            .department .inner .contents .team .contWrap .people article .pic img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              filter: grayscale(100%);
+              transition: 0.5s; }
+          .department .inner .contents .team .contWrap .people article h3 {
+            margin: 15px 0 10px;
+            font: 500 20px/1 "Roboto";
+            color: #171717; }
+          .department .inner .contents .team .contWrap .people article p {
+            font: 400 14px/1 "Roboto";
+            color: #727272; }
+          .department .inner .contents .team .contWrap .people article:hover .pic img {
+            filter: grayscale(0%); }
 
 @media screen and (max-width: 1200px) {
   .department .inner .contents .hww h1 {
@@ -409,28 +458,29 @@ a {
         .department .inner .contents .hww .contWrap .items article h4 {
           margin: 5px 0 10px; }
         .department .inner .contents .hww .contWrap .items article p {
-          width: 100%; } }
-@media screen and (max-width: 768px) {
-  .department .inner .contents .hww {
-    display: block; }
-    .department .inner .contents .hww h1 {
-      width: 100%;
-      margin-bottom: 20px; }
-    .department .inner .contents .hww .contWrap {
-      width: 100%; }
-      .department .inner .contents .hww .contWrap h2 {
-        word-break: keep-all; }
-        .department .inner .contents .hww .contWrap h2 br {
-          display: none; }
-      .department .inner .contents .hww .contWrap .items article h3 {
-        font: 400 12px/1 "Roboto";
-        margin-top: 20px; }
-      .department .inner .contents .hww .contWrap .items article h4 {
-        font: 500 16px/1.2 "Roboto";
-        margin: 15px 0; }
-      .department .inner .contents .hww .contWrap .items article p {
-        font: 400 12px/1.2 "Roboto";
-        width: 100%; } }
+          width: 100%; }
+  .department .inner .contents .team h1 {
+    width: 25%; }
+  .department .inner .contents .team .contWrap {
+    width: 75%; }
+    .department .inner .contents .team .contWrap h2 {
+      font: 500 25px/1.2 "Roboto"; }
+    .department .inner .contents .team .contWrap .people article h3 {
+      margin: 15px 0 10px;
+      font: 500 20px/1 "Roboto";
+      color: #171717; }
+    .department .inner .contents .team .contWrap .people article p {
+      font: 400 14px/1 "Roboto";
+      color: #727272; }
+    .department .inner .contents .team .contWrap .people article:hover .pic img {
+      filter: grayscale(0%); } }
+@media screen and (max-width: 900px) {
+  .department .inner .contents .team .contWrap .people article {
+    width: calc(100% / 2); }
+    .department .inner .contents .team .contWrap .people article:nth-of-type(3n) {
+      padding-right: 30px; }
+    .department .inner .contents .team .contWrap .people article:nth-of-type(2n) {
+      padding-right: 0px; } }
 @media screen and (max-width: 768px) {
   .department .inner .contents .hww {
     display: block; }
@@ -444,22 +494,94 @@ a {
         .department .inner .contents .hww .contWrap h2 br {
           display: none; }
       .department .inner .contents .hww .contWrap .items {
-        display: block;
-        margin-top: 0; }
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px; }
         .department .inner .contents .hww .contWrap .items article {
-          width: 85%;
-          margin-right: 0;
-          padding: 25px 0;
-          border-bottom: 1px solid #727272; }
+          width: calc(100% / 3); }
+          .department .inner .contents .hww .contWrap .items article i {
+            font-size: 40px; }
           .department .inner .contents .hww .contWrap .items article h3 {
-            font: 400 12px/1 "Roboto";
-            margin-top: 20px; }
+            margin-top: 30px;
+            font: 400 14px/1 "Roboto";
+            color: #727272; }
           .department .inner .contents .hww .contWrap .items article h4 {
-            font: 500 16px/1.2 "Roboto";
-            margin: 15px 0; }
+            margin: 15px 0;
+            font: 500 18px/1.2 "Roboto";
+            color: #171717; }
           .department .inner .contents .hww .contWrap .items article p {
-            font: 400 12px/1.2 "Roboto";
-            width: 100%; } }
+            font: 400 12px/1.2 "Roboto"; }
+  .department .inner .contents .team {
+    display: block; }
+    .department .inner .contents .team h1 {
+      width: 100%;
+      margin-bottom: 20px; }
+    .department .inner .contents .team .contWrap {
+      width: 100%; }
+      .department .inner .contents .team .contWrap h2 {
+        font: 500 25px/1.2 "Roboto"; }
+      .department .inner .contents .team .contWrap .people article {
+        width: calc(100% / 2);
+        padding-right: 10px; }
+        .department .inner .contents .team .contWrap .people article:nth-of-type(2n) {
+          padding-left: 10px;
+          padding-right: 0px; }
+        .department .inner .contents .team .contWrap .people article:nth-of-type(3n) {
+          padding-right: 10px; }
+        .department .inner .contents .team .contWrap .people article .pic {
+          height: 300px; }
+        .department .inner .contents .team .contWrap .people article h3 {
+          margin: 15px 0 10px;
+          font: 500 20px/1 "Roboto";
+          color: #171717; }
+        .department .inner .contents .team .contWrap .people article p {
+          font: 400 14px/1 "Roboto";
+          color: #727272; }
+        .department .inner .contents .team .contWrap .people article:hover .pic img {
+          filter: grayscale(0%); } }
+@media screen and (max-width: 510px) {
+  .department .inner .contents .hww .contWrap {
+    width: 100%; }
+    .department .inner .contents .hww .contWrap h2 {
+      word-break: keep-all; }
+      .department .inner .contents .hww .contWrap h2 br {
+        display: none; }
+    .department .inner .contents .hww .contWrap .items {
+      display: block;
+      margin-top: 0; }
+      .department .inner .contents .hww .contWrap .items article {
+        width: 100%;
+        margin-right: 0;
+        padding: 35px 0;
+        border-bottom: 1px solid #727272; }
+        .department .inner .contents .hww .contWrap .items article h3 {
+          font: 400 12px/1 "Roboto";
+          margin-top: 20px; }
+        .department .inner .contents .hww .contWrap .items article h4 {
+          font: 500 16px/1.2 "Roboto";
+          margin: 15px 0; }
+        .department .inner .contents .hww .contWrap .items article p {
+          font: 400 12px/1.2 "Roboto";
+          width: 100%; }
+  .department .inner .contents .team {
+    display: block; }
+    .department .inner .contents .team h1 {
+      width: 100%;
+      margin-bottom: 20px; }
+    .department .inner .contents .team .contWrap {
+      width: 100%; }
+      .department .inner .contents .team .contWrap h2 {
+        font: 500 25px/1.2 "Roboto"; }
+      .department .inner .contents .team .contWrap .people article {
+        width: calc(100% / 1);
+        padding: 0; }
+        .department .inner .contents .team .contWrap .people article:nth-of-type(2n) {
+          padding-left: 0px;
+          padding-right: 0px; }
+        .department .inner .contents .team .contWrap .people article:nth-of-type(3n) {
+          padding-right: 0px; }
+        .department .inner .contents .team .contWrap .people article .pic {
+          height: 300px; } }
 #header {
   width: 100%;
   position: absolute;
