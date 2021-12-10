@@ -190,16 +190,16 @@ a {
         margin-top: 0; }
       #projects .inner div article {
         margin-top: 11vh; }
-        #projects .inner div article p {
+        #projects .inner div article a p {
           font: 400 14px/1 'Roboto';
           color: #727272; }
-        #projects .inner div article h2 {
+        #projects .inner div article a h2 {
           font: 500 18px/1 "Roboto";
           color: #171717;
           margin: 10px 0 15px; }
-        #projects .inner div article .pic {
+        #projects .inner div article a .pic {
           width: calc(100% - 20px); }
-          #projects .inner div article .pic img {
+          #projects .inner div article a .pic img {
             width: 100%;
             height: 100%;
             object-fit: cover; }
@@ -261,29 +261,29 @@ a {
       #events .inner .slide article {
         width: 280px;
         margin-left: 20px; }
-        #events .inner .slide article h2 {
+        #events .inner .slide article a h2 {
           font: 600 40px/1 "Roboto";
           color: #171717;
           margin-bottom: 15px; }
-          #events .inner .slide article h2 span {
+          #events .inner .slide article a h2 span {
             font: 400 24px/1 "Roboto";
             margin-left: 10px; }
-        #events .inner .slide article p {
+        #events .inner .slide article a p {
           font: 400 14px/1.6 "Roboto";
           color: #727272; }
-        #events .inner .slide article .loca {
+        #events .inner .slide article a .loca {
           margin: 50px 0; }
-          #events .inner .slide article .loca p {
+          #events .inner .slide article a .loca p {
             font: 500 15px/1.6 "Saira Semi Condensed";
             color: #727272; }
-        #events .inner .slide article .pic {
+        #events .inner .slide article a .pic {
           width: 100%;
           height: 150px; }
-          #events .inner .slide article .pic img {
+          #events .inner .slide article a .pic img {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-        #events .inner .slide article.on .pic {
+        #events .inner .slide article.on a .pic {
           float: right;
           width: 200%;
           height: calc(150px * 2); }
@@ -584,7 +584,7 @@ a {
       width: calc(100% - 70px); }
       #events .inner .slide article {
         width: calc(100% / 4); }
-        #events .inner .slide article.on .pic {
+        #events .inner .slide article.on a .pic {
           width: 180%;
           height: calc(150px * 1.8); }
 
@@ -673,20 +673,20 @@ a {
     width: calc(100% / 3); }
     #events .inner .slide article:last-child {
       display: none; }
-    #events .inner .slide article .pic {
+    #events .inner .slide article a .pic {
       width: 100%;
       height: 120px; }
-    #events .inner .slide article.on .pic {
+    #events .inner .slide article a h2 {
+      font: 600 30px/1 "Roboto"; }
+      #events .inner .slide article a h2 span {
+        font: 400 20px/1 "Roboto"; }
+    #events .inner .slide article a > p {
+      display: none; }
+    #events .inner .slide article a .loca {
+      margin: 30px 0; }
+    #events .inner .slide article.on a .pic {
       width: 180%;
       height: calc(120px * 1.8); }
-    #events .inner .slide article h2 {
-      font: 600 30px/1 "Roboto"; }
-      #events .inner .slide article h2 span {
-        font: 400 20px/1 "Roboto"; }
-    #events .inner .slide article > p {
-      display: none; }
-    #events .inner .slide article .loca {
-      margin: 30px 0; }
 
   #news {
     padding: 0px 0 150px; }
@@ -765,9 +765,9 @@ a {
       display: none; }
     #events .inner .slide article:nth-of-type(2) {
       display: none; }
-    #events .inner .slide article > p {
+    #events .inner .slide article a > p {
       display: block; }
-    #events .inner .slide article.on .pic {
+    #events .inner .slide article.on a .pic {
       width: 100%;
       height: 150px; }
 
