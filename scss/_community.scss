@@ -362,3 +362,85 @@
     0% {transform: translateX(0)}
     100% {transform: translateX(-200%)}
 }
+
+
+// tablet
+@media screen and (max-width: 1200px) {
+    .community .inner .contents {
+        >ul {
+            margin-bottom: 20px;
+    
+            li {
+                width: calc(100% /3);
+                margin-right: 0;
+
+                &:nth-of-type(2) {
+                    >a {
+                        border-left: none;
+                        border-right: none;
+                    }
+                }
+    
+                >a {
+                    height: auto;
+                    
+                    span {
+                        display: none;
+                    }
+    
+                    h4 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        text-align: center;
+                    }
+    
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+        article {
+            >div {
+                &.faq {
+                    dl {
+                        dt {
+                            h5 {
+                                padding-right: 30px;
+                                line-height: 1.2;
+                            }
+                        }
+    
+                        dd {
+                            p {
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+    
+                &.events {
+                    ul {
+                        li {
+                            a {
+                                
+                                >div {
+                                    &.pic {
+                                        height: 300px;
+                                    }
+                                    
+                                    &.txtBox {
+                                        h5 {
+                                            font: 300 40px/1.1 "Roboto";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

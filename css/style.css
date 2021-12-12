@@ -934,6 +934,34 @@ table, td, th {
     transform: translateX(0); }
   100% {
     transform: translateX(-200%); } }
+@media screen and (max-width: 1200px) {
+  .community .inner .contents > ul {
+    margin-bottom: 20px; }
+    .community .inner .contents > ul li {
+      width: calc(100% /3);
+      margin-right: 0; }
+      .community .inner .contents > ul li:nth-of-type(2) > a {
+        border-left: none;
+        border-right: none; }
+      .community .inner .contents > ul li > a {
+        height: auto; }
+        .community .inner .contents > ul li > a span {
+          display: none; }
+        .community .inner .contents > ul li > a h4 {
+          margin-top: 0;
+          margin-bottom: 0;
+          text-align: center; }
+        .community .inner .contents > ul li > a p {
+          display: none; }
+  .community .inner .contents article > div.faq dl dt h5 {
+    padding-right: 30px;
+    line-height: 1.2; }
+  .community .inner .contents article > div.faq dl dd p {
+    width: 80%; }
+  .community .inner .contents article > div.events ul li a > div.pic {
+    height: 300px; }
+  .community .inner .contents article > div.events ul li a > div.txtBox h5 {
+    font: 300 40px/1.1 "Roboto"; } }
 #header {
   width: 100%;
   position: absolute;
