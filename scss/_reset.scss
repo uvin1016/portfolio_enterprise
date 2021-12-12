@@ -3,7 +3,9 @@ ul,ol,li { list-style: none; }
 a { text-decoration: none; }
 
 .hide {
+    position: absolute;
     text-indent: -99999px;
+    opacity: 0;
 }
 
 table,td,th {

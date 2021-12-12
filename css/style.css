@@ -12,7 +12,9 @@ a {
   text-decoration: none; }
 
 .hide {
-  text-indent: -99999px; }
+  position: absolute;
+  text-indent: -99999px;
+  opacity: 0; }
 
 table, td, th {
   border-collapse: collapse; }
@@ -463,23 +465,23 @@ table, td, th {
       .department .inner .contents .featurs .contWrap .distinction {
         display: flex;
         border: 1px solid #727272; }
-        .department .inner .contents .featurs .contWrap .distinction article {
+        .department .inner .contents .featurs .contWrap .distinction > article {
           width: calc(100% /3);
           padding: 20px;
           position: relative;
           cursor: pointer; }
-          .department .inner .contents .featurs .contWrap .distinction article h5 {
+          .department .inner .contents .featurs .contWrap .distinction > article h5 {
             font: 500 16px/1.3 "Roboto";
             color: #171717;
             margin-bottom: 80px;
             transition: .5s; }
-          .department .inner .contents .featurs .contWrap .distinction article p {
+          .department .inner .contents .featurs .contWrap .distinction > article p {
             font: 300 12px/1.6 "Roboto";
             color: rgba(255, 255, 255, 0.5); }
-          .department .inner .contents .featurs .contWrap .distinction article:nth-of-type(2) {
+          .department .inner .contents .featurs .contWrap .distinction > article:nth-of-type(2) {
             border-left: 1px solid #727272;
             border-right: 1px solid #727272; }
-          .department .inner .contents .featurs .contWrap .distinction article::after {
+          .department .inner .contents .featurs .contWrap .distinction > article::after {
             content: '';
             display: block;
             width: 0%;
@@ -490,9 +492,9 @@ table, td, th {
             transition: 0.5s;
             background-color: #171717;
             z-index: -1; }
-          .department .inner .contents .featurs .contWrap .distinction article:hover h3 {
+          .department .inner .contents .featurs .contWrap .distinction > article:hover h5 {
             color: #fff; }
-          .department .inner .contents .featurs .contWrap .distinction article:hover::after {
+          .department .inner .contents .featurs .contWrap .distinction > article:hover::after {
             width: 100%; }
       .department .inner .contents .featurs .contWrap > p {
         width: 60%;
@@ -621,12 +623,12 @@ table, td, th {
       .department .inner .contents .featurs .contWrap .distinction {
         display: flex;
         border: 1px solid #727272; }
-        .department .inner .contents .featurs .contWrap .distinction article {
+        .department .inner .contents .featurs .contWrap .distinction > article {
           width: calc(100% /3);
           padding: 20px;
           position: relative;
           cursor: pointer; }
-          .department .inner .contents .featurs .contWrap .distinction article p {
+          .department .inner .contents .featurs .contWrap .distinction > article p {
             display: none; }
       .department .inner .contents .featurs .contWrap > p {
         width: 100%;
@@ -686,17 +688,17 @@ table, td, th {
       .department .inner .contents .featurs .contWrap .distinction {
         display: block;
         border: 1px solid #727272; }
-        .department .inner .contents .featurs .contWrap .distinction article {
+        .department .inner .contents .featurs .contWrap .distinction > article {
           width: 100%;
           padding: 20px;
           position: relative;
           cursor: pointer; }
-          .department .inner .contents .featurs .contWrap .distinction article:nth-of-type(2) {
+          .department .inner .contents .featurs .contWrap .distinction > article:nth-of-type(2) {
             border-top: 1px solid #727272;
             border-bottom: 1px solid #727272;
             border-right: none;
             border-left: none; }
-          .department .inner .contents .featurs .contWrap .distinction article p {
+          .department .inner .contents .featurs .contWrap .distinction > article p {
             display: none; }
       .department .inner .contents .featurs .contWrap > p {
         width: 100%;
@@ -749,13 +751,13 @@ table, td, th {
           width: 80%;
           font: 400 14px/1.4 "Roboto";
           color: #727272; }
-      .community .inner .contents > ul li:hover > a {
+      .community .inner .contents > ul li:hover > a, .community .inner .contents > ul li.on > a {
         background-color: #171717;
         transition: 0.5s; }
-        .community .inner .contents > ul li:hover > a h4 {
+        .community .inner .contents > ul li:hover > a h4, .community .inner .contents > ul li.on > a h4 {
           color: #fff; }
-        .community .inner .contents > ul li:hover > a span {
-          animation: moving 7s ease-in infinite; }
+        .community .inner .contents > ul li:hover > a span, .community .inner .contents > ul li.on > a span {
+          animation: moving 10s ease-in infinite; }
   .community .inner .contents article {
     width: 100%; }
     .community .inner .contents article > div {
@@ -932,8 +934,10 @@ table, td, th {
 @keyframes moving {
   0% {
     transform: translateX(0); }
+  50% {
+    transform: translateX(-200%); }
   100% {
-    transform: translateX(-200%); } }
+    transform: translateX(0); } }
 @media screen and (max-width: 1200px) {
   .community .inner .contents > ul {
     margin-bottom: 20px; }
@@ -1012,6 +1016,117 @@ table, td, th {
 @media screen and (max-width: 372px) {
   .community .inner .contents article > div.events ul li a > div.txtBox h5 {
     font-size: 30px; } }
+.join .inner .contents {
+  padding: 150px 0; }
+  .join .inner .contents form fieldset {
+    border: none; }
+    .join .inner .contents form fieldset h3 {
+      font: 400 20px/1 "Saira Semi Condensed";
+      color: #171717;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+      .join .inner .contents form fieldset h3:nth-of-type(2) {
+        margin-top: 100px; }
+    .join .inner .contents form fieldset article {
+      margin-top: 30px; }
+      .join .inner .contents form fieldset article textarea {
+        width: 100%;
+        height: 200px;
+        resize: none;
+        border: 1px solid rgba(0, 0, 0, 0.35); }
+      .join .inner .contents form fieldset article > input[type=checkbox] {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-left: 10px;
+        cursor: pointer; }
+      .join .inner .contents form fieldset article > label {
+        font: 300 14px/1 "Roboto";
+        color: #171717;
+        cursor: pointer; }
+        .join .inner .contents form fieldset article > label span {
+          color: #d824a2;
+          padding-left: 5px; }
+    .join .inner .contents form fieldset .agreementAll {
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      padding: 10px 0 10px 10px;
+      margin-top: 20px;
+      background-color: #f3f3f3; }
+      .join .inner .contents form fieldset .agreementAll > input[type=checkbox] {
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        cursor: pointer; }
+      .join .inner .contents form fieldset .agreementAll > label {
+        font: 300 14px/1 "Roboto";
+        color: #171717;
+        cursor: pointer; }
+    .join .inner .contents form fieldset table tr th {
+      font: 600 14px/1 "Saira Semi Condensed";
+      color: #171717;
+      padding: 15px 0;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      min-width: 120px;
+      position: relative; }
+      .join .inner .contents form fieldset table tr th span {
+        color: #d824a2;
+        margin-left: 3px; }
+      .join .inner .contents form fieldset table tr th::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 60%;
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%); }
+    .join .inner .contents form fieldset table tr td {
+      width: 100%;
+      padding: 15px 30px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+      .join .inner .contents form fieldset table tr td input[type=text], .join .inner .contents form fieldset table tr td input[type=password] {
+        border: none;
+        background: #f3f3f3;
+        padding: 10px;
+        width: 50%; }
+      .join .inner .contents form fieldset table tr td select {
+        border: none;
+        background: #f3f3f3;
+        padding: 10px;
+        width: 200px;
+        cursor: pointer; }
+      .join .inner .contents form fieldset table tr td input[type=checkbox], .join .inner .contents form fieldset table tr td input[type=radio] {
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        cursor: pointer; }
+      .join .inner .contents form fieldset table tr td > label {
+        font: 300 14px/1 "Roboto";
+        color: #171717;
+        cursor: pointer;
+        margin-right: 10px; }
+    .join .inner .contents form fieldset table tr:nth-of-type(5) td input[type=text] {
+      border: none;
+      background: #f3f3f3;
+      padding: 10px;
+      width: 190px; }
+    .join .inner .contents form fieldset table tr:last-child th {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      background: #f3f3f3;
+      text-align: center; }
+      .join .inner .contents form fieldset table tr:last-child th > input {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        font: 400 16px/1 "Roboto";
+        width: 150px;
+        padding: 10px 0; }
+        .join .inner .contents form fieldset table tr:last-child th > input:nth-of-type(1) {
+          background: #fff;
+          color: #171717;
+          margin-right: 10px; }
+        .join .inner .contents form fieldset table tr:last-child th > input:nth-of-type(2) {
+          background: #171717;
+          color: #fff; }
+      .join .inner .contents form fieldset table tr:last-child th::after {
+        display: none; }
+
 #header {
   width: 100%;
   position: absolute;

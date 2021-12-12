@@ -65,7 +65,7 @@
                 }
             }
 
-            &:hover {
+            &:hover, &.on {
                 >a {
                     background-color: #171717;
                     transition: 0.5s;
@@ -75,7 +75,7 @@
                     }
 
                     span {
-                        animation: moving 7s ease-in infinite;
+                        animation: moving 10s ease-in infinite;
                     }
                 }
             }
@@ -359,8 +359,9 @@
 }
 
 @keyframes moving {
-    0% {transform: translateX(0)}
-    100% {transform: translateX(-200%)}
+    0% {transform: translateX(0);}
+    50% {transform: translateX(-200%);}
+    100% {transform: translateX(0);}
 }
 
 

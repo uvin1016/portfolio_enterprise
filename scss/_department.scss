@@ -159,7 +159,7 @@
                 display: flex;
                 border: 1px solid #727272;
 
-                article {
+                >article {
                     width: calc(100% /3);
                     padding: 20px;
                     position: relative;
@@ -196,7 +196,7 @@
                     }
 
                     &:hover {
-                        h3 {
+                        h5 {
                             color: #fff;
                         }
                     }
@@ -465,7 +465,7 @@
                     display: flex;
                     border: 1px solid #727272;
     
-                    article {
+                    >article {
                         width: calc(100% /3);
                         padding: 20px;
                         position: relative;
@@ -586,7 +586,7 @@
                     display: block;
                     border: 1px solid #727272;
     
-                    article {
+                    >article {
                         width: 100%;
                         padding: 20px;
                         position: relative;
