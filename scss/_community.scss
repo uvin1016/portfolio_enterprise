@@ -205,12 +205,89 @@
             &.faq {
                 dl {
                     width: 100%;
+                    border-bottom: 1px solid rgba(0,0,0,0.2);
 
                     dt {
-                        padding: 10px 0;
+                        padding: 20px 0;
+                        border-top: 1px solid rgba(0,0,0,0.2);
+                        cursor: pointer;
+                        
+                        &::after {
+                            content: '';
+                            display: block;
+                            clear: both;
+                        }
+
+                        span {
+                            float: left;
+                            width: 30px;
+                            font: bolder 18px/1 "Roboto";
+                            color: #171717;
+                        }
                         
                         h5 {
+                            float: left;
+                            width: calc(100% - 30px);
                             font: 500 18px/1 "Roboto";
+                            color: #171717;
+                            position: relative;
+
+                            i {
+                                position: absolute;
+                                top: 50%;
+                                right: 0;
+                                transform: translateY(-50%);
+                                color: #727272;
+                            }
+                        }
+
+                        &.on {
+                            h5 {
+                                i {
+                                    display: none;
+                                }
+
+                                &::after {
+                                    content: '';
+                                    display: block;
+                                    width: 15px;
+                                    height: 1px;
+                                    background-color: #727272;
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                    }
+
+                    dd {
+                        padding: 20px 0 40px;
+                        display: none;
+
+                        &.on {
+                            display: block;
+                            border-top: 1px solid rgba(0,0,0,0.1);
+                        }
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            clear: both;
+                        }
+
+                        span {
+                            float: left;
+                            width: 30px;
+                            font: bolder 18px/1 "Roboto";
+                            color: #171717;
+                        }
+
+                        p {
+                            float: left;
+                            width: 70%;
+                            font: 300 16px/1.4 "Roboto";
                             color: #171717;
                         }
                     }
