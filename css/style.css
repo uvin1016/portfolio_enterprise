@@ -1106,7 +1106,7 @@ table, td, th {
       border: none;
       background: #f3f3f3;
       padding: 10px;
-      width: 190px; }
+      width: calc(50% - 200px); }
     .join .inner .contents form fieldset table tr:last-child th {
       border-bottom: 1px solid rgba(0, 0, 0, 0.4);
       background: #f3f3f3;
@@ -1127,6 +1127,60 @@ table, td, th {
       .join .inner .contents form fieldset table tr:last-child th::after {
         display: none; }
 
+@media screen and (max-width: 1200px) {
+  .join .inner .contents form fieldset table {
+    width: 100%; }
+    .join .inner .contents form fieldset table tr td input[type=text], .join .inner .contents form fieldset table tr td input[type=password] {
+      width: 80%; }
+    .join .inner .contents form fieldset table tr td select {
+      width: 130px; }
+    .join .inner .contents form fieldset table tr:nth-of-type(5) td input[type=text] {
+      width: calc(80% - 130px); } }
+@media screen and (max-width: 670px) {
+  .join .inner .contents form fieldset table {
+    width: 100%; }
+    .join .inner .contents form fieldset table tr th {
+      display: none; }
+    .join .inner .contents form fieldset table tr td {
+      padding: 15px 0; }
+      .join .inner .contents form fieldset table tr td input[type=text], .join .inner .contents form fieldset table tr td input[type=password] {
+        width: 100%;
+        position: relative; }
+      .join .inner .contents form fieldset table tr td select {
+        width: 130px; }
+    .join .inner .contents form fieldset table tr:nth-of-type(5) td input[type=text] {
+      width: calc(100% - 130px - 10px); }
+    .join .inner .contents form fieldset table tr:last-child th {
+      display: block; } }
+@media screen and (max-width: 510px) {
+  .join .inner .contents form fieldset article > label {
+    font: 300 12px/1 "Roboto"; }
+  .join .inner .contents form fieldset .agreementAll {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 10px 0 10px 10px;
+    margin-top: 20px;
+    background-color: #f3f3f3; }
+    .join .inner .contents form fieldset .agreementAll > input[type=checkbox] {
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      cursor: pointer; }
+    .join .inner .contents form fieldset .agreementAll > label {
+      font: 300 12px/1 "Roboto"; }
+  .join .inner .contents form fieldset table tr td input[type=checkbox], .join .inner .contents form fieldset table tr td input[type=radio] {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer; }
+  .join .inner .contents form fieldset table tr td > label {
+    font: 300 12px/1 "Roboto";
+    margin-right: 6px; }
+  .join .inner .contents form fieldset table tr td select {
+    width: 100%; }
+  .join .inner .contents form fieldset table tr:nth-of-type(5) td input[type=text] {
+    width: 100%;
+    margin-bottom: 10px; }
+  .join .inner .contents form fieldset table tr:last-child th > input {
+    font: 400 14px/1 "Roboto";
+    width: 100px;
+    padding: 10px 0; } }
 #header {
   width: 100%;
   position: absolute;
