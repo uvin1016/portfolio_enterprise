@@ -758,59 +758,59 @@ table, td, th {
           animation: moving 7s ease-in infinite; }
   .community .inner .contents article {
     width: 100%; }
-    .community .inner .contents article div {
+    .community .inner .contents article > div {
       width: 100%;
       display: none; }
-      .community .inner .contents article div.on {
+      .community .inner .contents article > div.on {
         display: block; }
-      .community .inner .contents article div.notice table {
+      .community .inner .contents article > div.notice table {
         width: 100%;
         border-top: 1px solid rgba(0, 0, 0, 0.2); }
-        .community .inner .contents article div.notice table thead tr th {
+        .community .inner .contents article > div.notice table thead tr th {
           font: 600 14px/1 "Roboto";
           color: #171717;
           padding: 15px 0;
           border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-        .community .inner .contents article div.notice table tbody tr td {
+        .community .inner .contents article > div.notice table tbody tr td {
           padding: 15px 0;
           border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-          .community .inner .contents article div.notice table tbody tr td:nth-of-type(1), .community .inner .contents article div.notice table tbody tr td:nth-of-type(3) {
+          .community .inner .contents article > div.notice table tbody tr td:nth-of-type(1), .community .inner .contents article > div.notice table tbody tr td:nth-of-type(3) {
             width: 100px;
             text-align: center;
             font: 400 14px/1 "Roboto";
             color: #171717; }
-          .community .inner .contents article div.notice table tbody tr td a {
+          .community .inner .contents article > div.notice table tbody tr td a {
             font: 400 14px/1.8 "Roboto";
             color: #171717; }
-      .community .inner .contents article div.notice .pagination {
+      .community .inner .contents article > div.notice .pagination {
         width: 100%;
         text-align: center;
         margin-top: 30px; }
-        .community .inner .contents article div.notice .pagination a {
+        .community .inner .contents article > div.notice .pagination a {
           display: inline-block;
           vertical-align: middle;
           padding: 10px;
           font-size: 0; }
-          .community .inner .contents article div.notice .pagination a i {
+          .community .inner .contents article > div.notice .pagination a i {
             font-size: 16px; }
-        .community .inner .contents article div.notice .pagination .numbers {
+        .community .inner .contents article > div.notice .pagination .numbers {
           display: inline-block;
           font-size: 0;
           vertical-align: middle; }
-          .community .inner .contents article div.notice .pagination .numbers::after {
+          .community .inner .contents article > div.notice .pagination .numbers::after {
             content: '';
             display: block;
             clear: both; }
-          .community .inner .contents article div.notice .pagination .numbers li {
+          .community .inner .contents article > div.notice .pagination .numbers li {
             float: left; }
-            .community .inner .contents article div.notice .pagination .numbers li a {
+            .community .inner .contents article > div.notice .pagination .numbers li a {
               display: block;
               font: 300 14px/1.6 "Roboto";
               padding: 5px 10px;
               transition: 0.5s; }
-            .community .inner .contents article div.notice .pagination .numbers li:hover a {
+            .community .inner .contents article > div.notice .pagination .numbers li:hover a {
               position: relative; }
-              .community .inner .contents article div.notice .pagination .numbers li:hover a::after {
+              .community .inner .contents article > div.notice .pagination .numbers li:hover a::after {
                 position: absolute;
                 bottom: 0px;
                 left: 50%;
@@ -820,7 +820,7 @@ table, td, th {
                 width: 50%;
                 height: 1px;
                 background-color: rgba(0, 0, 0, 0.3); }
-              .community .inner .contents article div.notice .pagination .numbers li:hover a::before {
+              .community .inner .contents article > div.notice .pagination .numbers li:hover a::before {
                 position: absolute;
                 top: 0px;
                 left: 50%;
@@ -830,37 +830,37 @@ table, td, th {
                 width: 50%;
                 height: 1px;
                 background-color: rgba(0, 0, 0, 0.3); }
-      .community .inner .contents article div.faq dl {
+      .community .inner .contents article > div.faq dl {
         width: 100%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-        .community .inner .contents article div.faq dl dt {
+        .community .inner .contents article > div.faq dl dt {
           padding: 20px 0;
           border-top: 1px solid rgba(0, 0, 0, 0.2);
           cursor: pointer; }
-          .community .inner .contents article div.faq dl dt::after {
+          .community .inner .contents article > div.faq dl dt::after {
             content: '';
             display: block;
             clear: both; }
-          .community .inner .contents article div.faq dl dt span {
+          .community .inner .contents article > div.faq dl dt span {
             float: left;
             width: 30px;
             font: bolder 18px/1 "Roboto";
             color: #171717; }
-          .community .inner .contents article div.faq dl dt h5 {
+          .community .inner .contents article > div.faq dl dt h5 {
             float: left;
             width: calc(100% - 30px);
             font: 500 18px/1 "Roboto";
             color: #171717;
             position: relative; }
-            .community .inner .contents article div.faq dl dt h5 i {
+            .community .inner .contents article > div.faq dl dt h5 i {
               position: absolute;
               top: 50%;
               right: 0;
               transform: translateY(-50%);
               color: #727272; }
-          .community .inner .contents article div.faq dl dt.on h5 i {
+          .community .inner .contents article > div.faq dl dt.on h5 i {
             display: none; }
-          .community .inner .contents article div.faq dl dt.on h5::after {
+          .community .inner .contents article > div.faq dl dt.on h5::after {
             content: '';
             display: block;
             width: 15px;
@@ -870,26 +870,64 @@ table, td, th {
             top: 50%;
             right: 0;
             transform: translateY(-50%); }
-        .community .inner .contents article div.faq dl dd {
+        .community .inner .contents article > div.faq dl dd {
           padding: 20px 0 40px;
           display: none; }
-          .community .inner .contents article div.faq dl dd.on {
+          .community .inner .contents article > div.faq dl dd.on {
             display: block;
             border-top: 1px solid rgba(0, 0, 0, 0.1); }
-          .community .inner .contents article div.faq dl dd::after {
+          .community .inner .contents article > div.faq dl dd::after {
             content: '';
             display: block;
             clear: both; }
-          .community .inner .contents article div.faq dl dd span {
+          .community .inner .contents article > div.faq dl dd span {
             float: left;
             width: 30px;
             font: bolder 18px/1 "Roboto";
             color: #171717; }
-          .community .inner .contents article div.faq dl dd p {
+          .community .inner .contents article > div.faq dl dd p {
             float: left;
             width: 70%;
             font: 300 16px/1.4 "Roboto";
             color: #171717; }
+      .community .inner .contents article > div.events ul {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        .community .inner .contents article > div.events ul li {
+          border-top: 1px solid rgba(0, 0, 0, 0.2); }
+          .community .inner .contents article > div.events ul li a {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0; }
+            .community .inner .contents article > div.events ul li a span {
+              width: 30px;
+              font: 400 20px/1 "Roboto";
+              color: #171717; }
+            .community .inner .contents article > div.events ul li a > div {
+              width: calc((100% / 2) - 30px);
+              padding-left: 20px; }
+              .community .inner .contents article > div.events ul li a > div.pic {
+                height: 250px; }
+                .community .inner .contents article > div.events ul li a > div.pic img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; }
+              .community .inner .contents article > div.events ul li a > div.txtBox {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; }
+                .community .inner .contents article > div.events ul li a > div.txtBox h5 {
+                  font: 300 55px/1.1 "Roboto";
+                  color: #171717; }
+                  .community .inner .contents article > div.events ul li a > div.txtBox h5 span {
+                    display: block;
+                    width: 100%;
+                    font: 300 16px/1 "Roboto";
+                    color: #171717;
+                    margin-top: 10px; }
+                .community .inner .contents article > div.events ul li a > div.txtBox p {
+                  width: 70%;
+                  font: 300 14px/1.6 "Roboto";
+                  color: #727272; }
 
 @keyframes moving {
   0% {
