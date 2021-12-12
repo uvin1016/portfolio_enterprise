@@ -429,10 +429,172 @@
                                     &.pic {
                                         height: 300px;
                                     }
-                                    
+
                                     &.txtBox {
                                         h5 {
                                             font: 300 40px/1.1 "Roboto";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .community .inner .contents {
+        h3 {
+            font: 500 22px/1 "Saira Semi Condensed";
+        }
+    
+        >p {
+            font: 400 14px/1.6 "Roboto";
+        }
+    
+        >ul {
+            margin-bottom: 0px;
+    
+            li {
+                >a {
+                    padding: 10px;
+
+                    h4 {
+                        font: 400 16px/1 "Roboto";
+                    }
+                }
+            }
+        }
+    
+        article {
+            >div {
+                &.notice {
+                    table {
+                        thead {
+                            tr {
+                                th {
+                                    &:first-child {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+        
+                        tbody {
+                            tr {
+                                td {
+                                    &:first-child {
+                                        display: none;
+                                        
+                                    }
+        
+                                    &:nth-of-type(1), &:nth-of-type(3) {
+                                        width: auto;
+                                        min-width: 67px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+        
+                    .pagination {
+                        .numbers {
+                            li {
+                                &:nth-of-type(n+6):nth-of-type(-n+10) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                &.faq {
+                    margin-top: 20px;
+
+                    dl {
+                        dt {
+                            span {
+                                font: bolder 16px/1.2 "Roboto";
+                            }
+                            
+                            h5 {
+                                font: 500 16px/1.2 "Roboto";
+                            }
+                        }
+    
+                        dd {
+    
+                            span {
+                                font: bolder 16px/1.2 "Roboto";
+                            }
+    
+                            p {
+                                font: 300 14px/1.4 "Roboto";
+                            }
+                        }
+                    }
+                }
+    
+                &.events {
+                    margin-top: 20px;
+
+                    ul {
+                        li {
+                            &:nth-of-type(2n) {
+                                a {
+                                    flex-direction: column-reverse;
+                                    
+                                    .pic {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+
+                            a {
+                                flex-direction: column;
+    
+                                span {
+                                    display: none;
+                                }
+                                
+                                >div {
+                                    width: 100%;
+                                    padding-left: 0;
+    
+                                    &.txtBox {
+                                        margin-top: 20px;
+
+                                        h5 {
+                                            margin-bottom: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .community .inner .contents {
+        article {
+            >div {
+                &.events {
+                    ul {
+                        li {
+                            a {
+                                >div {
+                                    &.txtBox {
+
+                                        h5 {
+                                            font-size: 30px;
                                         }
                                     }
                                 }
