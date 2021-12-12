@@ -11,6 +11,12 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
+.hide {
+  text-indent: -99999px; }
+
+table, td, th {
+  border-collapse: collapse; }
+
 #headerSub {
   width: 100%;
   display: block; }
@@ -358,13 +364,13 @@ a {
   .department .inner .contents .hww {
     display: flex;
     justify-content: space-between; }
-    .department .inner .contents .hww h1 {
+    .department .inner .contents .hww h3 {
       width: 295px;
       font: 400 20px/1 "Saira Semi Condensed";
       color: #171717; }
     .department .inner .contents .hww .contWrap {
       width: calc(100% - 295px); }
-      .department .inner .contents .hww .contWrap h2 {
+      .department .inner .contents .hww .contWrap h4 {
         font: 500 30px/1.2 "Roboto";
         color: #171717; }
       .department .inner .contents .hww .contWrap .items {
@@ -375,11 +381,11 @@ a {
           width: calc(100% / 3); }
           .department .inner .contents .hww .contWrap .items article i {
             font-size: 40px; }
-          .department .inner .contents .hww .contWrap .items article h3 {
+          .department .inner .contents .hww .contWrap .items article h5 {
             margin-top: 30px;
             font: 400 16px/1 "Roboto";
             color: #727272; }
-          .department .inner .contents .hww .contWrap .items article h4 {
+          .department .inner .contents .hww .contWrap .items article h6 {
             margin: 15px 0;
             font: 500 20px/1.2 "Roboto";
             color: #171717; }
@@ -391,13 +397,13 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 150px 0 0; }
-    .department .inner .contents .team h1 {
+    .department .inner .contents .team h3 {
       width: 295px;
       font: 400 20px/1 "Saira Semi Condensed";
       color: #171717; }
     .department .inner .contents .team .contWrap {
       width: calc(100% - 295px); }
-      .department .inner .contents .team .contWrap h2 {
+      .department .inner .contents .team .contWrap h4 {
         font: 500 30px/1.2 "Roboto";
         color: #171717;
         margin-bottom: 30px; }
@@ -427,7 +433,7 @@ a {
               object-fit: cover;
               filter: grayscale(100%);
               transition: 0.5s; }
-          .department .inner .contents .team .contWrap .people article h3 {
+          .department .inner .contents .team .contWrap .people article h5 {
             margin: 15px 0 10px;
             font: 500 20px/1 "Roboto";
             color: #171717; }
@@ -440,7 +446,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 100px 0 0; }
-    .department .inner .contents .featurs h1 {
+    .department .inner .contents .featurs h3 {
       width: 295px;
       font: 400 20px/1 "Saira Semi Condensed";
       color: #171717; }
@@ -450,7 +456,7 @@ a {
         content: '';
         display: block;
         clear: both; }
-      .department .inner .contents .featurs .contWrap h2 {
+      .department .inner .contents .featurs .contWrap h4 {
         font: 500 30px/1.2 "Roboto";
         color: #171717;
         margin-bottom: 30px; }
@@ -462,7 +468,7 @@ a {
           padding: 20px;
           position: relative;
           cursor: pointer; }
-          .department .inner .contents .featurs .contWrap .distinction article h3 {
+          .department .inner .contents .featurs .contWrap .distinction article h5 {
             font: 500 16px/1.3 "Roboto";
             color: #171717;
             margin-bottom: 80px;
@@ -496,14 +502,14 @@ a {
         margin-top: 30px; }
 
 @media screen and (max-width: 1200px) {
-  .department .inner .contents .hww h1 {
+  .department .inner .contents .hww h3 {
     width: 25%; }
   .department .inner .contents .hww .contWrap {
     width: 75%; }
-    .department .inner .contents .hww .contWrap h2 {
+    .department .inner .contents .hww .contWrap h4 {
       word-break: break-all;
       font: 500 25px/1.2 "Roboto"; }
-      .department .inner .contents .hww .contWrap h2 br {
+      .department .inner .contents .hww .contWrap h4 br {
         display: none; }
     .department .inner .contents .hww .contWrap .items {
       display: flex;
@@ -511,19 +517,19 @@ a {
       margin-top: 40px; }
       .department .inner .contents .hww .contWrap .items article {
         margin-right: 20px; }
-        .department .inner .contents .hww .contWrap .items article h3 {
+        .department .inner .contents .hww .contWrap .items article h5 {
           margin-top: 20px; }
-        .department .inner .contents .hww .contWrap .items article h4 {
+        .department .inner .contents .hww .contWrap .items article h6 {
           margin: 5px 0 10px; }
         .department .inner .contents .hww .contWrap .items article p {
           width: 100%; }
-  .department .inner .contents .team h1 {
+  .department .inner .contents .team h3 {
     width: 25%; }
   .department .inner .contents .team .contWrap {
     width: 75%; }
-    .department .inner .contents .team .contWrap h2 {
+    .department .inner .contents .team .contWrap h4 {
       font: 500 25px/1.2 "Roboto"; }
-    .department .inner .contents .team .contWrap .people article h3 {
+    .department .inner .contents .team .contWrap .people article h5 {
       margin: 15px 0 10px;
       font: 500 20px/1 "Roboto";
       color: #171717; }
@@ -532,11 +538,11 @@ a {
       color: #727272; }
     .department .inner .contents .team .contWrap .people article:hover .pic img {
       filter: grayscale(0%); }
-  .department .inner .contents .featurs h1 {
+  .department .inner .contents .featurs h3 {
     width: 25%; }
   .department .inner .contents .featurs .contWrap {
     width: 75%; }
-    .department .inner .contents .featurs .contWrap h2 {
+    .department .inner .contents .featurs .contWrap h4 {
       font: 500 25px/1.2 "Roboto"; } }
 @media screen and (max-width: 900px) {
   .department .inner .contents .team .contWrap .people article {
@@ -548,14 +554,14 @@ a {
 @media screen and (max-width: 768px) {
   .department .inner .contents .hww {
     display: block; }
-    .department .inner .contents .hww h1 {
+    .department .inner .contents .hww h3 {
       width: 100%;
       margin-bottom: 20px; }
     .department .inner .contents .hww .contWrap {
       width: 100%; }
-      .department .inner .contents .hww .contWrap h2 {
+      .department .inner .contents .hww .contWrap h4 {
         word-break: keep-all; }
-        .department .inner .contents .hww .contWrap h2 br {
+        .department .inner .contents .hww .contWrap h4 br {
           display: none; }
       .department .inner .contents .hww .contWrap .items {
         display: flex;
@@ -565,11 +571,11 @@ a {
           width: calc(100% / 3); }
           .department .inner .contents .hww .contWrap .items article i {
             font-size: 40px; }
-          .department .inner .contents .hww .contWrap .items article h3 {
+          .department .inner .contents .hww .contWrap .items article h5 {
             margin-top: 30px;
             font: 400 14px/1 "Roboto";
             color: #727272; }
-          .department .inner .contents .hww .contWrap .items article h4 {
+          .department .inner .contents .hww .contWrap .items article h6 {
             margin: 15px 0;
             font: 500 18px/1.2 "Roboto";
             color: #171717; }
@@ -577,12 +583,12 @@ a {
             font: 400 12px/1.2 "Roboto"; }
   .department .inner .contents .team {
     display: block; }
-    .department .inner .contents .team h1 {
+    .department .inner .contents .team h3 {
       width: 100%;
       margin-bottom: 20px; }
     .department .inner .contents .team .contWrap {
       width: 100%; }
-      .department .inner .contents .team .contWrap h2 {
+      .department .inner .contents .team .contWrap h4 {
         font: 500 25px/1.2 "Roboto"; }
       .department .inner .contents .team .contWrap .people article {
         width: calc(100% / 2);
@@ -594,7 +600,7 @@ a {
           padding-right: 10px; }
         .department .inner .contents .team .contWrap .people article .pic {
           height: 300px; }
-        .department .inner .contents .team .contWrap .people article h3 {
+        .department .inner .contents .team .contWrap .people article h5 {
           margin: 15px 0 10px;
           font: 500 20px/1 "Roboto";
           color: #171717; }
@@ -605,12 +611,12 @@ a {
           filter: grayscale(0%); }
   .department .inner .contents .featurs {
     display: block; }
-    .department .inner .contents .featurs h1 {
+    .department .inner .contents .featurs h3 {
       width: 100%;
       margin-bottom: 20px; }
     .department .inner .contents .featurs .contWrap {
       width: 100%; }
-      .department .inner .contents .featurs .contWrap h2 {
+      .department .inner .contents .featurs .contWrap h4 {
         font: 500 25px/1.2 "Roboto"; }
       .department .inner .contents .featurs .contWrap .distinction {
         display: flex;
@@ -628,9 +634,9 @@ a {
 @media screen and (max-width: 510px) {
   .department .inner .contents .hww .contWrap {
     width: 100%; }
-    .department .inner .contents .hww .contWrap h2 {
+    .department .inner .contents .hww .contWrap h4 {
       word-break: keep-all; }
-      .department .inner .contents .hww .contWrap h2 br {
+      .department .inner .contents .hww .contWrap h4 br {
         display: none; }
     .department .inner .contents .hww .contWrap .items {
       display: block;
@@ -640,10 +646,10 @@ a {
         margin-right: 0;
         padding: 35px 0;
         border-bottom: 1px solid #727272; }
-        .department .inner .contents .hww .contWrap .items article h3 {
+        .department .inner .contents .hww .contWrap .items article h5 {
           font: 400 12px/1 "Roboto";
           margin-top: 20px; }
-        .department .inner .contents .hww .contWrap .items article h4 {
+        .department .inner .contents .hww .contWrap .items article h6 {
           font: 500 16px/1.2 "Roboto";
           margin: 15px 0; }
         .department .inner .contents .hww .contWrap .items article p {
@@ -651,12 +657,12 @@ a {
           width: 100%; }
   .department .inner .contents .team {
     display: block; }
-    .department .inner .contents .team h1 {
+    .department .inner .contents .team h3 {
       width: 100%;
       margin-bottom: 20px; }
     .department .inner .contents .team .contWrap {
       width: 100%; }
-      .department .inner .contents .team .contWrap h2 {
+      .department .inner .contents .team .contWrap h4 {
         font: 500 25px/1.2 "Roboto"; }
       .department .inner .contents .team .contWrap .people article {
         width: calc(100% / 1);
@@ -670,12 +676,12 @@ a {
           height: 300px; }
   .department .inner .contents .featurs {
     display: block; }
-    .department .inner .contents .featurs h1 {
+    .department .inner .contents .featurs h3 {
       width: 100%;
       margin-bottom: 20px; }
     .department .inner .contents .featurs .contWrap {
       width: 100%; }
-      .department .inner .contents .featurs .contWrap h2 {
+      .department .inner .contents .featurs .contWrap h4 {
         font: 500 25px/1.2 "Roboto"; }
       .department .inner .contents .featurs .contWrap .distinction {
         display: block;
@@ -697,7 +703,146 @@ a {
         float: left; } }
 .community .inner .contents {
   padding: 150px 0; }
+  .community .inner .contents h3 {
+    font: 500 24px/1 "Saira Semi Condensed";
+    color: #171717;
+    text-align: center;
+    margin-bottom: 10px; }
+  .community .inner .contents > p {
+    font: 400 16px/1.6 "Roboto";
+    color: #727272;
+    text-align: center;
+    margin-bottom: 40px; }
+  .community .inner .contents > ul {
+    margin-bottom: 40px; }
+    .community .inner .contents > ul::after {
+      content: '';
+      display: block;
+      clear: both; }
+    .community .inner .contents > ul li {
+      width: 380px;
+      float: left;
+      margin-right: 20px; }
+      .community .inner .contents > ul li:last-child {
+        margin-right: 0; }
+      .community .inner .contents > ul li > a {
+        display: block;
+        height: 270px;
+        position: relative;
+        padding: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.2); }
+        .community .inner .contents > ul li > a span {
+          font: bold 100px/1 "Roboto";
+          -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+          color: #fff;
+          letter-spacing: 1px;
+          position: absolute;
+          top: 20px;
+          left: 75%; }
+        .community .inner .contents > ul li > a h4 {
+          font: 600 20px/1 "Roboto";
+          color: #171717;
+          margin-top: 120px;
+          margin-bottom: 30px; }
+        .community .inner .contents > ul li > a p {
+          width: 80%;
+          font: 400 14px/1.4 "Roboto";
+          color: #727272; }
+      .community .inner .contents > ul li:hover > a {
+        background-color: #171717;
+        transition: 0.5s; }
+        .community .inner .contents > ul li:hover > a h4 {
+          color: #fff; }
+        .community .inner .contents > ul li:hover > a span {
+          animation: moving 7s ease-in infinite; }
+  .community .inner .contents article {
+    width: 100%; }
+    .community .inner .contents article div {
+      width: 100%;
+      display: none; }
+      .community .inner .contents article div.on {
+        display: block; }
+      .community .inner .contents article div.notice table {
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.2); }
+        .community .inner .contents article div.notice table thead tr th {
+          font: 600 14px/1 "Roboto";
+          color: #171717;
+          padding: 15px 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        .community .inner .contents article div.notice table tbody tr td {
+          padding: 15px 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+          .community .inner .contents article div.notice table tbody tr td:nth-of-type(1), .community .inner .contents article div.notice table tbody tr td:nth-of-type(3) {
+            width: 100px;
+            text-align: center;
+            font: 400 14px/1 "Roboto";
+            color: #171717; }
+          .community .inner .contents article div.notice table tbody tr td a {
+            font: 400 14px/1.8 "Roboto";
+            color: #171717; }
+      .community .inner .contents article div.notice .pagination {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px; }
+        .community .inner .contents article div.notice .pagination a {
+          display: inline-block;
+          vertical-align: middle;
+          padding: 10px;
+          font-size: 0; }
+          .community .inner .contents article div.notice .pagination a i {
+            font-size: 16px; }
+        .community .inner .contents article div.notice .pagination .numbers {
+          display: inline-block;
+          font-size: 0;
+          vertical-align: middle; }
+          .community .inner .contents article div.notice .pagination .numbers::after {
+            content: '';
+            display: block;
+            clear: both; }
+          .community .inner .contents article div.notice .pagination .numbers li {
+            float: left; }
+            .community .inner .contents article div.notice .pagination .numbers li a {
+              display: block;
+              font: 300 14px/1.6 "Roboto";
+              padding: 5px 10px;
+              transition: 0.5s; }
+            .community .inner .contents article div.notice .pagination .numbers li:hover a {
+              position: relative; }
+              .community .inner .contents article div.notice .pagination .numbers li:hover a::after {
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                content: '';
+                display: block;
+                width: 50%;
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.3); }
+              .community .inner .contents article div.notice .pagination .numbers li:hover a::before {
+                position: absolute;
+                top: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                content: '';
+                display: block;
+                width: 50%;
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.3); }
+      .community .inner .contents article div.faq dl {
+        width: 100%; }
+        .community .inner .contents article div.faq dl dt {
+          padding: 10px 0; }
+          .community .inner .contents article div.faq dl dt h5 {
+            font: 500 18px/1 "Roboto";
+            color: #171717; }
 
+@keyframes moving {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-200%); } }
 #header {
   width: 100%;
   position: absolute;

@@ -5,7 +5,7 @@
         display: flex;
         justify-content: space-between;
 
-        h1 {
+        h3 {
             width: 295px;
             font: 400 20px/1 "Saira Semi Condensed";
             color: #171717;
@@ -14,7 +14,7 @@
         .contWrap {
             width: calc(100% - 295px);
             
-            h2 {
+            h4 {
                 font: 500 30px/1.2 "Roboto";
                 color: #171717;
             }
@@ -31,13 +31,13 @@
                         font-size: 40px;
                     }
 
-                    h3 {
+                    h5 {
                         margin-top: 30px;
                         font: 400 16px/1 "Roboto";
                         color: #727272;
                     }
 
-                    h4 {
+                    h6 {
                         margin: 15px 0;
                         font: 500 20px/1.2 "Roboto";
                         color: #171717;
@@ -58,7 +58,7 @@
         justify-content: space-between;
         padding: 150px 0 0;
 
-        h1 {
+        h3 {
             width: 295px;
             font: 400 20px/1 "Saira Semi Condensed";
             color: #171717;
@@ -67,7 +67,7 @@
         .contWrap {
             width: calc(100% - 295px);
             
-            h2 {
+            h4 {
                 font: 500 30px/1.2 "Roboto";
                 color: #171717;
                 margin-bottom: 30px;
@@ -108,7 +108,7 @@
                         }
                     }
 
-                    h3 {
+                    h5 {
                         margin: 15px 0 10px;
                         font: 500 20px/1 "Roboto";
                         color: #171717;
@@ -134,7 +134,7 @@
         justify-content: space-between;
         padding: 100px 0 0;
 
-        h1 {
+        h3 {
             width: 295px;
             font: 400 20px/1 "Saira Semi Condensed";
             color: #171717;
@@ -149,7 +149,7 @@
                 clear: both;
             }
             
-            h2 {
+            h4 {
                 font: 500 30px/1.2 "Roboto";
                 color: #171717;
                 margin-bottom: 30px;
@@ -165,7 +165,7 @@
                     position: relative;
                     cursor: pointer;
 
-                    h3 {
+                    h5 {
                         font: 500 16px/1.3 "Roboto";
                         color: #171717;
                         margin-bottom: 80px;
@@ -224,14 +224,14 @@
     .department .inner .contents {
         .hww {
             
-            h1 {
+            h3 {
                 width: 25%;
             }
 
             .contWrap {
                 width: 75%;
 
-                h2 {
+                h4 {
                     word-break: break-all;
                     font: 500 25px/1.2 "Roboto";
                     
@@ -248,11 +248,11 @@
                     article {
                         margin-right: 20px;
 
-                        h3 {
+                        h5 {
                             margin-top: 20px;
                         }
     
-                        h4 {
+                        h6 {
                             margin: 5px 0 10px;
                         }
     
@@ -265,20 +265,20 @@
         }
 
         .team {
-            h1 {
+            h3 {
                 width: 25%;
             }
     
             .contWrap {
                 width: 75%;
                 
-                h2 {
+                h4 {
                     font: 500 25px/1.2 "Roboto";
                 }
     
                 .people {
                     article {
-                        h3 {
+                        h5 {
                             margin: 15px 0 10px;
                             font: 500 20px/1 "Roboto";
                             color: #171717;
@@ -300,14 +300,14 @@
         }
 
         .featurs {
-            h1 {
+            h3 {
                 width: 25%;
             }
     
             .contWrap {
                 width: 75%;
                 
-                h2 {
+                h4 {
                     font: 500 25px/1.2 "Roboto";
                 }
             }
@@ -344,7 +344,7 @@
         .hww {
             display: block;
 
-            h1 {
+            h3 {
                 width: 100%;
                 margin-bottom: 20px;
             }
@@ -352,7 +352,7 @@
             .contWrap {
                 width: 100%;
 
-                h2 {
+                h4 {
                     word-break: keep-all;
                     
                     br {
@@ -372,13 +372,13 @@
                             font-size: 40px;
                         }
     
-                        h3 {
+                        h5 {
                             margin-top: 30px;
                             font: 400 14px/1 "Roboto";
                             color: #727272;
                         }
     
-                        h4 {
+                        h6 {
                             margin: 15px 0;
                             font: 500 18px/1.2 "Roboto";
                             color: #171717;
@@ -395,7 +395,7 @@
         .team {
             display: block;
 
-            h1 {
+            h3 {
                 width: 100%;
                 margin-bottom: 20px;
             }
@@ -403,7 +403,7 @@
             .contWrap {
                 width: 100%;
 
-                h2 {
+                h4 {
                     font: 500 25px/1.2 "Roboto";
                 }
 
@@ -425,7 +425,7 @@
                             height: 300px;
                         }
 
-                        h3 {
+                        h5 {
                             margin: 15px 0 10px;
                             font: 500 20px/1 "Roboto";
                             color: #171717;
@@ -449,7 +449,7 @@
         .featurs {
             display: block;
 
-            h1 {
+            h3 {
                 width: 100%;
                 margin-bottom: 20px;
             }
@@ -457,7 +457,7 @@
             .contWrap {
                 width: 100%;
                 
-                h2 {
+                h4 {
                     font: 500 25px/1.2 "Roboto";
                 }
 
@@ -493,7 +493,7 @@
             .contWrap {
                 width: 100%;
 
-                h2 {
+                h4 {
                     word-break: keep-all;
                     
                     br {
@@ -511,12 +511,12 @@
                         padding: 35px 0;
                         border-bottom: 1px solid #727272;
     
-                        h3 {
+                        h5 {
                             font: 400 12px/1 "Roboto";
                             margin-top: 20px;
                         }
     
-                        h4 {
+                        h6 {
                             font: 500 16px/1.2 "Roboto";
                             margin: 15px 0;
                         }
@@ -533,7 +533,7 @@
         .team {
             display: block;
 
-            h1 {
+            h3 {
                 width: 100%;
                 margin-bottom: 20px;
             }
@@ -541,7 +541,7 @@
             .contWrap {
                 width: 100%;
 
-                h2 {
+                h4 {
                     font: 500 25px/1.2 "Roboto";
                 }
 
@@ -570,7 +570,7 @@
         .featurs {
             display: block;
 
-            h1 {
+            h3 {
                 width: 100%;
                 margin-bottom: 20px;
             }
@@ -578,7 +578,7 @@
             .contWrap {
                 width: 100%;
                 
-                h2 {
+                h4 {
                     font: 500 25px/1.2 "Roboto";
                 }
 

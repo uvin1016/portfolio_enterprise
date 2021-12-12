@@ -1,3 +1,227 @@
 .community .inner .contents {
     padding: 150px 0;
+
+    h3 {
+        font: 500 24px/1 "Saira Semi Condensed";
+        color: #171717;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    >p {
+        font: 400 16px/1.6 "Roboto";
+        color: #727272;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    >ul {
+        margin-bottom: 40px;
+
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        li {
+            width: 380px;
+            float: left;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            >a {
+                display: block;
+                height: 270px;
+                position: relative;
+                padding: 20px;
+                overflow: hidden;
+                border: 1px solid rgba(0,0,0,0.2);
+                
+                span {
+                    font: bold 100px/1 "Roboto";
+                    -webkit-text-stroke: 1px rgba(0,0,0,0.3);
+                    color: #fff;
+                    letter-spacing: 1px;
+                    position: absolute;
+                    top: 20px;
+                    left: 75%;
+                }
+
+                h4 {
+                    font: 600 20px/1 "Roboto";
+                    color: #171717;
+                    margin-top: 120px;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    width: 80%;
+                    font: 400 14px/1.4 "Roboto";
+                    color: #727272;
+                }
+            }
+
+            &:hover {
+                >a {
+                    background-color: #171717;
+                    transition: 0.5s;
+
+                    h4 {
+                        color: #fff;
+                    }
+
+                    span {
+                        animation: moving 7s ease-in infinite;
+                    }
+                }
+            }
+        }
+    }
+
+    article {
+        width: 100%;
+
+        div {
+            width: 100%;
+            display: none;
+
+            &.on {
+                display: block;
+            }
+
+            &.notice {
+                table {
+                    width: 100%;
+                    border-top: 1px solid rgba(0,0,0,0.2);
+    
+                    thead {
+                        tr {
+                            th {
+                                font: 600 14px/1 "Roboto";
+                                color: #171717;
+                                padding: 15px 0;
+                                border-bottom: 1px solid rgba(0,0,0,0.2);
+                            }
+                        }
+                    }
+    
+                    tbody {
+                        tr {
+                            td {
+                                padding: 15px 0;
+                                border-bottom: 1px solid rgba(0,0,0,0.2);
+    
+                                &:nth-of-type(1), &:nth-of-type(3) {
+                                    width: 100px;
+                                    text-align: center;
+                                    font: 400 14px/1 "Roboto";
+                                    color: #171717;
+                                }
+    
+                                a {
+                                    font: 400 14px/1.8 "Roboto";
+                                    color: #171717;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .pagination {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 30px;
+    
+                    a {
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding: 10px;
+                        font-size: 0;
+    
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+    
+                    .numbers {
+                        display: inline-block;
+                        font-size: 0;
+                        vertical-align: middle;
+    
+                        &::after {
+                            content: '';
+                            display: block;
+                            clear: both;
+                        }
+                        
+                        li {
+                            float: left;
+    
+                            a {
+                                display: block;
+                                font: 300 14px/1.6 "Roboto";
+                                padding: 5px 10px;
+                                transition: 0.5s;
+                            }
+    
+                            &:hover {
+                                a {
+                                    position: relative;
+    
+                                    &::after {
+                                        position: absolute;
+                                        bottom: 0px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        content: '';
+                                        display: block;
+                                        width: 50%;
+                                        height: 1px;
+                                        background-color: rgba(0,0,0,0.3);
+                                    }
+    
+                                    &::before {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        content: '';
+                                        display: block;
+                                        width: 50%;
+                                        height: 1px;
+                                        background-color: rgba(0,0,0,0.3);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.faq {
+                dl {
+                    width: 100%;
+
+                    dt {
+                        padding: 10px 0;
+                        
+                        h5 {
+                            font: 500 18px/1 "Roboto";
+                            color: #171717;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@keyframes moving {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(-200%)}
 }
