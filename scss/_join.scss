@@ -24,6 +24,7 @@
                     height: 200px;
                     resize: none;
                     border: 1px solid rgba(0,0,0,0.35);
+                    font-family: "Noto Sans KR";
                 }
 
                 >input[type=checkbox]{
@@ -33,7 +34,7 @@
                 }
 
                 >label {
-                    font: 300 14px/1 "Roboto";
+                    font: 300 14px/1 "Noto Sans KR";
                     color: #171717;
                     cursor: pointer;
 
@@ -57,7 +58,7 @@
                 }
 
                 >label {
-                    font: 300 14px/1 "Roboto";
+                    font: 300 14px/1 "Noto Sans KR";
                     color: #171717;
                     cursor: pointer;
                 }
@@ -118,7 +119,7 @@
                         }
                         
                         >label {
-                            font: 300 14px/1 "Roboto";
+                            font: 300 14px/1 "Noto Sans KR";
                             color: #171717;
                             cursor: pointer;
                             margin-right: 10px;
@@ -145,7 +146,7 @@
                             >input {
                                 border: 1px solid rgba(0,0,0,0.2);
                                 cursor: pointer;
-                                font: 400 16px/1 "Roboto";
+                                font: 400 16px/1 "Noto Sans KR";
                                 width: 150px;
                                 padding: 10px 0;
                                 
@@ -261,7 +262,7 @@
             fieldset {
                 article {
                     >label {
-                        font: 300 12px/1 "Roboto";
+                        font: 300 12px/1 "Noto Sans KR";
                     }
                 }
     
@@ -278,7 +279,7 @@
                     }
     
                     >label {
-                        font: 300 12px/1 "Roboto";
+                        font: 300 12px/1 "Noto Sans KR";
                     }
                 }
     
@@ -291,7 +292,7 @@
                             }
                             
                             >label {
-                                font: 300 12px/1 "Roboto";
+                                font: 300 12px/1 "Noto Sans KR";
                                 margin-right: 6px;
                             }
 
@@ -312,7 +313,7 @@
                         &:last-child {
                             th {
                                 >input {
-                                    font: 400 14px/1 "Roboto";
+                                    font: 400 14px/1 "Noto Sans KR";
                                     width: 100px;
                                     padding: 10px 0;
                                 }
