@@ -136,7 +136,7 @@
                     text-align: center;
                     margin-top: 30px;
     
-                    a {
+                    >a {
                         display: inline-block;
                         vertical-align: middle;
                         padding: 10px;
@@ -144,6 +144,7 @@
     
                         i {
                             font-size: 16px;
+                            color: #171717;
                         }
                     }
     
@@ -161,11 +162,12 @@
                         li {
                             float: left;
     
-                            a {
+                            >a {
                                 display: block;
                                 font: 300 14px/1.6 "Roboto";
                                 padding: 5px 10px;
                                 transition: 0.5s;
+                                color: #171717;
                             }
     
                             &:hover {

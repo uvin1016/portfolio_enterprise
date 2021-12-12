@@ -788,13 +788,14 @@ table, td, th {
         width: 100%;
         text-align: center;
         margin-top: 30px; }
-        .community .inner .contents article > div.notice .pagination a {
+        .community .inner .contents article > div.notice .pagination > a {
           display: inline-block;
           vertical-align: middle;
           padding: 10px;
           font-size: 0; }
-          .community .inner .contents article > div.notice .pagination a i {
-            font-size: 16px; }
+          .community .inner .contents article > div.notice .pagination > a i {
+            font-size: 16px;
+            color: #171717; }
         .community .inner .contents article > div.notice .pagination .numbers {
           display: inline-block;
           font-size: 0;
@@ -805,11 +806,12 @@ table, td, th {
             clear: both; }
           .community .inner .contents article > div.notice .pagination .numbers li {
             float: left; }
-            .community .inner .contents article > div.notice .pagination .numbers li a {
+            .community .inner .contents article > div.notice .pagination .numbers li > a {
               display: block;
               font: 300 14px/1.6 "Roboto";
               padding: 5px 10px;
-              transition: 0.5s; }
+              transition: 0.5s;
+              color: #171717; }
             .community .inner .contents article > div.notice .pagination .numbers li:hover a {
               position: relative; }
               .community .inner .contents article > div.notice .pagination .numbers li:hover a::after {
