@@ -354,7 +354,7 @@ a {
       #footerSub .inner .ftBttm p {
         width: 100%; } }
 .department .inner .contents {
-  padding: 150px 0 150px; }
+  padding: 150px 0; }
   .department .inner .contents .hww {
     display: flex;
     justify-content: space-between; }
@@ -446,6 +446,10 @@ a {
       color: #171717; }
     .department .inner .contents .featurs .contWrap {
       width: calc(100% - 295px); }
+      .department .inner .contents .featurs .contWrap::after {
+        content: '';
+        display: block;
+        clear: both; }
       .department .inner .contents .featurs .contWrap h2 {
         font: 500 30px/1.2 "Roboto";
         color: #171717;
@@ -622,77 +626,78 @@ a {
         width: 100%;
         float: left; } }
 @media screen and (max-width: 510px) {
-  .department .inner .contents {
-    padding: 150px 0 250px; }
-    .department .inner .contents .hww .contWrap {
+  .department .inner .contents .hww .contWrap {
+    width: 100%; }
+    .department .inner .contents .hww .contWrap h2 {
+      word-break: keep-all; }
+      .department .inner .contents .hww .contWrap h2 br {
+        display: none; }
+    .department .inner .contents .hww .contWrap .items {
+      display: block;
+      margin-top: 0; }
+      .department .inner .contents .hww .contWrap .items article {
+        width: 100%;
+        margin-right: 0;
+        padding: 35px 0;
+        border-bottom: 1px solid #727272; }
+        .department .inner .contents .hww .contWrap .items article h3 {
+          font: 400 12px/1 "Roboto";
+          margin-top: 20px; }
+        .department .inner .contents .hww .contWrap .items article h4 {
+          font: 500 16px/1.2 "Roboto";
+          margin: 15px 0; }
+        .department .inner .contents .hww .contWrap .items article p {
+          font: 400 12px/1.2 "Roboto";
+          width: 100%; }
+  .department .inner .contents .team {
+    display: block; }
+    .department .inner .contents .team h1 {
+      width: 100%;
+      margin-bottom: 20px; }
+    .department .inner .contents .team .contWrap {
       width: 100%; }
-      .department .inner .contents .hww .contWrap h2 {
-        word-break: keep-all; }
-        .department .inner .contents .hww .contWrap h2 br {
-          display: none; }
-      .department .inner .contents .hww .contWrap .items {
+      .department .inner .contents .team .contWrap h2 {
+        font: 500 25px/1.2 "Roboto"; }
+      .department .inner .contents .team .contWrap .people article {
+        width: calc(100% / 1);
+        padding: 0; }
+        .department .inner .contents .team .contWrap .people article:nth-of-type(2n) {
+          padding-left: 0px;
+          padding-right: 0px; }
+        .department .inner .contents .team .contWrap .people article:nth-of-type(3n) {
+          padding-right: 0px; }
+        .department .inner .contents .team .contWrap .people article .pic {
+          height: 300px; }
+  .department .inner .contents .featurs {
+    display: block; }
+    .department .inner .contents .featurs h1 {
+      width: 100%;
+      margin-bottom: 20px; }
+    .department .inner .contents .featurs .contWrap {
+      width: 100%; }
+      .department .inner .contents .featurs .contWrap h2 {
+        font: 500 25px/1.2 "Roboto"; }
+      .department .inner .contents .featurs .contWrap .distinction {
         display: block;
-        margin-top: 0; }
-        .department .inner .contents .hww .contWrap .items article {
+        border: 1px solid #727272; }
+        .department .inner .contents .featurs .contWrap .distinction article {
           width: 100%;
-          margin-right: 0;
-          padding: 35px 0;
-          border-bottom: 1px solid #727272; }
-          .department .inner .contents .hww .contWrap .items article h3 {
-            font: 400 12px/1 "Roboto";
-            margin-top: 20px; }
-          .department .inner .contents .hww .contWrap .items article h4 {
-            font: 500 16px/1.2 "Roboto";
-            margin: 15px 0; }
-          .department .inner .contents .hww .contWrap .items article p {
-            font: 400 12px/1.2 "Roboto";
-            width: 100%; }
-    .department .inner .contents .team {
-      display: block; }
-      .department .inner .contents .team h1 {
+          padding: 20px;
+          position: relative;
+          cursor: pointer; }
+          .department .inner .contents .featurs .contWrap .distinction article:nth-of-type(2) {
+            border-top: 1px solid #727272;
+            border-bottom: 1px solid #727272;
+            border-right: none;
+            border-left: none; }
+          .department .inner .contents .featurs .contWrap .distinction article p {
+            display: none; }
+      .department .inner .contents .featurs .contWrap > p {
         width: 100%;
-        margin-bottom: 20px; }
-      .department .inner .contents .team .contWrap {
-        width: 100%; }
-        .department .inner .contents .team .contWrap h2 {
-          font: 500 25px/1.2 "Roboto"; }
-        .department .inner .contents .team .contWrap .people article {
-          width: calc(100% / 1);
-          padding: 0; }
-          .department .inner .contents .team .contWrap .people article:nth-of-type(2n) {
-            padding-left: 0px;
-            padding-right: 0px; }
-          .department .inner .contents .team .contWrap .people article:nth-of-type(3n) {
-            padding-right: 0px; }
-          .department .inner .contents .team .contWrap .people article .pic {
-            height: 300px; }
-    .department .inner .contents .featurs {
-      display: block; }
-      .department .inner .contents .featurs h1 {
-        width: 100%;
-        margin-bottom: 20px; }
-      .department .inner .contents .featurs .contWrap {
-        width: 100%; }
-        .department .inner .contents .featurs .contWrap h2 {
-          font: 500 25px/1.2 "Roboto"; }
-        .department .inner .contents .featurs .contWrap .distinction {
-          display: block;
-          border: 1px solid #727272; }
-          .department .inner .contents .featurs .contWrap .distinction article {
-            width: 100%;
-            padding: 20px;
-            position: relative;
-            cursor: pointer; }
-            .department .inner .contents .featurs .contWrap .distinction article:nth-of-type(2) {
-              border-top: 1px solid #727272;
-              border-bottom: 1px solid #727272;
-              border-right: none;
-              border-left: none; }
-            .department .inner .contents .featurs .contWrap .distinction article p {
-              display: none; }
-        .department .inner .contents .featurs .contWrap > p {
-          width: 100%;
-          float: left; } }
+        float: left; } }
+.community .inner .contents {
+  padding: 150px 0; }
+
 #header {
   width: 100%;
   position: absolute;
