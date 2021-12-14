@@ -60,11 +60,10 @@ table, td, th {
         margin-left: 10px; }
         #headerSub .inner .menuWeb #util > li a i {
           color: #171717;
-          opacity: 0.9; }
+          opacity: 0.9;
+          font-size: 25px; }
         #headerSub .inner .menuWeb #util > li:first-child a i {
           font-size: 26px; }
-        #headerSub .inner .menuWeb #util > li:last-child a i {
-          font-size: 25px; }
     #headerSub .inner .menuMb {
       display: none; }
     #headerSub .inner .btnCall {
@@ -1236,11 +1235,10 @@ table, td, th {
         margin-left: 10px; }
         #header .inner .menuWeb #util > li a i {
           color: #fff;
-          opacity: 0.9; }
+          opacity: 0.9;
+          font-size: 25px; }
         #header .inner .menuWeb #util > li:first-child a i {
           font-size: 26px; }
-        #header .inner .menuWeb #util > li:last-child a i {
-          font-size: 25px; }
     #header .inner .menuMb {
       display: none; }
     #header .inner .btnCall {
