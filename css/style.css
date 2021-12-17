@@ -1232,11 +1232,33 @@ table, td, th {
         align-items: baseline; }
         #header .inner .menuWeb #gnb > li {
           display: inline-block;
-          margin-top: 3px; }
+          margin-top: 3px;
+          position: relative; }
           #header .inner .menuWeb #gnb > li > a {
             font: 400 18px/1 "Saira Semi Condensed";
             color: #fff;
-            opacity: 0.9; }
+            opacity: 0.9;
+            transition: .3s; }
+            #header .inner .menuWeb #gnb > li > a:hover::after {
+              content: '';
+              display: block;
+              width: 100%;
+              height: 1px;
+              background-color: #727272;
+              position: absolute;
+              bottom: 25px;
+              left: 50%;
+              transform: translate(-50%, -50%); }
+            #header .inner .menuWeb #gnb > li > a:hover::before {
+              content: '';
+              display: block;
+              width: 100%;
+              height: 1px;
+              background-color: #727272;
+              position: absolute;
+              top: 25px;
+              left: 50%;
+              transform: translate(-50%, -50%); }
       #header .inner .menuWeb #util::after {
         content: '';
         display: block;
