@@ -2,6 +2,16 @@
 #headerSub {
     width: 100%;
     display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transition: .5s;
+
+    &.scrollOn, &:hover {
+        background: rgba(255,255,255,0.9);
+        border-bottom: 1px solid #727272;
+    }
 
     .inner {
         width: 1180px;
@@ -35,10 +45,36 @@
                 >li {
                     display: inline-block;
                     margin-top: 3px;
+                    position: relative;
 
                     >a {
                         font: 400 18px/1 "Saira Semi Condensed";
                         color: #171717;
+                        transition: 0.3s;
+
+                        &:hover::after {
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 1px;
+                            background-color: #727272;
+                            position: absolute;
+                            bottom: 25px;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+
+                        &:hover::before {
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 1px;
+                            background-color: #727272;
+                            position: absolute;
+                            top: 25px;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
                     }
                 }
             }
@@ -81,6 +117,7 @@
 // content ------------------------------------------------------------------------
 .content {
     width: 100%;
+    padding-top: 98px;
 
     .inner {
         width: 1180px;
@@ -374,6 +411,8 @@
 
     // content ------------------------------------------------------------------------
     .content {
+        padding-top: 70px;
+
         .inner {
             width: calc(100% - 70px);
 
