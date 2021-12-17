@@ -1192,10 +1192,20 @@ table, td, th {
     padding: 10px 0; } }
 #header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 10; }
+  z-index: 10;
+  transition: .5s; }
+  #header.scrollOn, #header:hover {
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    #header.scrollOn .inner .logo a, #header:hover .inner .logo a {
+      color: #171717; }
+    #header.scrollOn .inner .menuWeb #gnb > li > a, #header:hover .inner .menuWeb #gnb > li > a {
+      color: #171717; }
+    #header.scrollOn .inner .menuWeb #util > li > a i, #header:hover .inner .menuWeb #util > li > a i {
+      color: #171717; }
   #header .inner {
     width: 1180px;
     position: relative;
@@ -1209,7 +1219,8 @@ table, td, th {
         font: 500 30px/1 "Saira Semi Condensed";
         color: #fff;
         opacity: 0.9;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        transition: .5s; }
     #header .inner .menuWeb {
       display: flex;
       justify-content: space-between;
@@ -1236,7 +1247,8 @@ table, td, th {
         #header .inner .menuWeb #util > li a i {
           color: #fff;
           opacity: 0.9;
-          font-size: 25px; }
+          font-size: 25px;
+          transition: .5s; }
         #header .inner .menuWeb #util > li:first-child a i {
           font-size: 26px; }
     #header .inner .menuMb {

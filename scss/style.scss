@@ -19,10 +19,35 @@
 // header ---------------------------------------------------------------------------
 #header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     z-index: 10;
+    transition: .5s;
+
+    &.scrollOn, &:hover {
+        background: rgba(255,255,255,0.9);
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+
+        .inner {
+            .logo a {
+                color: #171717;
+            }
+
+            .menuWeb {
+                #gnb > li > a {
+                    color: #171717;
+                }
+
+                #util > li > a i {
+                    color: #171717;
+                }
+            }
+        }
+
+    }
+
+
 
     .inner {
         width: 1180px;
@@ -40,6 +65,7 @@
                 color: #fff;
                 opacity: 0.9;
                 letter-spacing: 1px;
+                transition: .5s;
             }
         }
 
@@ -81,6 +107,7 @@
                         color: #fff;
                         opacity: 0.9;
                         font-size: 25px;
+                        transition: .5s;
                     }
 
                     &:first-child a i {
