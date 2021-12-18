@@ -8,6 +8,11 @@ a { text-decoration: none; }
     opacity: 0;
 }
 
+.hidden {
+    overflow: hidden;
+    touch-action: none;
+}
+
 table,td,th {
     border-collapse: collapse;
 }

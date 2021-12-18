@@ -754,7 +754,8 @@
 @media screen and (max-width: 1200px) {
     // header ---------------------------------------------------------------------------
     #header {
-
+        width: 100vw;
+        
         &.on .inner .btnCall {
             &::after, &::before {
                 background-color: #171717;
@@ -837,7 +838,7 @@
                 width: 40px;
                 height: 21px;
                 position: absolute;
-                right: 35px;
+                right: 53px;
                 top: 50%;
                 transform: translateY(-50%);
                 z-index: 12;
