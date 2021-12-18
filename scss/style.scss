@@ -25,7 +25,7 @@
     z-index: 10;
     transition: .5s;
 
-    &.scrollOn, &:hover {
+    &.on {
         background: rgba(255,255,255,0.9);
         border-bottom: 1px solid #727272;
 
@@ -754,6 +754,13 @@
 @media screen and (max-width: 1200px) {
     // header ---------------------------------------------------------------------------
     #header {
+
+        &.on .inner .btnCall {
+            &::after, &::before {
+                background-color: #727272;
+            }
+        }
+
         .inner {
             width: 100%;
             padding: 35px;
@@ -778,8 +785,12 @@
                 width: 100%;
                 height: 100vh;
                 z-index: 11;
-                background-color: #171717;
+                background-color: #fff;
                 justify-content: space-between;
+
+                &.on {
+                    display: block;
+                }
 
                 #gnb {
                     width: calc(100% / 2);
@@ -794,7 +805,7 @@
                         a {
                             display: block;
                             font: 300 50px/1 "Saira Semi Condensed";
-                            color: #fff;
+                            color: #171717;
                             margin-bottom: 30px;
                             letter-spacing: 1px;
                         }
@@ -805,16 +816,16 @@
                     width: calc(100% / 2);
                     display: block;
                     height: auto;
-                    margin-top: 50vh;
-                    margin-right: 35px;
-                    text-align: right;
+                    text-align: left;
+                    margin-top: 100px;
+                    margin-left: 35px;
 
                     li {
                         margin-bottom: 3px;
 
                         a {
                             font: 300 14px/1 'Roboto';
-                            color: #fff;
+                            color: #171717;
                             letter-spacing: 1px;
                         }
                     }
@@ -830,6 +841,10 @@
                 top: 50%;
                 transform: translateY(-50%);
                 z-index: 12;
+
+                &.on::after,&.on::before {
+                    background-color: #727272;
+                }
                 
                 &::before {
                     position: absolute;
