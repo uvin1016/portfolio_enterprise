@@ -757,7 +757,7 @@
 
         &.on .inner .btnCall {
             &::after, &::before {
-                background-color: #727272;
+                background-color: #171717;
             }
         }
 
@@ -841,10 +841,6 @@
                 top: 50%;
                 transform: translateY(-50%);
                 z-index: 12;
-
-                &.on::after,&.on::before {
-                    background-color: #727272;
-                }
                 
                 &::before {
                     position: absolute;

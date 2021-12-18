@@ -225,7 +225,7 @@ table, td, th {
 
 @media screen and (max-width: 1200px) {
   #headerSub.on .inner .btnCall::after, #headerSub.on .inner .btnCall::before {
-    background-color: #727272; }
+    background-color: #171717; }
   #headerSub .inner {
     width: 100%;
     padding: 35px; }
@@ -1710,7 +1710,7 @@ table, td, th {
 
 @media screen and (max-width: 1200px) {
   #header.on .inner .btnCall::after, #header.on .inner .btnCall::before {
-    background-color: #727272; }
+    background-color: #171717; }
   #header .inner {
     width: 100%;
     padding: 35px; }
@@ -1770,8 +1770,6 @@ table, td, th {
       top: 50%;
       transform: translateY(-50%);
       z-index: 12; }
-      #header .inner .btnCall.on::after, #header .inner .btnCall.on::before {
-        background-color: #727272; }
       #header .inner .btnCall::before {
         position: absolute;
         top: 30%;
