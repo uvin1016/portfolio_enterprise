@@ -1255,22 +1255,54 @@ table, td, th {
     justify-content: space-between;
     flex-wrap: wrap; }
     .location .inner .contents .contact h2 {
-      display: flex;
-      justify-content: space-between; }
-      .location .inner .contents .contact h2 strong {
-        margin-left: 223px;
+      font: 400 20px/1 "Saira Semi Condensed";
+      width: 295px; }
+    .location .inner .contents .contact > div {
+      width: calc(100% - 295px); }
+      .location .inner .contents .contact > div p {
         font: 500 30px/1.2 "Roboto";
         color: #171717; }
-    .location .inner .contents .contact #contact-form {
-      width: calc(100% - 295px);
-      margin-left: auto;
-      display: flex;
-      align-content: space-between;
-      flex-direction: column; }
-      .location .inner .contents .contact #contact-form input {
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid #727272; }
+      .location .inner .contents .contact > div #contact-form {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px; }
+        .location .inner .contents .contact > div #contact-form input {
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid #727272;
+          margin-bottom: 10px;
+          font: 300 16px/1 "Roboto";
+          padding: 10px 0; }
+          .location .inner .contents .contact > div #contact-form input[type=submit] {
+            margin-top: 15px;
+            height: 40px;
+            border-top: 1px solid #727272;
+            border-bottom: 1px solid #727272;
+            margin-bottom: 0;
+            background-color: transparent;
+            font: 500 18px/1 "Saira Semi Condensed";
+            color: #727272;
+            transition: .5s;
+            cursor: pointer; }
+            .location .inner .contents .contact > div #contact-form input[type=submit]:hover {
+              border-top: 1px solid #171717;
+              border-bottom: 1px solid #171717;
+              background-color: #171717;
+              border-radius: 5px;
+              color: #fff; }
+        .location .inner .contents .contact > div #contact-form label {
+          font: 300 16px/1 "Roboto";
+          color: #727272;
+          margin-top: 20px;
+          margin-bottom: 10px; }
+        .location .inner .contents .contact > div #contact-form textarea {
+          border: none;
+          border: 1px solid #727272;
+          border-radius: 5px;
+          padding: 10px 0;
+          resize: none; }
 
 #header {
   width: 100%;

@@ -20,27 +20,69 @@
         flex-wrap: wrap;
 
         h2 {
-            display: flex;
-            justify-content: space-between;
+            font: 400 20px/1 "Saira Semi Condensed";
+            width: 295px;
+        }
 
-            strong {
-                margin-left: 223px;
+        >div {
+            width: calc(100% - 295px);
+
+            p {
                 font: 500 30px/1.2 "Roboto";
                 color: #171717;
             }
-        }
 
-        #contact-form {
-            width: calc(100% - 295px);
-            margin-left: auto;
-            display: flex;
-            align-content: space-between;
-            flex-direction: column;
+            #contact-form {
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top: 30px;
 
-            input {
-                width: 100%;
-                border: none;
-                border-bottom: 1px solid #727272;
+                input {
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid #727272;
+                    margin-bottom: 10px;
+                    font: 300 16px/1 "Roboto";
+                    padding: 10px 0;
+
+                    &[type=submit]{
+                        margin-top: 15px;
+                        height: 40px;
+                        border-top: 1px solid #727272;
+                        border-bottom: 1px solid #727272;
+                        margin-bottom: 0;
+                        background-color: transparent;
+                        font: 500 18px/1 "Saira Semi Condensed";
+                        color: #727272;
+                        transition: .5s;
+                        cursor: pointer;
+
+                        &:hover {
+                            border-top: 1px solid #171717;
+                            border-bottom: 1px solid #171717;
+                            background-color: #171717;
+                            border-radius: 5px;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                label {
+                    font: 300 16px/1 "Roboto";
+                    color: #727272;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+
+                textarea {
+                    border: none;
+                    border: 1px solid #727272;
+                    border-radius: 5px;
+                    padding: 10px 0;
+                    resize: none;
+                }
             }
         }
     }
