@@ -96,7 +96,6 @@
                     display: inline-block;
                     font: 400 28px/1 "Roboto";
                     color: #171717;
-                    margin-top: 5px;
                     margin-bottom: 15px;
                 }
 
@@ -318,7 +317,7 @@
 
                         &.on {
                             position: static;
-                            padding: 20px 0;
+                            padding: 20px 0 40px;
                             visibility: visible;
                             opacity: 1;
                             transform: translateY(0);
