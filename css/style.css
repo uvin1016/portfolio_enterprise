@@ -814,6 +814,33 @@ table, td, th {
       display: none; }
       .community .inner .contents article > div.on {
         display: block; }
+        .community .inner .contents article > div.on::after {
+          content: '';
+          display: block;
+          clear: both; }
+        .community .inner .contents article > div.on h4 {
+          font: 400 28px/1 "Roboto";
+          color: #171717;
+          float: left;
+          margin-top: 5px;
+          margin-bottom: 15px; }
+        .community .inner .contents article > div.on .searchBox {
+          float: right;
+          margin-bottom: 15px;
+          display: flex;
+          justify-content: center;
+          border: 1px solid rgba(0, 0, 0, 0.2); }
+          .community .inner .contents article > div.on .searchBox input[type=search] {
+            padding: 3px 10px;
+            border: none; }
+          .community .inner .contents article > div.on .searchBox button {
+            background: #f3f3f3;
+            border: none;
+            cursor: pointer; }
+            .community .inner .contents article > div.on .searchBox button i {
+              font-size: 18px;
+              padding: 4px;
+              color: #727272; }
       .community .inner .contents article > div.notice table {
         width: 100%;
         border-top: 1px solid rgba(0, 0, 0, 0.2); }
@@ -1281,6 +1308,7 @@ table, td, th {
             border-top: 1px solid #727272;
             border-bottom: 1px solid #727272;
             margin-bottom: 0;
+            border-radius: 5px;
             background-color: transparent;
             font: 500 18px/1 "Saira Semi Condensed";
             color: #727272;
@@ -1290,7 +1318,6 @@ table, td, th {
               border-top: 1px solid #171717;
               border-bottom: 1px solid #171717;
               background-color: #171717;
-              border-radius: 5px;
               color: #fff; }
         .location .inner .contents .contact > div #contact-form label {
           font: 300 16px/1 "Roboto";

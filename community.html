@@ -8,6 +8,7 @@
     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
+    <script src="js/tab.js" defer></script>
 </head>
 <body>
     <header id="headerSub">
@@ -71,7 +72,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <!-- 탭메뉴 버튼 -->
-                <ul>
+                <ul class="tabBtns">
                     <li class="on"><a href="#tabNotice">
                         <span>NOTICE</span>
                         <h4>Notice</h4>
@@ -88,9 +89,16 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit itaque tenetur harum.</p>
                     </a></li>
                 </ul>
-                <article>
+
+                <!-- 탭메뉴 박스 -->
+                <article class="tabBoxs">
                     <!-- notice 탭메뉴 컨텐츠 -->
                     <div class="notice on">
+                        <h4>Notice</h4>
+                        <div class="searchBox">
+                            <input type="search" name="search" id="search">
+                            <button class="searchBtn"><i class="las la-search"></i></button>
+                        </div>
                         <table summary="공지사항 번호, 공지사항 제목, 공지사항 작성일">
                             <caption class="hide">공지사항 게시판</caption>
                             <thead>

@@ -91,6 +91,45 @@
 
             &.on {
                 display: block;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+
+                h4 {
+                    font: 400 28px/1 "Roboto";
+                    color: #171717;
+                    float: left;
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                }
+
+                .searchBox {
+                    float: right;
+                    margin-bottom: 15px;
+                    display: flex;
+                    justify-content: center;
+                    border: 1px solid rgba(0,0,0,0.2);
+
+                    input[type=search]{
+                        padding: 3px 10px;
+                        border: none;
+                    }
+
+                    button {
+                        background: #f3f3f3;
+                        border: none;
+                        cursor: pointer;
+
+                        i {
+                            font-size: 18px;
+                            padding: 4px;
+                            color: #727272;
+                        }
+                    }
+                }
             }
 
             &.notice {
