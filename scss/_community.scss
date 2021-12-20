@@ -87,6 +87,12 @@
 
         >div {
             display: none;
+
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
             
             &.on {
                 width: 100%;
@@ -245,6 +251,7 @@
             }
 
             &.faq {
+
 
                 dl {
                     width: 100%;
@@ -527,6 +534,7 @@
     
         article {
             >div {
+
                 &.notice {
                     margin-top: 20px;
                     
@@ -643,6 +651,16 @@
     .community .inner .contents {
         article {
             >div {
+                &.on {
+                    .searchBox {
+                        float: none;
+                        width: 100%;
+    
+                        input[type=search]{
+                            width: calc(100% - 26px);
+                        }
+                    }
+                }
                 &.events {
                     ul {
                         li {

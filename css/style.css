@@ -822,6 +822,10 @@ table, td, th {
     width: 100%; }
     .community .inner .contents article > div {
       display: none; }
+      .community .inner .contents article > div::after {
+        content: '';
+        display: block;
+        clear: both; }
       .community .inner .contents article > div.on {
         width: 100%;
         display: block; }
@@ -1115,6 +1119,11 @@ table, td, th {
           .community .inner .contents article > div.events ul li a > div.txtBox h5 {
             margin-bottom: 30px; } }
 @media screen and (max-width: 372px) {
+  .community .inner .contents article > div.on .searchBox {
+    float: none;
+    width: 100%; }
+    .community .inner .contents article > div.on .searchBox input[type=search] {
+      width: calc(100% - 26px); }
   .community .inner .contents article > div.events ul li a > div.txtBox h5 {
     font-size: 30px; } }
 .join .inner .contents {
