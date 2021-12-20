@@ -59,7 +59,7 @@ table, td, th {
         background-color: #171717;
         width: 100%;
         height: 1px;
-        animation: moving .5s ease-out; }
+        animation: effect .5s ease-out; }
     #headerSub.on .inner .menuWeb #util > li > a i {
       color: #171717; }
   #headerSub .inner {
@@ -410,7 +410,7 @@ table, td, th {
             display: none; }
       #footerSub .inner .ftBttm p {
         width: 100%; } }
-@keyframes moving {
+@keyframes effect {
   0% {
     width: 0px; }
   25% {
@@ -776,7 +776,7 @@ table, td, th {
     text-align: center;
     margin-bottom: 40px; }
   .community .inner .contents > ul {
-    margin-bottom: 40px; }
+    margin-bottom: 50px; }
     .community .inner .contents > ul::after {
       content: '';
       display: block;
@@ -821,25 +821,22 @@ table, td, th {
   .community .inner .contents article {
     width: 100%; }
     .community .inner .contents article > div {
-      width: 100%;
       display: none; }
       .community .inner .contents article > div.on {
+        width: 100%;
         display: block; }
-        .community .inner .contents article > div.on::after {
-          content: '';
-          display: block;
-          clear: both; }
         .community .inner .contents article > div.on h4 {
+          display: inline-block;
           font: 400 28px/1 "Roboto";
           color: #171717;
-          float: left;
           margin-top: 5px;
           margin-bottom: 15px; }
         .community .inner .contents article > div.on .searchBox {
           float: right;
-          margin-bottom: 15px;
           display: flex;
           justify-content: center;
+          width: fit-content;
+          margin-bottom: 15px;
           border: 1px solid rgba(0, 0, 0, 0.2); }
           .community .inner .contents article > div.on .searchBox input[type=search] {
             padding: 3px 10px;
@@ -931,6 +928,7 @@ table, td, th {
         .community .inner .contents article > div.faq dl dt {
           padding: 20px 0;
           border-top: 1px solid rgba(0, 0, 0, 0.2);
+          transition: .5s;
           cursor: pointer; }
           .community .inner .contents article > div.faq dl dt::after {
             content: '';
@@ -939,7 +937,7 @@ table, td, th {
           .community .inner .contents article > div.faq dl dt span {
             float: left;
             width: 30px;
-            font: bolder 18px/1 "Roboto";
+            font: bold 18px/1 "Roboto";
             color: #171717; }
           .community .inner .contents article > div.faq dl dt h5 {
             float: left;
@@ -967,6 +965,7 @@ table, td, th {
             transform: translateY(-50%); }
         .community .inner .contents article > div.faq dl dd {
           padding: 20px 0 40px;
+          transition: .5s;
           display: none; }
           .community .inner .contents article > div.faq dl dd.on {
             display: block;
@@ -1376,7 +1375,7 @@ table, td, th {
         background-color: #171717;
         width: 100%;
         height: 1px;
-        animation: moving .5s ease-out; }
+        animation: effect .5s ease-out; }
     #header.on .inner .menuWeb #util > li > a i {
       color: #171717; }
   #header .inner {
@@ -2186,7 +2185,7 @@ table, td, th {
             display: none; }
       #footer .inner .ftBttm p {
         width: 100%; } }
-@keyframes moving {
+@keyframes effect {
   0% {
     width: 0px; }
   25% {
