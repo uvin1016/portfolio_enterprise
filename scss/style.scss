@@ -37,6 +37,31 @@
             .menuWeb {
                 #gnb > li > a {
                     color: #171717;
+                    position: relative;
+                    
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        background-color: #171717;
+                        width: 0%;
+                        height: 1px;
+                        transition: .5s;
+                    }
+
+                    &:hover::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background-color: #171717;
+                        width: 100%;
+                        height: 1px;
+                        animation: moving .5s ease-out;
+                    }
                 }
 
                 #util > li > a i {
@@ -91,29 +116,7 @@
                         opacity: 0.9;
                         transition: .3s;
 
-                        &:hover::after {
-                            content: '';
-                            display: block;
-                            width: 100%;
-                            height: 1px;
-                            background-color: #727272;
-                            position: absolute;
-                            bottom: 25px;
-                            left: 50%;
-                            transform: translate(-50%,-50%);
-                        }
-
-                        &:hover::before {
-                            content: '';
-                            display: block;
-                            width: 100%;
-                            height: 1px;
-                            background-color: #727272;
-                            position: absolute;
-                            top: 25px;
-                            left: 50%;
-                            transform: translate(-50%,-50%);
-                        }
+                        
                     }
                 }
             }
@@ -1470,4 +1473,14 @@
             }
         }
     }
+}
+
+
+// Web menu 호버했을때 매니메이션
+@keyframes moving {
+    0% {width: 0px;}
+    25% {width: 25%;}
+    50% {width: 50%;}
+    75% {width: 75%;}
+    100% {width: 100%;}
 }
