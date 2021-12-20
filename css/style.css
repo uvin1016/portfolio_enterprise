@@ -964,11 +964,19 @@ table, td, th {
             right: 0;
             transform: translateY(-50%); }
         .community .inner .contents article > div.faq dl dd {
-          padding: 20px 0 40px;
-          transition: .5s;
-          display: none; }
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-50%);
+          transition: .3s; }
           .community .inner .contents article > div.faq dl dd.on {
-            display: block;
+            position: static;
+            padding: 20px 0;
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
             border-top: 1px solid rgba(0, 0, 0, 0.1); }
           .community .inner .contents article > div.faq dl dd::after {
             content: '';
