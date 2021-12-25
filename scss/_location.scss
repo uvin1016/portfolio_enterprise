@@ -1,9 +1,187 @@
 .location .inner .contents {
     padding: 150px 0;
 
-    h2 {
-        font: 400 20px/1 "Saira Semi Condensed";
-        margin-bottom: 15px;
+    .location {
+        width: 100%;
+
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .titBox {
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            h2 {
+                float: left;
+                font: 400 20px/1 "Saira Semi Condensed";
+                color: #171717;
+                margin-bottom: 15px;
+            }
+
+            .traffic {
+                float: right;
+                
+                &::after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+
+                >li {
+                    float: left;
+                    margin-right: 5px;
+
+                    p {
+                        font: 400 14px/1 "Saira Semi Condensed";
+                        margin-right: 10px;
+                    }
+
+                    a {
+                        display: block;
+                        padding: 0 5px;
+                        font: 300 14px/1 "Saira Semi Condensed";
+                        color: #727272;
+                    }
+                }
+            }
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+            border-top: 1px solid #171717;
+            border-bottom: 1px solid #171717;
+        }
+
+        .branch {
+            float: right;
+            margin-top: 15px;
+
+            li {
+                float: left;
+
+                a {
+                    display: block;
+                    padding: 10px 20px;
+                    font: 400 16px/1 "Roboto";
+                    color: #171717;
+                }
+            }
+        }
+    }
+
+    .contact {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 150px;
+
+        .left {
+            width: 295px;
+            position: relative;
+
+            h2 {
+                position: sticky;
+                float: left;
+                font: 400 20px/1 "Saira Semi Condensed";
+                color: #171717;
+                margin-bottom: 15px;
+            }
+        }
+
+        .right {
+            width: calc(100% - 295px);
+
+            h3 {
+                font: 500 30px/1.2 "Roboto";
+                color: #171717;
+                margin-bottom: 50px;
+            }
+
+            >ul {
+                width: 100%;
+                margin-bottom: 100px;
+                display: flex;
+                
+                >li {
+                    display: block;
+                    margin-right: 30px;
+                    width: calc(100% /3);
+
+                    >p {
+                        font: 400 18px/1 "Roboto";
+                        color: #171717;
+                        margin-bottom: 15px;
+                    }
+
+                    a {
+                        display: block;
+                        font: 300 16px/1.2 "Roboto";
+                        color: #727272;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            #contact-form {
+                width: 100%;
+
+                input[type=text]{
+                    width: 100%;
+                    padding: 10px 0;
+                    margin-bottom: 20px;
+                    border: none;
+                    border-bottom: 1px solid rgba(0,0,0,0.1);
+                    font: 300 16px/1  "Roboto";
+                    color: #171717;
+
+                    &::placeholder {
+                        font: 300 24px/1  "Roboto";
+                        color: #aaa;
+                    }
+                }
+
+                label {
+                    width: 100%;
+                    font: 300 24px/1  "Roboto";
+                    color: #aaa;
+                }
+                
+                textarea {
+                    margin-top: 10px;
+                    width: 100%;
+                    height: 150px;
+                    border: none;
+                    border-bottom: 1px solid rgba(0,0,0,0.1);
+                    resize: none;
+                }
+                input[type=submit]{
+                    width: 100%;
+                    height: 50px;
+                    border: 1px solid #171717;
+                    border-radius: 5px;
+                    font: 300 24px/50px "Roboto";
+                    margin-top: 20px;
+                    text-align: center;
+                    color: #171717;
+                    cursor: pointer;
+                    background-color: transparent;
+                    transition: .3s;
+
+                    &:hover {
+                        background-color: #171717;
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
     }
 
 }

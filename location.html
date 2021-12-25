@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio_enterprise</title>
     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
-    <link rel="stylesheet" href="css/style.css">
     <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
     <script src="js/form.js" defer></script>
 </head>
@@ -69,8 +69,61 @@
 
             <!-- 컨텐츠 작성 -->
             <div class="contents">
-                <h2>Location</h2>
+                <div class="location">
+                    <div class="titBox">
+                        <h2>Location</h2>
+                        <ul class="traffic">
+                            <li><p>Traffic</p></li>
+                            <li><a href="#">On</a></li>
+                            <li><a href="#">Off</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="map"></div>
+                    <ul class="branch">
+                        <li><a href="#">Suwon</a></li>
+                        <li><a href="#">Jeju</a></li>
+                        <li><a href="#">Busan</a></li>
+                    </ul>
+                </div>
                 
+                <div class="contact">
+                    <div class="left">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="right">
+                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa omnis sunt ducimus ipsum aliquam odio.</h3>
+                        <ul>
+                            <li>
+                                <p>Suwon</p>
+                                <a href="#">Obcaecati neque optio cupiditate saepe est consectetur, adipisicing elit.</a>
+                                <a href="#">(+82)10-1234-5678</a>
+                            </li>
+                            <li>
+                                <p>Jeju</p>
+                                <a href="#">Dipisicing elit. Modi quo ratione libero at vitae eos dignissimos.</a>
+                                <a href="#">(+82)10-1234-5678</a>
+                            </li>
+                            <li>
+                                <p>Busan</p>
+                                <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a>
+                                <a href="#">(+82)10-1234-5678</a>
+                            </li>
+                        </ul>
+
+                        <h3>Fugiat minus eum perferendis fuga blanditiis totam eius ratione consequuntur similique ab illo ipsa aspernatur animi.</h3>
+                        <form id="contact-form">
+                            <input type="hidden" name="contact_number">
+                            <input type="text" required placeholder="Name" name="to_name">
+                            <input type="text" required placeholder="Tel" name="contact">
+                            <input type="text" required placeholder="Email" name="from_name">
+                            <label for="txtinput">If you would like to project with us, please contact us!</label>
+                            <textarea required id="txtinput" name="message_html"></textarea>
+                            <input type="submit" value="Contact us">
+                        </form>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
