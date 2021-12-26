@@ -1295,7 +1295,8 @@ table, td, th {
 .location .inner .contents {
   padding: 150px 0; }
   .location .inner .contents .location {
-    width: 100%; }
+    width: 100%;
+    height: 580px; }
     .location .inner .contents .location::after {
       content: '';
       display: block;
@@ -1318,28 +1319,38 @@ table, td, th {
       .location .inner .contents .location .titBox .traffic > li {
         float: left;
         margin-right: 5px; }
+        .location .inner .contents .location .titBox .traffic > li.on a {
+          font: 500 14px/1 "Saira Semi Condensed";
+          color: #171717;
+          transition: .5s; }
         .location .inner .contents .location .titBox .traffic > li p {
           font: 400 14px/1 "Saira Semi Condensed";
           margin-right: 10px; }
         .location .inner .contents .location .titBox .traffic > li a {
           display: block;
           padding: 0 5px;
-          font: 300 14px/1 "Saira Semi Condensed";
-          color: #727272; }
+          font: 500 14px/1 "Saira Semi Condensed";
+          color: #aaa; }
     .location .inner .contents .location #map {
+      position: absolute;
+      left: 0;
       width: 100%;
-      height: 400px;
-      border-top: 1px solid #171717;
-      border-bottom: 1px solid #171717; }
+      height: 500px;
+      filter: grayscale(100%); }
     .location .inner .contents .location .branch {
       float: right;
-      margin-top: 15px; }
+      margin-top: 510px; }
       .location .inner .contents .location .branch li {
         float: left; }
         .location .inner .contents .location .branch li a {
           display: block;
           padding: 10px 20px;
           font: 400 16px/1 "Roboto";
+          color: #aaa;
+          transition: .5s; }
+        .location .inner .contents .location .branch li.on > a {
+          border-radius: 5px;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
           color: #171717; }
   .location .inner .contents .contact {
     width: 100%;
@@ -1351,10 +1362,10 @@ table, td, th {
       position: relative; }
       .location .inner .contents .contact .left h2 {
         position: sticky;
+        top: 50px;
         float: left;
         font: 400 20px/1 "Saira Semi Condensed";
-        color: #171717;
-        margin-bottom: 15px; }
+        color: #171717; }
     .location .inner .contents .contact .right {
       width: calc(100% - 295px); }
       .location .inner .contents .contact .right h3 {
@@ -1363,7 +1374,7 @@ table, td, th {
         margin-bottom: 50px; }
       .location .inner .contents .contact .right > ul {
         width: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 150px;
         display: flex; }
         .location .inner .contents .contact .right > ul > li {
           display: block;
@@ -1377,7 +1388,10 @@ table, td, th {
             display: block;
             font: 300 16px/1.2 "Roboto";
             color: #727272;
+            transition: .5s;
             margin-bottom: 10px; }
+            .location .inner .contents .contact .right > ul > li a:hover {
+              color: #ccc; }
       .location .inner .contents .contact .right #contact-form {
         width: 100%; }
         .location .inner .contents .contact .right #contact-form input[type=text] {
@@ -1386,11 +1400,15 @@ table, td, th {
           margin-bottom: 20px;
           border: none;
           border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          font: 300 16px/1  "Roboto";
-          color: #171717; }
+          font: 300 18px/1  "Roboto";
+          color: #171717;
+          transition: 1s; }
           .location .inner .contents .contact .right #contact-form input[type=text]::placeholder {
             font: 300 24px/1  "Roboto";
             color: #aaa; }
+          .location .inner .contents .contact .right #contact-form input[type=text]:focus {
+            outline: none;
+            border-bottom: 1px solid #171717; }
         .location .inner .contents .contact .right #contact-form label {
           width: 100%;
           font: 300 24px/1  "Roboto";
@@ -1401,7 +1419,12 @@ table, td, th {
           height: 150px;
           border: none;
           border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          resize: none; }
+          resize: none;
+          font: 300 18px/1  "Roboto";
+          transition: 1s; }
+          .location .inner .contents .contact .right #contact-form textarea:focus {
+            outline: none;
+            border-bottom: 1px solid #171717; }
         .location .inner .contents .contact .right #contact-form input[type=submit] {
           width: 100%;
           height: 50px;
