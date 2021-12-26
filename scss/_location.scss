@@ -27,6 +27,7 @@
 
             .traffic {
                 float: right;
+                padding-top: 5px;
                 
                 &::after {
                     content: '';
@@ -220,5 +221,91 @@
 
         }
     }
+}
 
+@media screen and (max-width: 900px) {
+    .location .inner .contents {
+        .contact {
+            flex-direction: column;
+            .left {
+                width: 100%;
+                margin-bottom: 15px;
+
+                h2 {
+                    position: relative;
+                    top: 0;
+                }
+            }
+    
+            .right {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 510px){
+    .location .inner .contents {
+        .contact {
+            .right {
+                h3 {
+                    font: 500 24px/1.2 "Roboto";
+                }
+    
+                >ul {
+                    flex-direction: column;
+                    margin-bottom: 90px;
+
+                    >li {
+                        margin-right: 0;
+                        margin-bottom: 30px;
+                        width: 100%;
+    
+                        >p {
+                            font: 400 16px/1 "Roboto";
+                        }
+    
+                        a {
+                            font: 300 14px/1.2 "Roboto";
+                        }
+                    }
+                }
+    
+                #contact-form {
+                    input[type=text]{
+                        font: 300 16px/1  "Roboto";
+    
+                        &::placeholder {
+                            font: 300 20px/1  "Roboto";
+                        }
+                    }
+    
+                    label {
+                        font: 300 20px/1.2  "Roboto";
+                    }
+    
+                    input[type=submit]{
+                        font: 300 20px/50px "Roboto";
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 331px) {
+    .location .inner .contents {
+        .location {
+            .branch {
+                li {
+                    
+                    a {
+                        padding: 10px 18px;
+                        font: 400 14px/1 "Roboto";
+                    }
+                }
+            }
+        }
+    }    
 }

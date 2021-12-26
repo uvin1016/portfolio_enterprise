@@ -2,6 +2,7 @@ var container = document.getElementById("map");
 var branch_btns = document.querySelectorAll(".branch li");
 const t_on = document.querySelectorAll(".traffic li")[1];
 const t_off = document.querySelectorAll(".traffic li")[2];
+let zoom = false;
 var options = {
 	center: new kakao.maps.LatLng(37.255984060183515,127.06404403910398),
 	level: 3
@@ -96,3 +97,4 @@ function setZoomable(zoomable) {
     // 마우스 휠로 지도 확대,축소 가능여부를 설정합니다
     map.setZoomable(zoomable);    
 }
+setZoomable(zoom);
