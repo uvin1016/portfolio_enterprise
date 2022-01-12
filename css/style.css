@@ -1381,20 +1381,22 @@ html, body {
       font: 300 16px/1 'Noto Sans KR';
       color: #171717; }
     .gallery .inner .contents #wrap #list {
-      width: 100%; }
-      .gallery .inner .contents #wrap #list::after {
-        content: '';
-        display: block;
-        clear: both; }
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: 1s; }
+      .gallery .inner .contents #wrap #list.on {
+        opacity: 1;
+        transform: translateY(0px); }
       .gallery .inner .contents #wrap #list li {
-        width: calc((100% / 3) - 20px);
-        float: left;
-        padding: 20px 0px;
-        margin-right: 30px;
-        border-top: 1px solid rgba(0, 0, 0, 0.3); }
-        .gallery .inner .contents #wrap #list li:nth-of-type(3n) {
-          margin-right: 0px; }
+        width: calc(100%/3);
+        padding: 0px 20px; }
         .gallery .inner .contents #wrap #list li div {
+          border-top: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px 0px;
           width: 100%; }
           .gallery .inner .contents #wrap #list li div p {
             width: 100%;
@@ -1407,10 +1409,10 @@ html, body {
             .gallery .inner .contents #wrap #list li div p i {
               float: left;
               font-size: 16px;
-              margin-right: 8px; }
+              margin-right: 5px; }
             .gallery .inner .contents #wrap #list li div p span {
               float: right;
-              font: 400 14px/18px 'Roboto';
+              font: 300 14px/18px 'Roboto';
               color: rgba(0, 0, 0, 0.8); }
           .gallery .inner .contents #wrap #list li div h3 {
             padding: 10px 0px 15px;
@@ -1420,8 +1422,109 @@ html, body {
             .gallery .inner .contents #wrap #list li div a img {
               width: 100%;
               height: 100%;
-              object-fit: contain; }
+              object-fit: contain;
+              filter: grayscale(100%);
+              transition: .5s; }
+            .gallery .inner .contents #wrap #list li div a:hover img {
+              filter: grayscale(0); }
 
+@media screen and (max-width: 1200px) {
+  .gallery .inner .contents .btns {
+    width: 25%; }
+  .gallery .inner .contents #wrap {
+    width: 75%; } }
+@media screen and (max-width: 1000px) {
+  .gallery .inner .contents #wrap #list li {
+    width: calc(100%/2); } }
+@media screen and (max-width: 769px) {
+  .gallery .inner .contents {
+    flex-direction: column; }
+    .gallery .inner .contents .btns {
+      width: 100%;
+      flex-direction: row;
+      margin-bottom: 50px;
+      padding-left: 20px; }
+      .gallery .inner .contents .btns li {
+        margin-bottom: 0px;
+        margin-right: 15px; }
+        .gallery .inner .contents .btns li button {
+          font: 400 16px/33px "Saira Semi Condensed"; }
+        .gallery .inner .contents .btns li#searchBox {
+          margin-left: auto;
+          margin-right: 20px; }
+          .gallery .inner .contents .btns li#searchBox #search {
+            font: 400 16px/1 "Saira Semi Condensed"; }
+          .gallery .inner .contents .btns li#searchBox .searchBtn i {
+            font-size: 16px; }
+    .gallery .inner .contents #wrap {
+      width: 100%; } }
+@media screen and (max-width: 548px) {
+  .gallery .inner .contents .btns {
+    flex-wrap: wrap;
+    padding-left: 10px; }
+    .gallery .inner .contents .btns li {
+      margin-right: 10px; }
+      .gallery .inner .contents .btns li button {
+        font: 400 16px/33px "Saira Semi Condensed"; }
+      .gallery .inner .contents .btns li#searchBox {
+        margin-right: 10px; }
+        .gallery .inner .contents .btns li#searchBox #search {
+          font: 400 16px/1 "Saira Semi Condensed"; }
+        .gallery .inner .contents .btns li#searchBox .searchBtn i {
+          font-size: 16px; }
+  .gallery .inner .contents #wrap {
+    width: 100%; }
+    .gallery .inner .contents #wrap #list li {
+      padding: 0px 10px; }
+      .gallery .inner .contents #wrap #list li div p {
+        font: 300 12px/18px 'Roboto'; }
+        .gallery .inner .contents #wrap #list li div p span {
+          font: 300 12px/18px 'Roboto'; }
+      .gallery .inner .contents #wrap #list li div h3 {
+        padding: 10px 0px 10px;
+        font: 400 16px/1.2 'Saira Semi Condensed'; } }
+@media screen and (max-width: 510px) {
+  .gallery .inner .contents .btns {
+    padding: 0px 10px; }
+    .gallery .inner .contents .btns li {
+      margin-right: 10px; }
+      .gallery .inner .contents .btns li#searchBox {
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 0px; }
+        .gallery .inner .contents .btns li#searchBox #search {
+          width: calc(100% - 26px); }
+  .gallery .inner .contents #wrap #list li {
+    width: 100%; }
+    .gallery .inner .contents #wrap #list li div p {
+      font: 300 12px/18px 'Roboto'; }
+      .gallery .inner .contents #wrap #list li div p span {
+        font: 300 12px/18px 'Roboto'; }
+    .gallery .inner .contents #wrap #list li div h3 {
+      padding: 10px 0px 10px;
+      font: 400 16px/1.2 'Saira Semi Condensed'; } }
+@media screen and (max-width: 336px) {
+  .gallery .inner .contents .btns {
+    padding: 0px 10px; }
+    .gallery .inner .contents .btns li {
+      margin-right: 10px; }
+      .gallery .inner .contents .btns li button {
+        font: 400 14px/33px "Saira Semi Condensed"; }
+      .gallery .inner .contents .btns li#searchBox {
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 0px; }
+        .gallery .inner .contents .btns li#searchBox #search {
+          width: calc(100% - 26px); }
+  .gallery .inner .contents #wrap #list li {
+    width: 100%; }
+    .gallery .inner .contents #wrap #list li div p {
+      font: 300 12px/18px 'Roboto'; }
+      .gallery .inner .contents #wrap #list li div p span {
+        font: 300 12px/18px 'Roboto'; }
+    .gallery .inner .contents #wrap #list li div h3 {
+      padding: 10px 0px 10px;
+      font: 400 16px/1.2 'Saira Semi Condensed'; } }
 @keyframes btnActive {
   0% {
     width: 0%; }

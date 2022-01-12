@@ -1,9 +1,9 @@
 const main = document.querySelector(".gallery");
-const frame = main.querySelector("#list");
-const loading = frame.querySelector(".loading");
-const search = frame.querySelector("#search");
-const btnSearch = frame.querySelector(".btnSearch");
-const errTxt = frame.querySelector(".errTxt");
+const frame = document.querySelector("#list");
+const loading = document.querySelector(".loading");
+const search = document.querySelector("#search");
+const btnSearch = document.querySelector(".btnSearch");
+const errTxt = document.querySelector(".errTxt");
 
 const api_key = '04c5ace5347f338643f5a46006aa1910';
 const format = 'json';
@@ -30,6 +30,11 @@ const url4 = `${path}method=${method4}&api_key=${api_key}&per_page=${count}&form
 callData(url1);
 
 function callData(url){
+    frame.innerHTML = "";
+    loading.classList.remove("off");
+    frame.classList.remove("on");
+    errTxt.style.display = "none";
+
     fetch(url)
     .then(data=>{
         let result = data.json();
@@ -39,7 +44,14 @@ function callData(url){
         let items = json.photos.photo;
         console.log(items);
 
-        createList(items);
+        if(items.length > 0){
+            createList(items);
+            delayLoading();
+        }else{
+            loading.classList.add("on");
+            errTxt.innerText = "검색하신 이미지의 데이터가 존재하지 않습니다.";
+            errTxt.style.display = "block";
+        }
     })
 }
 
@@ -47,7 +59,6 @@ function createList(items){
     let htmls = "";
 
     items.forEach(data => {
-        console.log(data);
         let imgSrcBig = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg`;
         let imgSrc = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_z.jpg`;
 
@@ -63,4 +74,37 @@ function createList(items){
     });
 
     frame.innerHTML = htmls;
+}
+
+function delayLoading(){
+    const imgs = frame.querySelectorAll("img");
+    const len = imgs.length;
+    let num = 0;
+
+    for(let img of imgs){
+        let thumb = img.closest(".item").querySelector(".thumb");
+        thumb.onerror = e => {
+            e.currentTarget.closest(".item").querySelector(".thumb").setAttribute("img","noneimg.jpg");
+        }
+
+        img.onload = () => {
+            num++;
+
+            if(num === len){
+                isoLayout();
+            }
+        }
+    }
+}
+
+function isoLayout(){
+    loading.classList.add("off");
+    frame.classList.add("on");
+    errTxt.style.display = 'none';
+
+    new Isotope('#list',{
+        itemSelector : ".item",
+        columnWidth : ".item",
+        transitionDuration : "0.5s"
+    })
 }
