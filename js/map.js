@@ -4,7 +4,7 @@ const t_on = document.querySelectorAll(".traffic li")[1];
 const t_off = document.querySelectorAll(".traffic li")[2];
 let zoom = false;
 var options = {
-	center: new kakao.maps.LatLng(37.255984060183515,127.06404403910398),
+	center: new kakao.maps.LatLng(37.2845479,127.0550941),
 	level: 3
 };
 
@@ -14,7 +14,7 @@ var map = new kakao.maps.Map(container, options); // 지도를 생성합니다
 var positions = [
     {
         title: '수원본점', 
-        latlng: new kakao.maps.LatLng(37.255984060183515,127.06404403910398),
+        latlng: new kakao.maps.LatLng(37.2845479,127.0550941),
         imgSrc: 'img/marker.png',
         imgSize: new kakao.maps.Size(25,34),
         imgPos: {offset: new kakao.maps.Point(12,34)},
