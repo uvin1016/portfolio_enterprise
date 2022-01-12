@@ -2,13 +2,14 @@ const main = document.querySelector(".gallery");
 const frame = document.querySelector("#list");
 const loading = document.querySelector(".loading");
 const search = document.querySelector("#search");
-const btnSearch = document.querySelector(".btnSearch");
+const btnSearch = document.querySelector(".searchBtn");
+const btns = document.querySelectorAll(".btns li");
 const errTxt = document.querySelector(".errTxt");
 
 const api_key = '04c5ace5347f338643f5a46006aa1910';
 const format = 'json';
 const path = 'https://www.flickr.com/services/rest/?';
-const count = 15;
+const count = 16;
 const method1 = 'flickr.interestingness.getList';
 const method2 = 'flickr.people.getPhotos';
 const method3 = 'flickr.favorites.getList';
@@ -22,12 +23,52 @@ const user_id = '194310676@N02';
 const url2 = `${path}method=${method2}&api_key=${api_key}&user_id=${user_id}&per_page=${count}&format=${format}&nojsoncallback=1&privacy_filter=1`;
 
 // Landscape
-const url3 = `${path}method=${method3}&api_key=${api_key}&per_page=${count}&format=${format}&nojsoncallback=1&privacy_filter=1`;
-
-// Search
-const url4 = `${path}method=${method4}&api_key=${api_key}&per_page=${count}&format=${format}&nojsoncallback=1&privacy_filter=1`;
+const url3 = `${path}method=${method3}&api_key=${api_key}&user_id=${user_id}&per_page=${count}&format=${format}&nojsoncallback=1&privacy_filter=1`;
 
 callData(url1);
+
+btns[0].addEventListener("click",e=>{
+    btnActive(e);
+    callData(url1);
+});
+
+btns[1].addEventListener("click",e=>{
+    btnActive(e);
+    callData(url2);
+});
+
+btns[2].addEventListener("click",e=>{
+    btnActive(e);
+    callData(url3);
+});
+
+search.addEventListener("keypress",e=>{
+    if(e.keyCode == 13){
+        let tag = search.value;
+        const url4 = `${path}method=${method4}&api_key=${api_key}&per_page=${count}&format=${format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
+
+        if(tag != ""){
+            callData(url4);
+        }else{
+            errTxt.innerText = "검색어를 입력하세요."
+            errTxt.style.display = "block";
+            frame.innerHTML = "";
+        }
+    }
+});
+
+btnSearch.addEventListener("click",()=>{
+    let tag = search.value;
+    const url4 = `${path}method=${method4}&api_key=${api_key}&per_page=${count}&format=${format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
+
+    if(tag != ""){
+        callData(url4);
+    }else{
+        errTxt.innerText = "검색어를 입력하세요."
+        errTxt.style.display = "block";
+        frame.innerHTML = "";
+    }
+});
 
 function callData(url){
     frame.innerHTML = "";
@@ -42,7 +83,7 @@ function callData(url){
     })
     .then(json=>{
         let items = json.photos.photo;
-        console.log(items);
+        console.log(json);
 
         if(items.length > 0){
             createList(items);
@@ -95,6 +136,13 @@ function delayLoading(){
             }
         }
     }
+}
+
+function btnActive (e){
+    for(let el of btns){
+        el.classList.remove("on");
+    }
+    e.currentTarget.classList.add('on');
 }
 
 function isoLayout(){
