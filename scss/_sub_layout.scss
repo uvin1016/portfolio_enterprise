@@ -311,7 +311,7 @@
 @media screen and (max-width: 1200px) {
     // header ---------------------------------------------------------------------------
     #headerSub {
-        width: 100vw;
+        width: 100%;
         
         &.on .inner .btnCall {
             &::after, &::before {

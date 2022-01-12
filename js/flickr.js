@@ -1,3 +1,4 @@
+const isBody = document.querySelector("body");
 const main = document.querySelector(".gallery");
 const frame = document.querySelector("#list");
 const loading = document.querySelector(".loading");
@@ -69,6 +70,42 @@ btnSearch.addEventListener("click",()=>{
         frame.innerHTML = "";
     }
 });
+
+frame.addEventListener("click",e=>{
+    e.preventDefault();
+
+    if(e.target == frame) return;
+
+    let target = e.target.closest(".item").querySelector('.thumb');
+    if(e.target == target){
+        isBody.style.overflowY = "hidden";
+
+        let imgSrc = target.parentElement.getAttribute("href");
+        let pop = document.createElement("aside");
+        pop.classList.add("pop");
+
+        let pops = `<div class="con">
+                        <img src="${imgSrc}">
+                    </div>
+                    <span class="close"><i class="las la-times"></i></span>`;
+        pop.innerHTML = pops;
+        isBody.appendChild(pop);
+    }
+})
+
+isBody.addEventListener("click",e=>{
+    let pop = isBody.querySelector(".pop");
+
+    if(pop != null){
+        let close = pop.querySelector(".close i");
+
+        if(e.target === close){
+            isBody.style.overflowY = "auto";
+            pop.remove();
+        }
+    }
+    console.log(e);
+})
 
 function callData(url){
     frame.innerHTML = "";
