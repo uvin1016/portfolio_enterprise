@@ -1,0 +1,184 @@
+.youtube .inner .contents {
+    .vidList {
+        padding: 150px 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        article {
+            width: 50%;
+            padding: 0 30px;
+            transition: .5s;
+
+            &:nth-of-type(11) .inner, &:nth-of-type(12) .inner{
+                border-bottom: 1px solid rgba(0,0,0,0.5);
+            }
+
+            >.inner {
+                width: 100%;
+                padding: 30px 0;
+                border-top: 1px solid rgba(0,0,0,0.5);
+
+                .pic {
+                    display: block;
+                    width: 100%;
+                    height: 290px;
+                    overflow: hidden;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: .5s;
+                    }
+                }
+
+                .con {
+                    margin-top: 20px;
+
+                    h2 {
+                        font: 600 24px/1.2 'Roboto';
+                        color: #171717;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font: 300 16px/1.2 'Roboto';
+                        color: #555;
+                        margin-bottom: 15px;
+                    }
+
+                    span {
+                        font: 300 14px/1 'Saira Semi Condensed';
+                        color: #555;
+                    }
+                }
+            }
+
+            &:hover {
+                .inner .pic img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        >.pop {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 5vw;
+            box-sizing: border-box;
+
+            .btnClose {
+                display: block;
+                position: absolute;   
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+                z-index: 10;
+                color: #fff;
+
+                i {
+                    font-size: 30px;
+                    color: rgba(255,255,255,0.5);
+                    transition: .5s;
+                }
+
+                &:hover {
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .youtube .inner .contents {
+        .vidList {
+            article {
+                >.inner {
+                    .pic {
+                        height: 185px;
+                    }
+                }
+            }
+    
+            >.pop {
+                padding: 10vh 5vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 879px) {
+    .youtube .inner .contents {
+        .vidList {
+            article {
+                >.inner {
+                    .pic {
+                        height: 145px;
+                    }
+                }
+            }
+
+            >.pop {
+                padding: 30vh 5vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .youtube .inner .contents {
+        .vidList {
+            article {
+                width: 100%;
+                padding: 0;
+
+                &:nth-of-type(11) .inner {
+                    border-bottom: none;
+                }
+
+                >.inner {
+                    .pic {
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .youtube .inner .contents {
+        .vidList {
+            article {
+                
+                >.inner {
+                    .pic {
+                        height: 229px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 497px) {
+    .youtube .inner .contents {
+        .vidList {
+            article {
+                
+                >.inner {
+                    .pic {
+                        height: 130px;
+                    }
+                }
+            }
+        }
+    }
+}

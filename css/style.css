@@ -1286,6 +1286,93 @@ table, td, th {
     font: 400 14px/1 "Noto Sans KR";
     width: 100px;
     padding: 10px 0; } }
+.youtube .inner .contents .vidList {
+  padding: 150px 0;
+  display: flex;
+  flex-wrap: wrap; }
+  .youtube .inner .contents .vidList article {
+    width: 50%;
+    padding: 0 30px;
+    transition: .5s; }
+    .youtube .inner .contents .vidList article:nth-of-type(11) .inner, .youtube .inner .contents .vidList article:nth-of-type(12) .inner {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+    .youtube .inner .contents .vidList article > .inner {
+      width: 100%;
+      padding: 30px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.5); }
+      .youtube .inner .contents .vidList article > .inner .pic {
+        display: block;
+        width: 100%;
+        height: 290px;
+        overflow: hidden; }
+        .youtube .inner .contents .vidList article > .inner .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: .5s; }
+      .youtube .inner .contents .vidList article > .inner .con {
+        margin-top: 20px; }
+        .youtube .inner .contents .vidList article > .inner .con h2 {
+          font: 600 24px/1.2 'Roboto';
+          color: #171717;
+          margin-bottom: 10px; }
+        .youtube .inner .contents .vidList article > .inner .con p {
+          font: 300 16px/1.2 'Roboto';
+          color: #555;
+          margin-bottom: 15px; }
+        .youtube .inner .contents .vidList article > .inner .con span {
+          font: 300 14px/1 'Saira Semi Condensed';
+          color: #555; }
+    .youtube .inner .contents .vidList article:hover .inner .pic img {
+      transform: scale(1.2); }
+  .youtube .inner .contents .vidList > .pop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 5vw;
+    box-sizing: border-box; }
+    .youtube .inner .contents .vidList > .pop .btnClose {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 10;
+      color: #fff; }
+      .youtube .inner .contents .vidList > .pop .btnClose i {
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.5);
+        transition: .5s; }
+      .youtube .inner .contents .vidList > .pop .btnClose:hover i {
+        color: #fff; }
+
+@media screen and (max-width: 1200px) {
+  .youtube .inner .contents .vidList article > .inner .pic {
+    height: 185px; }
+  .youtube .inner .contents .vidList > .pop {
+    padding: 10vh 5vw; } }
+@media screen and (max-width: 879px) {
+  .youtube .inner .contents .vidList article > .inner .pic {
+    height: 145px; }
+  .youtube .inner .contents .vidList > .pop {
+    padding: 30vh 5vw; } }
+@media screen and (max-width: 769px) {
+  .youtube .inner .contents .vidList article {
+    width: 100%;
+    padding: 0; }
+    .youtube .inner .contents .vidList article:nth-of-type(11) .inner {
+      border-bottom: none; }
+    .youtube .inner .contents .vidList article > .inner .pic {
+      height: 300px; } }
+@media screen and (max-width: 679px) {
+  .youtube .inner .contents .vidList article > .inner .pic {
+    height: 229px; } }
+@media screen and (max-width: 497px) {
+  .youtube .inner .contents .vidList article > .inner .pic {
+    height: 130px; } }
 .gallery .inner .contents {
   display: flex;
   padding: 150px 0; }
