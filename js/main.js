@@ -29,3 +29,13 @@ btnCall.onclick = function(e){
     menuMb.classList.toggle("on");
     body.classList.toggle("hidden");
 }
+
+const swiper = new Swiper(".visual_swiper", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+});

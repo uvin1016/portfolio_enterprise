@@ -162,91 +162,96 @@
     width: 100%;
     height: 100vh;
 
-    .slide {
+    .swiper {
         width: 100%;
         height: 100%;
-        position: relative;
 
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .swiper-wrapper {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            z-index: -1;
+
+            .swiper-slide {
+                width: 100%;
+                height: 100%;
+                position: relative;
+        
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: -1;
+                }
+        
+                .inner {
+                    width: 1180px;
+                    height: 100%;
+                    margin: 0 auto;
+                    position: relative;
+        
+                    .txtBox {
+                        position: absolute;
+                        left: 0;
+                        bottom: 200px;
+        
+                        h1 {
+                            font: 400 16px/1 'Roboto';
+                            color: #fff;
+                            opacity: 0.9;
+                        }
+        
+                        h2 {
+                            font: 500 8vw/1.1 'Roboto';
+                            color: #fff;
+                            margin-left: -7px;
+                        }
+                    }
+        
+                    .txtSub {
+                        position: absolute;
+                        bottom: 100px;
+                        left: 0;
+                        display: flex;
+                        justify-content: space-between;
+        
+                        li {
+                            width: 295px;
+        
+                            h3 {
+                                font: 400 16px/1 'Roboto';
+                                color: #fff;
+                                opacity: 0.7;
+                            }
+        
+                            span {
+                                font: 400 16px/1 'Roboto';
+                                color: #fff;
+                                opacity: 0.95;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
-        .inner {
-            width: 1180px;
-            height: 100%;
-            margin: 0 auto;
-            position: relative;
+        .visual_btns {
+            width: 100px;
+            height: 25px;
+            position: absolute;
+            right: calc((100% - 1180px)/2);
+            bottom: 100px;
 
-            .txtBox {
-                position: absolute;
-                left: 0;
-                bottom: 200px;
-
-                h1 {
-                    font: 400 16px/1 'Roboto';
-                    color: #fff;
-                    opacity: 0.9;
-                }
-
-                h2 {
-                    font: 500 8vw/1.1 'Roboto';
-                    color: #fff;
-                    margin-left: -7px;
-                }
+            div {
+                font: 400 16px/1 'Roboto';
+                color: #fff;
+                opacity: 0.95;
+                cursor: pointer;
             }
 
-            .txtSub {
-                position: absolute;
-                bottom: 100px;
-                left: 0;
-                display: flex;
-                justify-content: space-between;
-
-                li {
-                    width: 295px;
-
-                    h3 {
-                        font: 400 16px/1 'Roboto';
-                        color: #fff;
-                        opacity: 0.7;
-                    }
-
-                    span {
-                        font: 400 16px/1 'Roboto';
-                        color: #fff;
-                        opacity: 0.95;
-                    }
-                }
-            }
-
-            .pagination {
-                position: absolute;
-                right: 0;
-                bottom: 100px;
-                display: flex;
-                width: 295px;
-                justify-content: space-between;
-                align-items: center;
-
-                span {
-                    font: 400 16px/1 'Roboto';
-                    color: #fff;
-                    opacity: 0.9;
-                }
-
-                .progress {
-                    width: 200px;
-                    height: 2px;
-                    background-color: #fff;
-                    opacity: 0.7;
-                    position: relative;
-                }
+            div::after {
+                display: none;
             }
         }
     }
@@ -757,7 +762,7 @@
 @media screen and (max-width: 1200px) {
     // header ---------------------------------------------------------------------------
     #header {
-        width: 100vw;
+        width: 100%;
         
         &.on .inner .btnCall {
             &::after, &::before {
@@ -807,11 +812,31 @@
                         display: block;
 
                         a {
-                            display: block;
+                            display: inline-block;
                             font: 300 50px/1 "Saira Semi Condensed";
                             color: #171717;
                             margin-bottom: 30px;
                             letter-spacing: 1px;
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                display: block;
+                                width: 0%;
+                                height: 1px;
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                background-color: #171717;
+                            }
+                        }
+
+                        &:hover {
+                            a {
+                                &::after {
+                                    animation: moveLine .5s linear forwards ;
+                                }
+                            }
                         }
                     }
                 }
@@ -882,37 +907,33 @@
 
     // visual ---------------------------------------------------------------------------
     #visual {
-        .slide {
-            .inner {
-                width: calc(100% - 70px);
-
-                .txtBox {
-                    h1 {
-                        font: 400 16px/1 'Roboto';
-                        color: #fff;
-                        opacity: 0.9;
-                    }
-    
-                    h2 {
-                        font: 500 15vw/1.1 'Roboto';
-                        color: #fff;
-                        margin-left: -7px;
-                    }
-                }
-
-                .txtSub {
-                    width: 70%;
-
-                    li {
-                        width: calc(100% / 3);
-                    }
-                }
-
-                .pagination {
-                    width: 30%;
-
-                    .progress {
-                        width: 80%;
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .inner {
+                        width: calc(100% - 70px);
+        
+                        .txtBox {
+                            h1 {
+                                font: 400 16px/1 'Roboto';
+                                color: #fff;
+                                opacity: 0.9;
+                            }
+            
+                            h2 {
+                                font: 500 15vw/1.1 'Roboto';
+                                color: #fff;
+                                margin-left: -7px;
+                            }
+                        }
+        
+                        .txtSub {
+                            width: 70%;
+        
+                            li {
+                                width: calc(100% / 3);
+                            }
+                        }
                     }
                 }
             }
@@ -1039,28 +1060,21 @@
 
     // visual ---------------------------------------------------------------------------
     #visual {
-        .slide {
-            .inner {
-                .txtBox {
-                    bottom: 250px;
-                }
-                .txtSub {
-                    width: 100%;
-                    bottom: 150px;
-
-                    li {
-                        width: calc(100% / 3);
-                    }
-                }
-
-                .pagination {
-                    width: 100%;
-                    bottom: 50px;
-                    right: auto;
-                    left: 0;
-
-                    .progress {
-                        width: 80%;
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .inner {
+                        .txtBox {
+                            bottom: 250px;
+                        }
+                        .txtSub {
+                            width: 100%;
+                            bottom: 150px;
+        
+                            li {
+                                width: calc(100% / 3);
+                            }
+                        }
                     }
                 }
             }
@@ -1300,24 +1314,28 @@
 
     // visual ---------------------------------------------------------------------------
     #visual {
-        .slide {
-            .inner {
-                .txtBox {
-                    bottom: 250px;
-                }
-                .txtSub {
-                    width: 100%;
-                    bottom: 150px;
-
-                    li {
-                        width: calc(100% / 3);
-
-                        h3 {
-                            font: 400 14px/1 'Roboto';
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .inner {
+                        .txtBox {
+                            bottom: 250px;
                         }
-
-                        span {
-                            font: 400 14px/1 'Roboto';
+                        .txtSub {
+                            width: 100%;
+                            bottom: 150px;
+        
+                            li {
+                                width: calc(100% / 3);
+        
+                                h3 {
+                                    font: 400 14px/1 'Roboto';
+                                }
+        
+                                span {
+                                    font: 400 14px/1 'Roboto';
+                                }
+                            }
                         }
                     }
                 }
@@ -1483,4 +1501,9 @@
     50% {width: 50%;}
     75% {width: 75%;}
     100% {width: 100%;}
+}
+
+@keyframes moveLine {
+    0%{width: 0%;}
+    100%{width: 100%;}
 }
