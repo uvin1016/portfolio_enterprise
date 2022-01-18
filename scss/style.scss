@@ -604,13 +604,6 @@
                 padding: 30px 0;
                 border-bottom: 1px solid #171717;
 
-                &.on {
-                    >a::after {
-                        content: '';
-                        display: none;
-                    }
-                }
-
                 >a {
                     display: block;
                     padding-left: 30px;
@@ -648,61 +641,76 @@
                 }
 
                 .subNews {
-                    margin-top: 30px;
-                    display: flex;
-                    justify-content: space-between;
-                    position: relative;
+                    position: absolute;
+                    top: -999999px;
+                    opacity: 0;
+                }
 
-                    .pic {
-                        width: calc(100% / 2);
-                        height: 300px;
-                        margin-right: 20px;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            object-position: top;
-                        }
-                    }
-
-                    .subTxt {
-                        width: calc(100% / 2);
-                        height: 100%;
-
-                        h2 {
-                            margin-bottom: 20px;
-                        }
-
-                        p {
-                            font: 400 14px/1.6 "Roboto";
-                            color: #171717;
-                        }
-                    }
-
-                    .moreBtn {
-                        position: absolute;
-                        left: calc((100% / 2) + 20px);
-                        bottom: 0px;
+                &.on {
+                    .subNews {
+                        margin-top: 30px;
                         display: flex;
                         justify-content: space-between;
-                        align-items: center;
-        
-                        span {
-                            font: 400 14px/1 'Roboto';
-                            color: #727272;
-                            margin-right: 10px;
+                        position: relative;
+                        top: unset;
+                        opacity: 1;
+    
+                        .pic {
+                            width: calc(100% / 2);
+                            height: 300px;
+                            margin-right: 20px;
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: top;
+                            }
                         }
-        
-                        .progress {
-                            width: 100px;
-                            height: 1px;
-                            background-color: #727272;
-                            position: relative;
-                            margin-right: 10px;
+    
+                        .subTxt {
+                            width: calc(100% / 2);
+                            height: 100%;
+    
+                            h2 {
+                                margin-bottom: 20px;
+                            }
+    
+                            p {
+                                font: 400 14px/1.6 "Roboto";
+                                color: #171717;
+                            }
                         }
+    
+                        .moreBtn {
+                            position: absolute;
+                            left: calc((100% / 2) + 20px);
+                            bottom: 0px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+            
+                            span {
+                                font: 400 14px/1 'Roboto';
+                                color: #727272;
+                                margin-right: 10px;
+                            }
+            
+                            .progress {
+                                width: 100px;
+                                height: 1px;
+                                background-color: #727272;
+                                position: relative;
+                                margin-right: 10px;
+                            }
+                        }
+                        
                     }
-                    
+
+                    >a::after {
+                        content: '';
+                        display: none;
+                    }
                 }
             }
         }
@@ -1066,20 +1074,7 @@
         
         .inner {
             width: calc(100% - 70px);
-
-            .slide {
-                article {
-                    width: calc(100% / 4);
-
-                    &.on a .pic {
-                        width: 180%;
-                        height: calc(150px * 1.8);
-                    }
-                }
-            }
         }
-
-        
     }
 
 
@@ -1244,46 +1239,43 @@
     // events ---------------------------------------------------------------------------
     #events {
         .inner {
-            .slide {
-                article {
-                    width: calc(100% / 3);
-
-                    &:last-child {
-                        display: none;
-                    }
-
-                    a {
-                        .pic {
-                            width: 100%;
-                            height: 120px;
-                        }
-
-                        h2 {
-                            font: 600 30px/1 "Roboto";
+            .events_swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+        
+                        a {
+                            .pic {
+                                width: 100%;
+                                height: 120px;
+                            }
     
-                            span {
-                                font: 400 20px/1 "Roboto";
+                            h2 {
+                                font: 600 30px/1 "Roboto";
+        
+                                span {
+                                    font: 400 20px/1 "Roboto";
+                                }
+                            }
+    
+                            >p {
+                                display: none;
+                            }
+    
+                            .loca {
+                                margin: 30px 0;
                             }
                         }
-
-                        >p {
-                            display: none;
+                        &.swiper-slide-active {
+                            a {
+                                .pic {
+                                    height: calc(120px * 1.8);
+                                }
+                            } 
                         }
-
-                        .loca {
-                            margin: 30px 0;
-                        }
-                    }
-
-                    &.on a .pic {
-                        width: 180%;
-                        height: calc(120px * 1.8);
                     }
                 }
             }
         }
-
-        
     }
 
 
@@ -1450,32 +1442,24 @@
     // events ---------------------------------------------------------------------------
     #events {
         .inner {
-            .slide {
-                article {
-                    margin: 0;
-                    width: 100%;
+            .events_swiper {
+                width: 100%;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        a > p { display: block; }
 
-                    &:last-child {
-                        display: none;
-                    }
-
-                    &:nth-of-type(2) {
-                        display: none;
-                    }
-
-                    a > p {
-                        display: block;
-                    }
-
-                    &.on a .pic {
-                        width: 100%;
-                        height: 150px;
+                        &.swiper-slide-active {
+                            a {
+                                .pic { 
+                                    width: 100%;
+                                    height: 150px; 
+                                }
+                            } 
+                        }
                     }
                 }
             }
         }
-
-        
     }
 
 

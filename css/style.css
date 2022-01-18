@@ -1207,6 +1207,9 @@ table, td, th {
         color: #171717;
         cursor: pointer;
         margin-right: 10px; }
+      .join .inner .contents form fieldset table tr td p {
+        font: 300 12px/1.2 'Noto Sans KR';
+        color: hotpink; }
     .join .inner .contents form fieldset table tr:nth-of-type(5) td input[type=text] {
       border: none;
       background: #f3f3f3;
@@ -2211,9 +2214,6 @@ table, td, th {
         width: 100%;
         padding: 30px 0;
         border-bottom: 1px solid #171717; }
-        #news .inner ul li.on > a::after {
-          content: '';
-          display: none; }
         #news .inner ul li > a {
           display: block;
           padding-left: 30px;
@@ -2243,44 +2243,53 @@ table, td, th {
             top: 50%;
             transform: translate(-50%, -50%); }
         #news .inner ul li .subNews {
+          position: absolute;
+          top: -999999px;
+          opacity: 0; }
+        #news .inner ul li.on .subNews {
           margin-top: 30px;
           display: flex;
           justify-content: space-between;
-          position: relative; }
-          #news .inner ul li .subNews .pic {
+          position: relative;
+          top: unset;
+          opacity: 1; }
+          #news .inner ul li.on .subNews .pic {
             width: calc(100% / 2);
             height: 300px;
             margin-right: 20px; }
-            #news .inner ul li .subNews .pic img {
+            #news .inner ul li.on .subNews .pic img {
               width: 100%;
               height: 100%;
               object-fit: cover;
               object-position: top; }
-          #news .inner ul li .subNews .subTxt {
+          #news .inner ul li.on .subNews .subTxt {
             width: calc(100% / 2);
             height: 100%; }
-            #news .inner ul li .subNews .subTxt h2 {
+            #news .inner ul li.on .subNews .subTxt h2 {
               margin-bottom: 20px; }
-            #news .inner ul li .subNews .subTxt p {
+            #news .inner ul li.on .subNews .subTxt p {
               font: 400 14px/1.6 "Roboto";
               color: #171717; }
-          #news .inner ul li .subNews .moreBtn {
+          #news .inner ul li.on .subNews .moreBtn {
             position: absolute;
             left: calc((100% / 2) + 20px);
             bottom: 0px;
             display: flex;
             justify-content: space-between;
             align-items: center; }
-            #news .inner ul li .subNews .moreBtn span {
+            #news .inner ul li.on .subNews .moreBtn span {
               font: 400 14px/1 'Roboto';
               color: #727272;
               margin-right: 10px; }
-            #news .inner ul li .subNews .moreBtn .progress {
+            #news .inner ul li.on .subNews .moreBtn .progress {
               width: 100px;
               height: 1px;
               background-color: #727272;
               position: relative;
               margin-right: 10px; }
+        #news .inner ul li.on > a::after {
+          content: '';
+          display: none; }
 
 #footer {
   width: 100%;
@@ -2503,11 +2512,6 @@ table, td, th {
     padding: 150px 0 150px; }
     #events .inner {
       width: calc(100% - 70px); }
-      #events .inner .slide article {
-        width: calc(100% / 4); }
-        #events .inner .slide article.on a .pic {
-          width: 180%;
-          height: calc(150px * 1.8); }
 
   #news {
     padding: 50px 0 150px; }
@@ -2583,24 +2587,19 @@ table, td, th {
       #banner .inner p {
         font: 300 14px/1.3 "Roboto"; }
 
-  #events .inner .slide article {
-    width: calc(100% / 3); }
-    #events .inner .slide article:last-child {
-      display: none; }
-    #events .inner .slide article a .pic {
-      width: 100%;
-      height: 120px; }
-    #events .inner .slide article a h2 {
-      font: 600 30px/1 "Roboto"; }
-      #events .inner .slide article a h2 span {
-        font: 400 20px/1 "Roboto"; }
-    #events .inner .slide article a > p {
-      display: none; }
-    #events .inner .slide article a .loca {
-      margin: 30px 0; }
-    #events .inner .slide article.on a .pic {
-      width: 180%;
-      height: calc(120px * 1.8); }
+  #events .inner .events_swiper .swiper-wrapper .swiper-slide a .pic {
+    width: 100%;
+    height: 120px; }
+  #events .inner .events_swiper .swiper-wrapper .swiper-slide a h2 {
+    font: 600 30px/1 "Roboto"; }
+    #events .inner .events_swiper .swiper-wrapper .swiper-slide a h2 span {
+      font: 400 20px/1 "Roboto"; }
+  #events .inner .events_swiper .swiper-wrapper .swiper-slide a > p {
+    display: none; }
+  #events .inner .events_swiper .swiper-wrapper .swiper-slide a .loca {
+    margin: 30px 0; }
+  #events .inner .events_swiper .swiper-wrapper .swiper-slide.swiper-slide-active a .pic {
+    height: calc(120px * 1.8); }
 
   #news {
     padding: 0px 0 150px; }
@@ -2672,16 +2671,11 @@ table, td, th {
     #banner .inner p {
       font: 300 12px/1.3 "Roboto"; }
 
-  #events .inner .slide article {
-    margin: 0;
+  #events .inner .events_swiper {
     width: 100%; }
-    #events .inner .slide article:last-child {
-      display: none; }
-    #events .inner .slide article:nth-of-type(2) {
-      display: none; }
-    #events .inner .slide article a > p {
+    #events .inner .events_swiper .swiper-wrapper .swiper-slide a > p {
       display: block; }
-    #events .inner .slide article.on a .pic {
+    #events .inner .events_swiper .swiper-wrapper .swiper-slide.swiper-slide-active a .pic {
       width: 100%;
       height: 150px; }
 

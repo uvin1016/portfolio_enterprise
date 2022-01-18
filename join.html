@@ -8,6 +8,7 @@
     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
+    <script src="js/join.js" defer></script>
 </head>
 <body>
     <header id="headerSub">
@@ -66,7 +67,7 @@
 
             <!-- 컨텐츠 작성 -->
             <div class="contents">
-                <form action="/" method="post">
+                <form action="/" method="post" id="#member">
                     <fieldset>
                         <legend class="hide">회원가입양식폼</legend>
 
@@ -462,8 +463,8 @@
                                 <th><label for="email">이메일</label><span>*</span></th>
                                 <td>
                                     <input type="text" name="email" id="email" placeholder="이메일 주소를 입력해주세요.">
-                                    <select name="email" id="emailHost">
-                                        <option>직접입력</option>
+                                    <select name="emailHost" id="emailHost">
+                                        <option value="">직접입력</option>
                                         <option value="naver">@naver.com</option>
                                         <option value="google">@google.com</option>
                                         <option value="nate">@nate.com</option>

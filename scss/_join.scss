@@ -124,6 +124,11 @@
                             cursor: pointer;
                             margin-right: 10px;
                         }
+
+                        p {
+                            font: 300 12px/1.2 'Noto Sans KR';
+                            color: hotpink;
+                        }
                     }
 
                     &:nth-of-type(5) {
