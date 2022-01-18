@@ -30,10 +30,22 @@ btnCall.onclick = function(e){
     body.classList.toggle("hidden");
 }
 
-const swiper = new Swiper(".visual_swiper", {
+const visualSwiper = new Swiper(".visual_swiper", {
     spaceBetween: 30,
     effect: "fade",
     loop: true,
+    autoplay: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+});
+
+const eventsSwiper = new Swiper(".events_swiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

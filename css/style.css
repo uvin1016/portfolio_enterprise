@@ -1981,18 +1981,37 @@ table, td, th {
                 color: #fff;
                 opacity: 0.95; }
     #visual .swiper .visual_btns {
-      width: 100px;
+      width: 295px;
       height: 25px;
       position: absolute;
       right: calc((100% - 1180px)/2);
       bottom: 100px; }
-      #visual .swiper .visual_btns div {
+      #visual .swiper .visual_btns button {
+        border: none;
+        background-color: transparent;
         font: 400 16px/1 'Roboto';
         color: #fff;
         opacity: 0.95;
-        cursor: pointer; }
-      #visual .swiper .visual_btns div::after {
-        display: none; }
+        cursor: pointer;
+        transition: .5s;
+        z-index: 2; }
+        #visual .swiper .visual_btns button::after {
+          display: none; }
+        #visual .swiper .visual_btns button.swiper-button-next:hover {
+          transform: translateX(3px); }
+        #visual .swiper .visual_btns button.swiper-button-prev:hover {
+          transform: translateX(-3px); }
+      #visual .swiper .visual_btns::after {
+        content: '';
+        display: block;
+        width: calc(100% - 120px);
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; }
 
 #about {
   width: 100%;
@@ -2059,11 +2078,15 @@ table, td, th {
           color: #171717;
           margin: 10px 0 15px; }
         #projects .inner div article a .pic {
-          width: calc(100% - 20px); }
+          width: calc(100% - 20px);
+          overflow: hidden; }
           #projects .inner div article a .pic img {
             width: 100%;
             height: 100%;
-            object-fit: cover; }
+            object-fit: cover;
+            transition: 1s; }
+          #projects .inner div article a .pic:hover img {
+            transform: scale(1.1); }
     #projects .inner .moreBtn {
       position: absolute;
       left: calc(100% / 2);
@@ -2109,45 +2132,68 @@ table, td, th {
   #events .inner {
     width: 1180px;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     #events .inner h1 {
       font: 400 24px/1 "Saira Semi Condensed";
       color: #171717;
       border-bottom: 1px solid #171717;
       padding-bottom: 10px;
       margin-bottom: 30px; }
-    #events .inner .slide {
-      display: flex;
-      justify-content: right; }
-      #events .inner .slide article {
-        width: 280px;
-        margin-left: 20px; }
-        #events .inner .slide article a h2 {
+    #events .inner .events_swiper {
+      width: 80%;
+      margin-left: auto;
+      margin-right: unset;
+      overflow: visible; }
+      #events .inner .events_swiper .swiper-wrapper .swiper-slide {
+        width: 100%; }
+        #events .inner .events_swiper .swiper-wrapper .swiper-slide a h2 {
           font: 600 40px/1 "Roboto";
           color: #171717;
           margin-bottom: 15px; }
-          #events .inner .slide article a h2 span {
+          #events .inner .events_swiper .swiper-wrapper .swiper-slide a h2 span {
             font: 400 24px/1 "Roboto";
             margin-left: 10px; }
-        #events .inner .slide article a p {
+        #events .inner .events_swiper .swiper-wrapper .swiper-slide a p {
           font: 400 14px/1.6 "Roboto";
           color: #727272; }
-        #events .inner .slide article a .loca {
+        #events .inner .events_swiper .swiper-wrapper .swiper-slide a .loca {
           margin: 50px 0; }
-          #events .inner .slide article a .loca p {
+          #events .inner .events_swiper .swiper-wrapper .swiper-slide a .loca p {
             font: 500 15px/1.6 "Saira Semi Condensed";
             color: #727272; }
-        #events .inner .slide article a .pic {
+        #events .inner .events_swiper .swiper-wrapper .swiper-slide a .pic {
           width: 100%;
           height: 150px; }
-          #events .inner .slide article a .pic img {
+          #events .inner .events_swiper .swiper-wrapper .swiper-slide a .pic img {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-        #events .inner .slide article.on a .pic {
+        #events .inner .events_swiper .swiper-wrapper .swiper-slide.swiper-slide-active a .pic {
           float: right;
-          width: 200%;
+          width: 180%;
           height: calc(150px * 2); }
+        #events .inner .events_swiper .swiper-wrapper .swiper-slide.swiper-slide-prev, #events .inner .events_swiper .swiper-wrapper .swiper-slide.swiper-slide-duplicate-next {
+          opacity: 0; }
+    #events .inner .eventsBtns {
+      position: absolute;
+      top: 15px;
+      right: 0px;
+      width: 100px; }
+      #events .inner .eventsBtns button {
+        border: none;
+        background: transparent;
+        padding: 5px;
+        color: #171717;
+        transition: .5s; }
+        #events .inner .eventsBtns button i {
+          font-size: 25px; }
+        #events .inner .eventsBtns button::after {
+          display: none; }
+        #events .inner .eventsBtns button.swiper-button-next:hover {
+          transform: translateX(3px); }
+        #events .inner .eventsBtns button.swiper-button-prev:hover {
+          transform: translateX(-3px); }
 
 #news {
   width: 100%;
