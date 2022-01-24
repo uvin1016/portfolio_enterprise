@@ -2369,6 +2369,43 @@ table, td, th {
             color: #fff;
             letter-spacing: 1px; }
 
+#popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999; }
+  #popup .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: #fff;
+    padding: 30px; }
+    #popup .inner h1 {
+      font: bold 27px/1 "Saira Semi Condensed";
+      text-align: center;
+      color: #171717;
+      margin-bottom: 30px; }
+    #popup .inner .cookieInput {
+      text-align: right; }
+      #popup .inner .cookieInput label {
+        font: 300 16px/1 'Noto Sans KR';
+        cursor: pointer; }
+    #popup .inner .close {
+      position: absolute;
+      top: -25px;
+      right: -4px;
+      border: none;
+      background: transparent;
+      cursor: pointer; }
+      #popup .inner .close i {
+        font-size: 20px;
+        color: #fff; }
+
 @media screen and (max-width: 1200px) {
   #header {
     width: 100%; }
