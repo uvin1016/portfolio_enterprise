@@ -1214,7 +1214,7 @@ table, td, th {
       border: none;
       background: #f3f3f3;
       padding: 10px;
-      width: calc(50% - 200px); }
+      width: calc(50% - 205px); }
     .join .inner .contents form fieldset table tr:last-child th {
       border-bottom: 1px solid rgba(0, 0, 0, 0.4);
       background: #f3f3f3;
@@ -1243,7 +1243,7 @@ table, td, th {
     .join .inner .contents form fieldset table tr td select {
       width: 130px; }
     .join .inner .contents form fieldset table tr:nth-of-type(5) td input[type=text] {
-      width: calc(80% - 130px); } }
+      width: calc(80% - 135px); } }
 @media screen and (max-width: 670px) {
   .join .inner .contents form fieldset table {
     width: 100%; }
@@ -1257,7 +1257,7 @@ table, td, th {
       .join .inner .contents form fieldset table tr td select {
         width: 130px; }
     .join .inner .contents form fieldset table tr:nth-of-type(5) td input[type=text] {
-      width: calc(100% - 130px - 10px); }
+      width: calc(100% - 130px - 6px); }
     .join .inner .contents form fieldset table tr:last-child th {
       display: block; } }
 @media screen and (max-width: 510px) {
