@@ -30,6 +30,7 @@ btnClose.addEventListener("click", e=>{
 
     if(isChecked) setCookie(idName, "done", 1);
     popup.style.display = "none";
+    body.style.overflow = "auto";
 })
 
 setPos();
