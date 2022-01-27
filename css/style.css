@@ -2521,6 +2521,9 @@ table, td, th {
       width: 70%; }
       #visual .swiper .swiper-wrapper .swiper-slide .inner .txtSub li {
         width: calc(100% / 3); }
+  #visual .swiper .visual_btns {
+    width: calc(100%/4);
+    right: 40px; }
 
   #about {
     padding: 150px 0 150px; }
@@ -2576,6 +2579,9 @@ table, td, th {
     bottom: 150px; }
     #visual .swiper .swiper-wrapper .swiper-slide .inner .txtSub li {
       width: calc(100% / 3); }
+  #visual .swiper .visual_btns {
+    width: calc(100% - 70px);
+    right: 40px; }
 
   #about {
     padding: 150px 0 150px; }
@@ -2719,16 +2725,17 @@ table, td, th {
   #news .inner ul li > a {
     font: 400 14px/1 "Roboto";
     padding-left: 20px; }
-  #news .inner ul li .subNews {
-    display: block; }
-    #news .inner ul li .subNews .pic {
+  #news .inner ul li.on .subNews {
+    display: flex;
+    flex-wrap: wrap; }
+    #news .inner ul li.on .subNews .pic {
       width: 100%;
       height: 150px; }
-    #news .inner ul li .subNews .subTxt {
+    #news .inner ul li.on .subNews .subTxt {
       margin-top: 30px;
       padding-bottom: 40px;
       width: 100%; }
-    #news .inner ul li .subNews .moreBtn {
+    #news .inner ul li.on .subNews .moreBtn {
       left: 0; }
 
   #footer {
@@ -2760,6 +2767,11 @@ table, td, th {
             display: none; }
       #footer .inner .ftBttm p {
         width: 100%; } }
+@media screen and (max-width: 375px) {
+  #news .inner ul li > a > span {
+    position: absolute;
+    top: -999999px;
+    opacity: 0; } }
 @keyframes effect {
   0% {
     width: 0px; }
