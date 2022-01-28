@@ -11,7 +11,6 @@ fetch(url)
 .then(json=>{
     let items = json.items;
     let result = "";
-    console.log(items);
 
     items.forEach(item=>{
         let title = item.snippet.title;

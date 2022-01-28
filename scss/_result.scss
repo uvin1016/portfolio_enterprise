@@ -1,0 +1,23 @@
+.result {
+    .inner {
+        .contents {
+            padding: 150px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                font: 400 50px/1.2 "Saira Semi Condensed";
+                color: #171717;
+                text-align: center;
+
+                i:first-child {
+                    color: palevioletred;
+                }
+
+                i:last-child {
+                    color: orange;
+                }
+            }
+        }
+    }
+}
