@@ -1,3 +1,4 @@
+const frame = document.querySelector("body");
 const popup = document.querySelector("#popup");
 const btnClose = popup.querySelector(".close");
 const isCookie = document.cookie.indexOf("popup=done");
@@ -7,11 +8,11 @@ let posArr = [];
 if(isCookie == -1){
     console.log("쿠키없음");
     popup.style.display = "block";
-    body.style.overflow = "hidden";
+    frame.style.overflow = "hidden";
 }else{
     console.log("쿠키있음");
     popup.style.display = "none";
-    body.style.overflow = "auto";
+    frame.style.overflow = "auto";
 }
 
 btnClose.addEventListener("click", e=>{
@@ -22,7 +23,7 @@ btnClose.addEventListener("click", e=>{
 
     if(isChecked) setCookie(idName, "done", 1);
     popup.style.display = "none";
-    body.style.overflow = "auto";
+    frame.style.overflow = "auto";
 });
 
 setPos();

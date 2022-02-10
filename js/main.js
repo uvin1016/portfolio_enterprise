@@ -1,4 +1,3 @@
-const body = document.querySelector("body");
 const secs = document.querySelectorAll("section");
 const newsList = document.querySelectorAll("#news .inner ul li");
 const counter = document.querySelectorAll(".counter");
